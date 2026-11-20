@@ -1,0 +1,45 @@
+\begin{table}[t]
+\centering
+\caption{Offer F1 by venue tier (P1, test; \%)}
+\label{tab:venue_results}
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+Model & Non-chain & Chain & street\_vendor & small\_shop & supermarket\_foodcourt \\
+\midrule
+EraX-VL-2B v1.5 & 4.7 & 2.4 & 6.7 & 3.8 & 20.7 \\
+EraX-VL-7B v1.5 & 41.5 & 30.8 & 48.7 & 38.1 & 83.3 \\
+Gemma 4 E2B & 67.2 & 47.2 & 71.4 & 65.1 & 80.0 \\
+Gemma 4 E4B & 83.1 & 55.0 & 82.5 & 83.4 & 80.0 \\
+GLM-4.6V-Flash & 76.2 & 50.2 & 79.5 & 74.7 & 66.7 \\
+InternVL3.5-1B & 31.4 & 18.2 & 37.1 & 28.5 & 28.6 \\
+InternVL3.5-2B & 55.0 & 29.7 & 56.4 & 54.2 & 80.0 \\
+InternVL3.5-4B & 76.8 & 68.7 & 75.3 & 77.7 & 34.8 \\
+InternVL3.5-8B & 72.9 & 61.2 & 74.1 & 72.4 & 80.0 \\
+MiMo-VL-7B-RL & 49.7 & 12.8 & 54.3 & 47.4 & 28.6 \\
+MiniCPM-V 4.5 & 74.5 & 51.5 & 72.1 & 75.6 & 72.7 \\
+Ministral 3 14B (FP8) & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 \\
+Ministral 3 3B & 77.5 & 58.1 & 74.2 & 79.1 & 66.7 \\
+Ministral 3 8B & 83.7 & 65.4 & 80.8 & 85.3 & 36.4 \\
+Molmo-7B-D & 2.8 & 0.9 & 4.8 & 1.6 & 0.0 \\
+Ovis2.5-9B & 79.5 & 63.4 & 79.6 & 79.4 & 80.0 \\
+Phi-4-multimodal & 61.5 & 24.3 & – & 61.5 & – \\
+Qwen2.5-VL-7B & 71.4 & 51.9 & 71.6 & 71.6 & 28.6 \\
+Qwen3.5-0.8B & 36.1 & 32.0 & 39.6 & 34.5 & 16.7 \\
+Qwen3.5-27B (AWQ-4bit) & 88.0 & 70.9 & 87.9 & 88.3 & 38.1 \\
+Qwen3.5-2B & 62.5 & 53.5 & 65.6 & 61.0 & 66.7 \\
+Qwen3.5-4B & 82.1 & 70.7 & 82.5 & 81.9 & 80.0 \\
+Qwen3.5-9B & 83.9 & 76.0 & 83.5 & 84.3 & 38.1 \\
+Qwen3-VL-2B & 57.1 & 43.9 & 61.4 & 55.3 & 33.3 \\
+Qwen3-VL-30B-A3B (AWQ-4bit) & 80.0 & 52.5 & 79.1 & 80.7 & 27.3 \\
+Qwen3-VL-32B (AWQ-4bit) & 84.2 & 58.7 & 81.8 & 85.6 & 28.6 \\
+Qwen3-VL-4B & 80.2 & 71.0 & 80.1 & 80.3 & 66.7 \\
+Qwen3-VL-8B & 85.2 & 68.3 & 83.0 & 86.4 & 38.1 \\
+Qwen3-VL-8B (AWQ-4bit) & 85.6 & 62.6 & 83.1 & 86.8 & 100.0 \\
+Qwen3-VL-8B (FP8) & 85.4 & 69.8 & 82.6 & 86.9 & 38.1 \\
+Vintern-1B v3.5 & 14.1 & 4.6 & 14.9 & 13.5 & 42.9 \\
+Vintern-3B-R beta & 38.6 & 14.4 & 43.5 & 36.1 & 40.0 \\
+\bottomrule
+\end{tabular}
+\par\smallskip{\footnotesize Non-chain menus are less likely to appear in pre-training data.}
+\end{table}

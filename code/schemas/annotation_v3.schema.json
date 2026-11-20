@@ -1,0 +1,573 @@
+{
+  "$defs": {
+    "ComboComponent": {
+      "additionalProperties": true,
+      "properties": {
+        "name": {
+          "default": "",
+          "title": "Name",
+          "type": "string"
+        },
+        "qty": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Qty"
+        },
+        "ref_price_vnd": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ref Price Vnd"
+        }
+      },
+      "title": "ComboComponent",
+      "type": "object"
+    },
+    "IgnoreRegion": {
+      "additionalProperties": true,
+      "properties": {
+        "desc": {
+          "default": "",
+          "title": "Desc",
+          "type": "string"
+        },
+        "text": {
+          "default": "",
+          "title": "Text",
+          "type": "string"
+        },
+        "bbox": {
+          "default": null,
+          "title": "Bbox"
+        }
+      },
+      "title": "IgnoreRegion",
+      "type": "object"
+    },
+    "Item": {
+      "additionalProperties": true,
+      "properties": {
+        "item_id": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Item Id"
+        },
+        "section_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Section Id"
+        },
+        "item_code": {
+          "default": "",
+          "title": "Item Code",
+          "type": "string"
+        },
+        "raw_name": {
+          "default": "",
+          "title": "Raw Name",
+          "type": "string"
+        },
+        "raw_name_2": {
+          "default": "",
+          "title": "Raw Name 2",
+          "type": "string"
+        },
+        "norm_name": {
+          "default": "",
+          "title": "Norm Name",
+          "type": "string"
+        },
+        "alt_norm_names": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Alt Norm Names",
+          "type": "array"
+        },
+        "description": {
+          "default": "",
+          "title": "Description",
+          "type": "string"
+        },
+        "category": {
+          "default": "",
+          "title": "Category",
+          "type": "string"
+        },
+        "is_add_on": {
+          "default": false,
+          "title": "Is Add On",
+          "type": "boolean"
+        },
+        "is_combo": {
+          "default": false,
+          "title": "Is Combo",
+          "type": "boolean"
+        },
+        "combo_components": {
+          "items": {
+            "$ref": "#/$defs/ComboComponent"
+          },
+          "title": "Combo Components",
+          "type": "array"
+        },
+        "serves": {
+          "default": "",
+          "title": "Serves",
+          "type": "string"
+        },
+        "option_groups": {
+          "default": "",
+          "title": "Option Groups",
+          "type": "string"
+        },
+        "attributes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Attributes",
+          "type": "array"
+        },
+        "availability": {
+          "default": "",
+          "title": "Availability",
+          "type": "string"
+        },
+        "item_status": {
+          "default": "active",
+          "title": "Item Status",
+          "type": "string"
+        },
+        "legibility": {
+          "default": "",
+          "title": "Legibility",
+          "type": "string"
+        },
+        "ambiguous": {
+          "default": false,
+          "title": "Ambiguous",
+          "type": "boolean"
+        },
+        "ambig_reason": {
+          "default": "",
+          "title": "Ambig Reason",
+          "type": "string"
+        },
+        "bbox": {
+          "default": null,
+          "title": "Bbox"
+        },
+        "notes": {
+          "default": "",
+          "title": "Notes",
+          "type": "string"
+        },
+        "offers": {
+          "items": {
+            "$ref": "#/$defs/Offer"
+          },
+          "title": "Offers",
+          "type": "array"
+        }
+      },
+      "title": "Item",
+      "type": "object"
+    },
+    "Offer": {
+      "additionalProperties": true,
+      "properties": {
+        "size": {
+          "default": "",
+          "title": "Size",
+          "type": "string"
+        },
+        "size_rank": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Size Rank"
+        },
+        "temp": {
+          "default": "",
+          "title": "Temp",
+          "type": "string"
+        },
+        "portion": {
+          "default": "",
+          "title": "Portion",
+          "type": "string"
+        },
+        "quantity": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Quantity"
+        },
+        "qty_unit": {
+          "default": "",
+          "title": "Qty Unit",
+          "type": "string"
+        },
+        "raw_price": {
+          "default": "",
+          "title": "Raw Price",
+          "type": "string"
+        },
+        "price_vnd": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Price Vnd"
+        },
+        "old_price_vnd": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Old Price Vnd"
+        },
+        "price_kind": {
+          "default": "fixed",
+          "title": "Price Kind",
+          "type": "string"
+        },
+        "price_min_vnd": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Price Min Vnd"
+        },
+        "price_max_vnd": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Price Max Vnd"
+        },
+        "unit_qty": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit Qty"
+        },
+        "unit": {
+          "default": "",
+          "title": "Unit",
+          "type": "string"
+        },
+        "price_source": {
+          "default": "item_line",
+          "title": "Price Source",
+          "type": "string"
+        },
+        "evidence": {
+          "default": "",
+          "title": "Evidence",
+          "type": "string"
+        },
+        "ambiguous": {
+          "default": false,
+          "title": "Ambiguous",
+          "type": "boolean"
+        },
+        "notes": {
+          "default": "",
+          "title": "Notes",
+          "type": "string"
+        }
+      },
+      "title": "Offer",
+      "type": "object"
+    },
+    "Section": {
+      "additionalProperties": true,
+      "properties": {
+        "section_id": {
+          "title": "Section Id",
+          "type": "string"
+        },
+        "raw_title": {
+          "default": "",
+          "title": "Raw Title",
+          "type": "string"
+        },
+        "norm_title": {
+          "default": "",
+          "title": "Norm Title",
+          "type": "string"
+        },
+        "shared_price_raw": {
+          "default": "",
+          "title": "Shared Price Raw",
+          "type": "string"
+        },
+        "notes": {
+          "default": "",
+          "title": "Notes",
+          "type": "string"
+        }
+      },
+      "required": [
+        "section_id"
+      ],
+      "title": "Section",
+      "type": "object"
+    }
+  },
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": {
+      "default": "3.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "image_id": {
+      "default": "",
+      "title": "Image Id",
+      "type": "string"
+    },
+    "file_name": {
+      "default": "",
+      "title": "File Name",
+      "type": "string"
+    },
+    "file_sha256": {
+      "default": "",
+      "title": "File Sha256",
+      "type": "string"
+    },
+    "group_id": {
+      "default": "",
+      "title": "Group Id",
+      "type": "string"
+    },
+    "near_duplicate_of": {
+      "default": "",
+      "title": "Near Duplicate Of",
+      "type": "string"
+    },
+    "split": {
+      "default": "unassigned",
+      "title": "Split",
+      "type": "string"
+    },
+    "ccl": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Ccl"
+    },
+    "tags": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Tags",
+      "type": "array"
+    },
+    "venue_tier": {
+      "default": "",
+      "title": "Venue Tier",
+      "type": "string"
+    },
+    "venue_type": {
+      "default": "",
+      "title": "Venue Type",
+      "type": "string"
+    },
+    "medium": {
+      "default": "",
+      "title": "Medium",
+      "type": "string"
+    },
+    "lighting": {
+      "default": "",
+      "title": "Lighting",
+      "type": "string"
+    },
+    "angle": {
+      "default": "",
+      "title": "Angle",
+      "type": "string"
+    },
+    "source": {
+      "default": "",
+      "title": "Source",
+      "type": "string"
+    },
+    "city": {
+      "default": "",
+      "title": "City",
+      "type": "string"
+    },
+    "languages": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Languages",
+      "type": "array"
+    },
+    "price_unit_default": {
+      "default": "",
+      "title": "Price Unit Default",
+      "type": "string"
+    },
+    "tax_note": {
+      "default": "",
+      "title": "Tax Note",
+      "type": "string"
+    },
+    "has_prices": {
+      "default": true,
+      "title": "Has Prices",
+      "type": "boolean"
+    },
+    "pii_present": {
+      "default": false,
+      "title": "Pii Present",
+      "type": "boolean"
+    },
+    "pii_types": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Pii Types",
+      "type": "array"
+    },
+    "redaction_checked": {
+      "default": false,
+      "title": "Redaction Checked",
+      "type": "boolean"
+    },
+    "consent_id": {
+      "default": "",
+      "title": "Consent Id",
+      "type": "string"
+    },
+    "sections": {
+      "items": {
+        "$ref": "#/$defs/Section"
+      },
+      "title": "Sections",
+      "type": "array"
+    },
+    "items": {
+      "items": {
+        "$ref": "#/$defs/Item"
+      },
+      "title": "Items",
+      "type": "array"
+    },
+    "ignore_regions": {
+      "items": {
+        "$ref": "#/$defs/IgnoreRegion"
+      },
+      "title": "Ignore Regions",
+      "type": "array"
+    },
+    "annotator": {
+      "default": "",
+      "title": "Annotator",
+      "type": "string"
+    },
+    "status": {
+      "default": "draft",
+      "title": "Status",
+      "type": "string"
+    },
+    "version": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Version"
+    },
+    "notes": {
+      "default": "",
+      "title": "Notes",
+      "type": "string"
+    }
+  },
+  "title": "Annotation",
+  "type": "object"
+}

@@ -1,0 +1,11 @@
+**Majority-vote ensembles of answers that already exist (test, strict rule)**
+
+| Ensemble (strict majority) | Images | Offer F1 [95% CI] | Precision | Recall | Reference | Reference F1 | Δ [95% CI] | Members F1 (min-max) |
+|---|---|---|---|---|---|---|---|---|
+| 3 tuning models, P1 | 274 | 73.0 [69.0, 77.1] | 90.3 | 61.3 | best member | 81.6 | -8.5 [-11.5, -5.8] | 70.4-81.6 |
+| Qwen3-VL-8B, 8 prompts | 274 | 75.3 [71.7, 78.8] | 88.9 | 65.3 | P1, greedy | 81.6 | -6.2 [-8.5, -4.1] | 81.3-82.4 |
+| Gemma 4 E4B, 8 prompts | 274 | 71.4 [67.5, 75.4] | 87.1 | 60.5 | P1, greedy | 77.3 | -5.9 [-7.9, -3.7] | 76.2-78.9 |
+| InternVL3.5-8B, 4 prompts | 274 | 63.3 [58.4, 68.0] | 88.1 | 49.3 | P1, greedy | 70.4 | -7.2 [-10.7, -4.1] | 69.0-75.8 |
+| Gemma 4 E4B, 5 sampled answers | 274 | 73.1 [69.5, 76.9] | 85.9 | 63.7 | P1, greedy | 77.3 | -4.2 [-6.1, -2.1] | 76.9-77.9 |
+
+An (item, price) pair is kept when a strict majority of the members return it (names compared after normalisation, without diacritics). Δ: ensemble minus reference on the same images, paired bootstrap.

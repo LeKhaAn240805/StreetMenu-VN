@@ -1,0 +1,97 @@
+# Full study G1-G6 (+ out-of-domain split). Run order = priority: the main table first, scale ladders next, then
+# prompt study / thinking / OCR cascade, large quantised models last. `smv run` skips whatever is already in the shared
+# result store (outputs/results), so `pilot` results are reused. Optional stages: --with-optional.
+name: full
+seeds: [0]
+splits: [dev, test, ood]
+include_optional: false
+prefetch: true
+keep_weights: false
+stages:
+  # ---------------- G5 OCR (runs first: P-OCR+ needs the transcripts) ----------------
+  - role: ocr
+    name: G5 OCR
+    models: [ocr_ppocr, ocr_paddleocr_vl, ocr_glm_ocr, ocr_dots, ocr_vietocr, ocr_easyocr, ocr_mineru25]
+  - role: ocr
+    name: G5 OCR optional
+    optional: true
+    models: [ocr_deepseek_ocr, ocr_deepseek_ocr2, ocr_glm_ocr_vi]
+  # ---------------- G1 families: the three main VLMs carry the prompt study ----------------
+  - role: vlm
+    name: G1 main models + prompt study
+    models: [qwen3vl_8b, internvl35_8b, gemma4_e4b]
+    prompts:
+      - P0
+      - P1
+      - P2
+      - P-T
+      - P-2S
+      - {id: P-OCR+, ocr_from: [ocr_ppocr, ocr_paddleocr_vl]}
+      - P1-VI
+      - {id: P-NL, optional: true}
+      - {id: P-Conf, optional: true}
+      - {id: P1a, optional: true}
+      - {id: P1b, optional: true}
+      - {id: P1c, optional: true}
+  - role: vlm
+    name: G1 other families
+    models: [glm46v_flash, minicpmv45, ministral3_8b, phi4_mm, pixtral_12b, molmo_7b, qwen35_9b, ovis25_9b, qwen25vl_7b,
+             mimo_vl_7b]
+    prompts: [P0, P1]
+  - role: vlm
+    name: G1 optional families
+    optional: true
+    models: [aya_vision_8b, nemotron_vl_12b_fp8, granite_vision_4b, smolvlm2_2b]
+    prompts: [P0, P1]
+  # ---------------- G2 scale ladders: Qwen3-VL, Qwen3.5, InternVL3.5, Gemma 4, Ministral 3 ----------------
+  - role: vlm
+    name: G2 scale (small models, 5 families)
+    models: [qwen3vl_2b, qwen3vl_4b, qwen35_0p8b, qwen35_2b, qwen35_4b, internvl35_1b, internvl35_2b, internvl35_4b,
+             gemma4_e2b, ministral3_3b]
+    prompts: [P0, P1]
+  - role: vlm
+    name: G2 scale (large, 4-bit or FP8 weights, test and ood only)
+    optional: true
+    splits: [test, ood]
+    models: [gemma4_12b, internvl35_14b, ministral3_14b_fp8, qwen3vl_30b_a3b_awq, gemma4_26b_a4b_4bit, qwen3vl_32b_awq,
+             qwen35_27b_awq, gemma4_31b_awq]
+    prompts: [P1]
+  # ---------------- G3 thinking ----------------
+  - role: vlm
+    name: G3 thinking on/off (same weights)
+    models: [gemma4_e4b, glm46v_flash, minicpmv45, qwen35_4b]
+    prompts: [P1]
+    thinking: ["off", "on"]
+  - role: vlm
+    name: G3 thinking (separate weights)
+    models: [qwen3vl_8b_thinking]
+    prompts: [P0, P1]
+  # ---------------- G4 Vietnamese ----------------
+  - role: vlm
+    name: G4 Vietnamese-specialised
+    models: [vintern_1b, vintern_3b_r, erax_vl_7b, erax_vl_2b]
+    prompts: [P0, P1, P1-VI]
+  - role: vlm
+    name: G4 optional
+    optional: true
+    models: [vintern_3b, erax_vl_7b_v2, qwen3vl_8b_vi_ocrvqa]
+    prompts: [P0, P1, P1-VI]
+  # ---------------- G6 quantisation of qwen3vl_8b ----------------
+  - role: vlm
+    name: G6 quantisation of qwen3vl_8b
+    models: [qwen3vl_8b_fp8, qwen3vl_8b_awq]
+    prompts: [P1]
+  # ---------------- G5 OCR -> text LLM, P-Oracle ----------------
+  - role: llm
+    name: G5 OCR -> LLM (two families + Vietnamese)
+    models: [llm_qwen3_8b, llm_gemma3_12b_text, llm_vylinh_3b, llm_sailor2_8b]
+    prompts:
+      - {id: P-OCR+, ocr_from: [ocr_ppocr, ocr_paddleocr_vl, ocr_glm_ocr, ocr_dots, ocr_vietocr]}
+      - P-Oracle
+  - role: llm
+    name: G5 optional LLMs
+    optional: true
+    models: [llm_seallm_v3_7b, llm_phogpt_4b]
+    prompts:
+      - {id: P-OCR+, ocr_from: [ocr_ppocr, ocr_paddleocr_vl]}
+      - P-Oracle

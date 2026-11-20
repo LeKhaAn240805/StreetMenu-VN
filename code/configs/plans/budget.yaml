@@ -1,0 +1,26 @@
+# Image-budget study: how many visual tokens does a model need to read a dense menu? One server session per model, the
+# prompt (frozen P1) is sent at several per-request budgets (result ids P1@<tag>); the default budget of each model is
+# its ordinary P1 run (pilot). Needs vLLM's --trust-request-mm-kwargs (on by default, configs/default.yaml).
+# Probe first: smv run ... --split dev --limit 2 and compare prompt_tokens across tags.
+name: budget
+seeds: [0]
+splits: [test]
+prefetch: true
+keep_weights: false
+stages:
+  - role: vlm
+    name: Qwen3-VL-8B, maximum pixels per image (default 4,194,304)
+    models: [qwen3vl_8b]
+    prompts:
+      - {id: P1, tag: px0p25m, mm: {size: {longest_edge: 262144, shortest_edge: 65536}}}
+      - {id: P1, tag: px0p5m, mm: {size: {longest_edge: 524288, shortest_edge: 65536}}}
+      - {id: P1, tag: px1m, mm: {size: {longest_edge: 1048576, shortest_edge: 65536}}}
+      - {id: P1, tag: px2m, mm: {size: {longest_edge: 2097152, shortest_edge: 65536}}}
+  - role: vlm
+    name: Gemma 4 E4B, soft tokens per image (default 1120)
+    models: [gemma4_e4b]
+    prompts:
+      - {id: P1, tag: tok70, mm: {max_soft_tokens: 70}}
+      - {id: P1, tag: tok140, mm: {max_soft_tokens: 140}}
+      - {id: P1, tag: tok280, mm: {max_soft_tokens: 280}}
+      - {id: P1, tag: tok560, mm: {max_soft_tokens: 560}}

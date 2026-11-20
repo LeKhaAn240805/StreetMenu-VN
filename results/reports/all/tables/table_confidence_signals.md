@@ -1,0 +1,20 @@
+**Which signal finds the wrong offers? (test, strict price rule)**
+
+| Model | Signal | Offers | Wrong (%) | AUROC | Errors found, review 10% | review 20% | review 30% | Precision of the 80% kept |
+|---|---|---|---|---|---|---|---|---|
+| Qwen3-VL-8B | token probability (item and price) | 4116 | 10.9 | 0.564 | 16 | 30 | 41 | 90.5 |
+| Qwen3-VL-8B | token probability (price only) | 4116 | 10.9 | 0.521 | 15 | 25 | 33 | 89.8 |
+| Qwen3-VL-8B | agreement of 7 other prompts | 4206 | 11.0 | 0.728 | 37 | 50 | 59 | 93.0 |
+| Qwen3-VL-8B | agreement of 31 other models | 4206 | 11.0 | 0.813 | 31 | 55 | 75 | 93.8 |
+| Gemma 4 E4B | token probability (item and price) | 3681 | 13.3 | 0.638 | 19 | 30 | 44 | 88.3 |
+| Gemma 4 E4B | token probability (price only) | 3681 | 13.3 | 0.543 | 18 | 28 | 37 | 88.0 |
+| Gemma 4 E4B | agreement of 7 other prompts | 3865 | 13.2 | 0.768 | 33 | 52 | 64 | 92.0 |
+| Gemma 4 E4B | agreement of 5 sampled answers | 3865 | 13.2 | 0.696 | 29 | 47 | 61 | 91.3 |
+| Gemma 4 E4B | agreement of 31 other models | 3865 | 13.2 | 0.810 | 27 | 50 | 68 | 91.8 |
+| InternVL3.5-8B | agreement of 3 other prompts | 3724 | 18.7 | 0.806 | 31 | 54 | 69 | 89.2 |
+| InternVL3.5-8B | agreement of 31 other models | 3724 | 18.7 | 0.900 | 44 | 72 | 80 | 93.4 |
+| Qwen3.5-4B | token probability (item and price) | 3898 | 12.9 | 0.607 | 18 | 31 | 43 | 88.8 |
+| Qwen3.5-4B | token probability (price only) | 3898 | 12.9 | 0.623 | 20 | 40 | 49 | 90.4 |
+| Qwen3.5-4B | agreement of 31 other models | 4086 | 13.0 | 0.859 | 42 | 65 | 78 | 94.3 |
+
+Every predicted offer with a price is right or wrong under the strict rule. AUROC: chance that a right offer gets a higher value than a wrong one (0.5 = no information). Errors found: share of all wrong offers among the 10/20/30% least confident. Missed items are not offers and no signal sees them.

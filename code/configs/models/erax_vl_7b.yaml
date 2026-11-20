@@ -1,0 +1,66 @@
+key: erax_vl_7b
+hf_id: erax-ai/EraX-VL-7B-V1.5
+revision: 665b1fd8f8f87b293599d867d9ad60aa3e40efe3
+family: EraX-VL (Qwen2-VL)
+org: EraX
+params_b: 8.3
+license: apache-2.0
+gated: false
+download_gb: 16.6
+role: vlm
+groups:
+- G4
+tier: pilot
+priority: 65
+backend: vllm
+text_only: false
+dtype: bfloat16
+keep_weights: false
+enabled: true
+note: ''
+vllm:
+  max_model_len: 16384
+  max_num_seqs: 8
+  gpu_memory_utilization: 0.9
+  limit_mm_per_prompt:
+    image: 1
+    video: 0
+  trust_remote_code: false
+  enforce_eager: false
+  extra_args: []
+  env: {}
+autotune:
+  max_num_seqs:
+  - 16
+  - 8
+  - 4
+  - 2
+  - 1
+  max_model_len:
+  - 16384
+  - 12288
+  - 8192
+  mm_processor_kwargs:
+  - max_pixels: 1605632
+  - max_pixels: 802816
+  preemption_limit: 200
+thinking:
+  supported: false
+  default_on: false
+  'off': {}
+  'on': {}
+  strip:
+  - <think>
+  - </think>
+sampling: {}
+hf:
+  adapter: generic
+  model_class: AutoModelForImageTextToText
+  batch_size: 4
+  batch_ladder:
+  - 4
+  - 2
+  - 1
+  python: main
+  dtype: bfloat16
+mock: {}

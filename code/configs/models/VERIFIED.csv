@@ -1,0 +1,69 @@
+key,hf_id,exists,revision,license,gated,size_gb,architectures,last_modified,downloads,suggestions,checked_at
+aya_vision_8b,unsloth/aya-vision-8b,yes,1904accecafa6a9d5c5c9a475d92a40c0b4694cc,cc-by-nc-4.0,False,17.28,AyaVisionForConditionalGeneration,2025-03-14,630,,2026-11-14T21:17:27
+erax_vl_2b,erax-ai/EraX-VL-2B-V1.5,yes,e4d4b5cd046ba526d258a18c08291fbd4e5848a2,apache-2.0,False,8.85,Qwen2VLForConditionalGeneration,2025-01-15,81,,2026-11-14T21:17:28
+erax_vl_7b,erax-ai/EraX-VL-7B-V1.5,yes,665b1fd8f8f87b293599d867d9ad60aa3e40efe3,apache-2.0,False,16.6,Qwen2VLForConditionalGeneration,2025-04-02,43,,2026-11-14T21:17:28
+erax_vl_7b_v2,erax-ai/EraX-VL-7B-V2.0-Preview,yes,8b800c71d817a737629d248d4a8ccdfadf98854f,apache-2.0,False,16.6,Qwen2VLForConditionalGeneration,2025-01-21,132,,2026-11-14T21:17:29
+gemma4_12b,google/gemma-4-12B-it-qat-w4a16-ct,yes,1d2c2d7f2466070e69d6fb3fd5ce9a7d75f2f6ee,apache-2.0,False,10.3,Gemma4UnifiedForConditionalGeneration,2026-07-20,657876,,2026-11-14T21:17:29
+gemma4_26b_a4b_4bit,cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit,yes,5c5db8a7aeabb70b27923ef56536aa5343ecbb5b,apache-2.0,False,17.23,Gemma4ForConditionalGeneration,2026-10-19,1235972,,2026-11-14T21:17:29
+gemma4_31b_awq,QuantTrio/gemma-4-31B-it-AWQ,yes,37cf6a076672592df03c8d941886a9d70d4338f0,apache-2.0,False,20.49,Gemma4ForConditionalGeneration,2026-07-23,665391,,2026-11-14T21:31:59
+gemma4_e2b,google/gemma-4-E2B-it,yes,4adf15748de9e1a0097b6274cee9c15836c41c37,apache-2.0,False,10.28,Gemma4ForConditionalGeneration,2026-11-03,2946165,,2026-11-14T21:17:30
+gemma4_e4b,google/gemma-4-E4B-it,yes,4ecc2ba63bcac23ba4a767fc87025b1450f84c9c,apache-2.0,False,16.02,Gemma4ForConditionalGeneration,2026-11-03,4320633,,2026-11-14T21:17:30
+glm46v_flash,zai-org/GLM-4.6V-Flash,yes,411bb4d77144a3f03accbf4b780f5acb8b7cde4e,mit,False,20.61,Glm4vForConditionalGeneration,2025-12-09,51872,,2026-11-14T21:17:30
+granite_vision_4b,ibm-granite/granite-vision-4.1-4b,yes,37d591f06319e8f1638b5adcf58bdf50e0f84f7a,apache-2.0,False,8.01,Granite4VisionForConditionalGeneration,2026-07-13,89355,,2026-11-14T21:32:00
+internvl35_14b,brandonbeiler/InternVL3_5-14B-FP8-Dynamic,yes,c5adef928ee2067ce32171091d0c05900de38f84,mit,False,17.04,InternVLChatModel,2025-08-28,283,,2026-11-14T21:17:31
+internvl35_1b,OpenGVLab/InternVL3_5-1B,yes,2f71cf52542334823e48a46ffba0e2bc9add3446,apache-2.0,False,2.14,InternVLChatModel,2025-08-29,9497,,2026-11-14T21:17:31
+internvl35_2b,OpenGVLab/InternVL3_5-2B,yes,7d7bd7bcc35b77b391883ebd7f9686cfa0e25cc0,apache-2.0,False,4.71,InternVLChatModel,2025-08-29,6561,,2026-11-14T21:17:31
+internvl35_4b,OpenGVLab/InternVL3_5-4B,yes,481f6e32467eab4e922ccd7fd6cf420441a62331,apache-2.0,False,9.48,InternVLChatModel,2025-08-29,10077,,2026-11-14T21:17:31
+internvl35_8b,OpenGVLab/InternVL3_5-8B,yes,9bb6a56ad9cc69db95e2d4eeb15a52bbcac4ef79,apache-2.0,False,17.07,InternVLChatModel,2025-08-29,104935,,2026-11-14T21:17:32
+llm_gemma3_12b_text,RedHatAI/gemma-3-12b-it-FP8-dynamic,yes,15180966d5519f0bbd815362db005dc67bb2332f,apache-2.0,False,13.66,Gemma3ForConditionalGeneration,2025-06-09,2374,,2026-11-14T21:17:32
+llm_phogpt_4b,vinai/PhoGPT-4B-Chat,yes,3b11fad96d853b78f2fecc76f13aedb381b02d5a,bsd-3-clause,False,7.38,MPTForCausalLM,2024-11-12,1993,,2026-11-14T21:17:32
+llm_qwen3_8b,Qwen/Qwen3-8B,yes,b968826d9c46dd6066d109eabc6255188de91218,apache-2.0,False,16.4,Qwen3ForCausalLM,2025-07-26,6111761,,2026-11-14T21:17:33
+llm_sailor2_8b,sail/Sailor2-8B-Chat,yes,577d5b2745863cec11e1b2f1c92586a91cea446e,apache-2.0,False,17.11,Qwen2ForCausalLM,2025-02-20,2852,,2026-11-14T21:17:33
+llm_seallm_v3_7b,SeaLLMs/SeaLLMs-v3-7B-Chat,yes,a9900348910a6d7f611a6859270d6c28da1e0789,other,False,15.24,Qwen2ForCausalLM,2024-09-02,1680,,2026-11-14T21:17:33
+llm_vistral_7b,Viet-Mistral/Vistral-7B-Chat,yes,d331b64e61b935cc43c2b3010ae9fb4fde599b45,afl-3.0,manual,29.18,MistralForCausalLM,2024-02-27,322,,2026-11-14T21:17:34
+llm_vylinh_3b,arcee-ai/Arcee-VyLinh,yes,5f9751c095cdfa14c2e77489f8aef8a037da1b1c,apache-2.0,False,13.6,Qwen2ForCausalLM,2025-10-09,586,,2026-11-14T21:17:34
+mimo_vl_7b,XiaomiMiMo/MiMo-VL-7B-RL-2508,yes,ec4ebdc29b83b94aa7f62670c78376250dad8dbc,mit,False,16.64,Qwen2_5_VLForConditionalGeneration,2026-10-28,5108,,2026-11-14T21:32:00
+minicpmv45,openbmb/MiniCPM-V-4_5,yes,14a2004908140699317e2109e90573c1e6323c36,apache-2.0,False,17.41,MiniCPMV,2026-11-09,70991,,2026-11-14T21:17:34
+ministral3_14b_fp8,mistralai/Ministral-3-14B-Instruct-2512,yes,29439f81c2be264d8d393273f99e7db9c0961120,apache-2.0,False,15.76,Mistral3ForConditionalGeneration,2026-07-15,200480,,2026-11-14T21:32:00
+ministral3_3b,mistralai/Ministral-3-3B-Instruct-2512-BF16,yes,b6d637bef2393152b3da2b2fde72eecdee30557e,apache-2.0,False,7.73,Mistral3ForConditionalGeneration,2026-07-15,47187,,2026-11-14T21:32:00
+ministral3_8b,mistralai/Ministral-3-8B-Instruct-2512-BF16,yes,f6fae9795746f63c9be8344932f01275f3c63734,apache-2.0,False,17.87,Mistral3ForConditionalGeneration,2026-07-15,44928,,2026-11-14T21:32:01
+mock_llm,,n/a,,,,,,,,no HF repo (pip engine),2026-11-14T21:17:35
+mock_ocr,,n/a,,,,,,,,no HF repo (pip engine),2026-11-14T21:17:35
+mock_vlm_a,,n/a,,,,,,,,no HF repo (pip engine),2026-11-14T21:17:35
+mock_vlm_crash,,n/a,,,,,,,,no HF repo (pip engine),2026-11-14T21:17:35
+mock_vlm_oom,,n/a,,,,,,,,no HF repo (pip engine),2026-11-14T21:17:35
+molmo_7b,allenai/Molmo-7B-D-0924,yes,cab33fb7f1a40091911f81165f8481920621948f,apache-2.0,False,32.1,MolmoForCausalLM,2025-12-15,6284,,2026-11-14T21:17:35
+nemotron_vl_12b_fp8,nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL-FP8,yes,e9550fdec09682d12e8c3e41548b2e05b16db7c1,other,False,15.42,,2026-09-02,2710,,2026-11-14T21:32:03
+ocr_deepseek_ocr,deepseek-ai/DeepSeek-OCR,yes,9f30c71f441d010e5429c532364a86705536c53a,mit,False,6.68,DeepseekOCRForCausalLM,2025-11-04,1886573,,2026-11-14T21:17:35
+ocr_deepseek_ocr2,deepseek-ai/DeepSeek-OCR-2,yes,aaa02f3811945a91062062994c5c4a3f4c0af2b0,apache-2.0,False,6.79,DeepseekOCR2ForCausalLM,2026-02-03,289982,,2026-11-14T21:17:35
+ocr_dots,rednote-hilab/dots.ocr,yes,c0111ce6bc07803dbc267932ffef0ae3a51dc951,mit,False,6.09,DotsOCRForCausalLM,2025-10-31,372632,,2026-11-14T21:17:36
+ocr_easyocr,,n/a,,,,,,,,no HF repo (pip engine),2026-11-14T21:17:36
+ocr_glm_ocr,zai-org/GLM-OCR,yes,2e85a62840ccac27daa451df36c736c4636b8628,mit,False,2.66,GlmOcrForConditionalGeneration,2026-09-11,1821680,,2026-11-14T21:17:36
+ocr_glm_ocr_vi,KuongB/glm-ocr-vietnamese,yes,c1b59a697bc7d276bae99c8a639ee8db087e6798,,False,2.22,GlmOcrForConditionalGeneration,2026-05-06,32,,2026-11-14T21:17:36
+ocr_mineru25,opendatalab/MinerU2.5-2509-1.2B,yes,1aa090b41282e64fadd79c10572221f91ec21924,agpl-3.0,False,2.32,Qwen2VLForConditionalGeneration,2026-04-09,77046,,2026-11-14T21:17:37
+ocr_paddleocr_vl,PaddlePaddle/PaddleOCR-VL,yes,dae2996584399c9fb7eabfeecf8acd2c7cae95b7,apache-2.0,False,2.14,PaddleOCRVLForConditionalGeneration,2026-11-06,13138,,2026-11-14T21:17:37
+ocr_ppocr,,n/a,,,,,,,,no HF repo (pip engine),2026-11-14T21:17:37
+ocr_vietocr,,n/a,,,,,,,,no HF repo (pip engine),2026-11-14T21:17:37
+ovis25_9b,AIDC-AI/Ovis2.5-9B,yes,d73b2283ae2a930b7762f8d7b8b8a3f0f3b5c3bd,apache-2.0,False,18.37,Ovis2_5,2026-02-13,4735,,2026-11-14T21:17:37
+phi4_mm,microsoft/Phi-4-multimodal-instruct,yes,93f923e1a7727d1c4f446756212d9d3e8fcc5d81,mit,False,12.88,Phi4MMForCausalLM,2025-12-10,68661,,2026-11-14T21:17:38
+pixtral_12b,nm-testing/pixtral-12b-FP8-dynamic,yes,6627e5c1844832bf50e92d2dcafc5bbdb32798ed,apache-2.0,False,14.48,LlavaForConditionalGeneration,2025-04-11,1837,,2026-11-14T21:17:38
+qwen25vl_7b,Qwen/Qwen2.5-VL-7B-Instruct,yes,cc594898137f460bfe9f0759e9844b3ce807cfb5,apache-2.0,False,16.6,Qwen2_5_VLForConditionalGeneration,2025-04-06,5711718,,2026-11-14T21:17:39
+qwen35_0p8b,Qwen/Qwen3.5-0.8B,yes,2fc06364715b967f1860aea9cf38778875588b17,apache-2.0,False,1.77,Qwen3_5ForConditionalGeneration,2026-03-02,3088096,,2026-11-14T21:32:04
+qwen35_27b_awq,cyankiwi/Qwen3.5-27B-AWQ-4bit,yes,9d8d63632afafe90bdfcb70164d3e2a0955619f7,apache-2.0,False,20.08,Qwen3_5ForConditionalGeneration,2026-10-19,639987,,2026-11-14T21:32:06
+qwen35_2b,Qwen/Qwen3.5-2B,yes,15852e8c16360a2fea060d615a32b45270f8a8fc,apache-2.0,False,4.57,Qwen3_5ForConditionalGeneration,2026-03-02,4697454,,2026-11-14T21:32:07
+qwen35_4b,Qwen/Qwen3.5-4B,yes,851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a,apache-2.0,False,9.34,Qwen3_5ForConditionalGeneration,2026-03-02,5051721,,2026-11-14T21:32:07
+qwen35_9b,Qwen/Qwen3.5-9B,yes,c202236235762e1c871ad0ccb60c8ee5ba337b9a,apache-2.0,False,19.33,Qwen3_5ForConditionalGeneration,2026-03-02,6083231,,2026-11-14T21:17:39
+qwen3vl_2b,Qwen/Qwen3-VL-2B-Instruct,yes,89644892e4d85e24eaac8bacfd4f463576704203,apache-2.0,False,4.27,Qwen3VLForConditionalGeneration,2025-10-23,1082963,,2026-11-14T21:17:39
+qwen3vl_30b_a3b_awq,QuantTrio/Qwen3-VL-30B-A3B-Instruct-AWQ,yes,a5ea10732e2c9330957864ece3ec66d806a4b00d,apache-2.0,False,17.91,Qwen3VLMoeForConditionalGeneration,2025-10-08,94738,,2026-11-14T21:32:08
+qwen3vl_32b_awq,QuantTrio/Qwen3-VL-32B-Instruct-AWQ,yes,c2d44b1376c73fa120fdb4e216c2ef61c1945498,apache-2.0,False,20.53,Qwen3VLForConditionalGeneration,2025-10-22,205526,,2026-11-14T21:17:39
+qwen3vl_4b,Qwen/Qwen3-VL-4B-Instruct,yes,ebb281ec70b05090aa6165b016eac8ec08e71b17,apache-2.0,False,8.89,Qwen3VLForConditionalGeneration,2025-10-15,3426794,,2026-11-14T21:17:40
+qwen3vl_8b,Qwen/Qwen3-VL-8B-Instruct,yes,0c351dd01ed87e9c1b53cbc748cba10e6187ff3b,apache-2.0,False,17.55,Qwen3VLForConditionalGeneration,2025-10-15,7086033,,2026-11-14T21:17:40
+qwen3vl_8b_awq,cyankiwi/Qwen3-VL-8B-Instruct-AWQ-4bit,yes,914bc902ca94c0135be5aa70f25a616bfc853140,apache-2.0,False,7.57,Qwen3VLForConditionalGeneration,2026-10-19,65363,,2026-11-14T21:17:40
+qwen3vl_8b_fp8,Qwen/Qwen3-VL-8B-Instruct-FP8,yes,9cdc6310a8cb770ce18efaf4e9935334512aee45,apache-2.0,False,10.61,Qwen3VLForConditionalGeneration,2025-11-26,1474907,,2026-11-14T21:17:41
+qwen3vl_8b_gguf_q4,Qwen/Qwen3-VL-8B-Instruct-GGUF,yes,f982a07559d4a2f6c8744d840bf6fccab30eea96,apache-2.0,False,6.19,,2025-11-01,2139625,,2026-11-14T21:17:41
+qwen3vl_8b_thinking,Qwen/Qwen3-VL-8B-Thinking,yes,92f3c4b4feadd3a016ef468d103bb5f58b2a2c6b,apache-2.0,False,17.55,Qwen3VLForConditionalGeneration,2025-11-26,136558,,2026-11-14T21:17:41
+qwen3vl_8b_vi_ocrvqa,phucdu/Qwen3-VL-8B-Vietnamese-OCR-VQA,yes,30f4b60168dddc7a14626da7a1d6e03f48eb6cb8,,False,17.55,Qwen3VLForConditionalGeneration,2026-09-19,30,,2026-11-14T21:17:41
+smolvlm2_2b,HuggingFaceTB/SmolVLM2-2.2B-Instruct,yes,be92141c8d0ceb98596a923c308ac2bbb4a7c466,apache-2.0,False,8.99,SmolVLMForConditionalGeneration,2026-11-12,68670,,2026-11-14T21:32:24
+vintern_1b,5CD-AI/Vintern-1B-v3_5,yes,b98f263eab246eb5269ade64edbdca8a887dc44d,mit,False,3.76,InternVLChatModel,2025-12-10,2694,,2026-11-14T21:17:42
+vintern_3b,5CD-AI/Vintern-3B-beta,yes,75884d86cdbbc36b1ffd7dd8689329accf66cfb1,,False,7.43,InternVLChatModel,2024-12-06,8190,,2026-11-14T21:17:42
+vintern_3b_r,5CD-AI/Vintern-3B-R-beta,yes,4fd34d713dfca446cdecc00d921f5038909e3efb,mit,False,7.43,InternVLChatModel,2025-03-26,550,,2026-11-14T21:17:42

@@ -1,0 +1,175 @@
+{
+ "schema_version": "3.1",
+ "image_id": "smv_0131",
+ "file_name": "IMG_1604.jpg",
+ "file_sha256": "78d7d5f35fc551f627169c370a85b10df33082dfaf5882b9003cb4373f9f8734",
+ "group_id": "G_1604",
+ "near_duplicate_of": "",
+ "split": "test",
+ "ccl": 4,
+ "tags": [
+  "P_FORMAT",
+  "L_VARIANT",
+  "S_LAYOUT",
+  "D_DISTRACTOR"
+ ],
+ "venue_tier": "small_shop",
+ "venue_type": "quán nhậu – ốc",
+ "medium": "bảng đèn",
+ "lighting": "đủ sáng",
+ "angle": "thẳng",
+ "source": "",
+ "city": "",
+ "languages": [
+  "vi"
+ ],
+ "price_unit_default": "k_vnd",
+ "tax_note": "not_stated",
+ "has_prices": true,
+ "pii_present": true,
+ "pii_types": [
+  "phone"
+ ],
+ "redaction_checked": false,
+ "consent_id": "",
+ "sections": [
+  {
+   "section_id": "s1",
+   "raw_title": "MENU TÔM HÙM ĐẤT",
+   "norm_title": "tôm hùm đất",
+   "shared_price_raw": "",
+   "notes": ""
+  }
+ ],
+ "items": [
+  {
+   "section_id": "s1",
+   "item_code": "",
+   "raw_name": "TÔM HÙM ĐẤT",
+   "raw_name_2": "",
+   "norm_name": "tôm hùm đất",
+   "alt_norm_names": [],
+   "description": "",
+   "category": "món chính khác",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "Chọn sốt: Sốt truyền thống (cay nồng, đậm đà gia vị nghiện); Sốt bơ (béo thơm, ngon khó cưỡng)",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "NHỎ",
+     "size_rank": 1,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "59K",
+     "raw_old_price": "",
+     "price_vnd": 59000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    },
+    {
+     "size": "VỪA",
+     "size_rank": 2,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "85K",
+     "raw_old_price": "",
+     "price_vnd": 85000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    },
+    {
+     "size": "LỚN",
+     "size_rank": 3,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "110K",
+     "raw_old_price": "",
+     "price_vnd": 110000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 1
+  }
+ ],
+ "ignore_regions": [],
+ "annotator": "A",
+ "status": "adjudicated",
+ "version": 2,
+ "notes": "Bảng đèn nửa ảnh nửa thông tin. Chọn sốt là lựa chọn không đổi giá; Chọn size là offer. Tên gọi Hello Hùm Đất là tên quán.",
+ "domain": "food_menu",
+ "image_width": 1448,
+ "image_height": 802,
+ "label_origin": "claude_draft",
+ "review": {
+  "status": "edited",
+  "reviewer": "A",
+  "changed": true,
+  "seconds": 107,
+  "reviewed_at": "2026-11-09T16:01:27.202Z",
+  "flag_note": "",
+  "pii_note": ""
+ },
+ "redactions": [
+  {
+   "type": "phone",
+   "bbox": [
+    0.6257,
+    0.8603,
+    0.8218,
+    0.9352
+   ],
+   "origin": "manual"
+  }
+ ],
+ "adjudication": {
+  "by": "claude_rule_pass+manual_image_check",
+  "date": "2026-11-14",
+  "version": "1.0",
+  "n_changes": 0,
+  "reviewer_status": "edited",
+  "reviewer": "A"
+ }
+}

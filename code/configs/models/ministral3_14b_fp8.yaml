@@ -1,0 +1,69 @@
+key: ministral3_14b_fp8
+hf_id: mistralai/Ministral-3-14B-Instruct-2512
+revision: 29439f81c2be264d8d393273f99e7db9c0961120
+family: Ministral 3
+org: Mistral AI
+params_b: 14.0
+license: apache-2.0
+gated: false
+download_gb: 15.76
+role: vlm
+groups:
+- G2
+tier: optional
+priority: 50
+backend: vllm
+text_only: false
+dtype: bfloat16
+quant: fp8-weight-only
+allow_patterns:
+- '*.json'
+- '*.jinja'
+- model*.safetensors
+- tokenizer*
+keep_weights: false
+enabled: true
+note: official FP8 checkpoint (bf16 28 GB does not fit); Ampere runs it weight-only
+vllm:
+  max_model_len: 16384
+  max_num_seqs: 4
+  gpu_memory_utilization: 0.93
+  limit_mm_per_prompt:
+    image: 1
+  trust_remote_code: false
+  enforce_eager: false
+  extra_args: []
+  env: {}
+autotune:
+  max_num_seqs:
+  - 16
+  - 8
+  - 4
+  - 2
+  - 1
+  max_model_len:
+  - 16384
+  - 12288
+  - 8192
+  mm_processor_kwargs: []
+  preemption_limit: 200
+thinking:
+  supported: false
+  default_on: false
+  'off': {}
+  'on': {}
+  strip:
+  - <think>
+  - </think>
+sampling: {}
+hf:
+  adapter: generic
+  model_class: AutoModelForImageTextToText
+  batch_size: 4
+  batch_ladder:
+  - 4
+  - 2
+  - 1
+  python: main
+  dtype: bfloat16
+mock: {}

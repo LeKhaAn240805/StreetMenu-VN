@@ -1,0 +1,283 @@
+{
+ "schema_version": "3.1",
+ "image_id": "smv_0066",
+ "file_name": "IMG_1468.jpg",
+ "file_sha256": "90f1d899a760f8f292c4565599bb7d0a2d1c65308e5fe01b6a1427c06cd622bc",
+ "group_id": "G_1468",
+ "near_duplicate_of": "",
+ "split": "test",
+ "ccl": 2,
+ "tags": [
+  "P_FORMAT",
+  "N_SECTION_COMPOSE",
+  "N_FOREIGN",
+  "D_DISTRACTOR"
+ ],
+ "venue_tier": "chain",
+ "venue_type": "cà phê",
+ "medium": "poster một món",
+ "lighting": "đủ sáng",
+ "angle": "thẳng",
+ "source": "",
+ "city": "",
+ "languages": [
+  "vi",
+  "en"
+ ],
+ "price_unit_default": "vnd",
+ "tax_note": "not_stated",
+ "has_prices": true,
+ "pii_present": true,
+ "pii_types": [
+  "name"
+ ],
+ "redaction_checked": false,
+ "consent_id": "",
+ "sections": [
+  {
+   "section_id": "s1",
+   "raw_title": "COLD BREW SERIES",
+   "norm_title": "cold brew",
+   "shared_price_raw": "",
+   "notes": ""
+  }
+ ],
+ "items": [
+  {
+   "item_id": 1,
+   "section_id": "s1",
+   "item_code": "",
+   "raw_name": "ĐÀO",
+   "raw_name_2": "PEACH",
+   "norm_name": "cold brew đào",
+   "alt_norm_names": [
+    "đào"
+   ],
+   "description": "",
+   "category": "cà phê",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "43.000Đ",
+     "price_vnd": 43000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "raw_old_price": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ]
+  },
+  {
+   "item_id": 2,
+   "section_id": "s1",
+   "item_code": "",
+   "raw_name": "QUÝT NHÀI",
+   "raw_name_2": "CITRUS",
+   "norm_name": "cold brew quýt nhài",
+   "alt_norm_names": [
+    "quýt nhài"
+   ],
+   "description": "",
+   "category": "cà phê",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "43.000Đ",
+     "price_vnd": 43000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "raw_old_price": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ]
+  },
+  {
+   "item_id": 3,
+   "section_id": "s1",
+   "item_code": "",
+   "raw_name": "ANH ĐÀO",
+   "raw_name_2": "CHERRY",
+   "norm_name": "cold brew anh đào",
+   "alt_norm_names": [
+    "anh đào"
+   ],
+   "description": "",
+   "category": "cà phê",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "45.000Đ",
+     "price_vnd": 45000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "raw_old_price": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ]
+  },
+  {
+   "item_id": 4,
+   "section_id": "s1",
+   "item_code": "",
+   "raw_name": "SỮA CHUỐI",
+   "raw_name_2": "BANANA MILK",
+   "norm_name": "cold brew sữa chuối",
+   "alt_norm_names": [
+    "sữa chuối"
+   ],
+   "description": "",
+   "category": "cà phê",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [
+    "recommended"
+   ],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "49.000Đ",
+     "price_vnd": 49000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "raw_old_price": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ]
+  }
+ ],
+ "ignore_regions": [],
+ "annotator": "A",
+ "status": "adjudicated",
+ "version": 2,
+ "notes": "Poster Cold Brew. Vị ghép với tên dòng sản phẩm. Thẻ tên nhân viên phía trên đã che.",
+ "domain": "food_menu",
+ "image_width": 2946,
+ "image_height": 1871,
+ "label_origin": "claude_draft",
+ "review": {
+  "status": "confirmed",
+  "reviewer": "A",
+  "changed": false,
+  "seconds": 40,
+  "reviewed_at": "2026-11-09T17:09:38.413Z",
+  "flag_note": "",
+  "pii_note": ""
+ },
+ "redactions": [
+  {
+   "type": "name",
+   "bbox": [
+    0.4796,
+    0.0,
+    0.5344,
+    0.0301
+   ],
+   "origin": "manual"
+  }
+ ],
+ "adjudication": {
+  "by": "claude_rule_pass+manual_image_check",
+  "date": "2026-11-14",
+  "version": "1.0",
+  "n_changes": 0,
+  "reviewer_status": "confirmed",
+  "reviewer": "A"
+ }
+}

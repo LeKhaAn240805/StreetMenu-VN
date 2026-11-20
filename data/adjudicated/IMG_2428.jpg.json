@@ -1,0 +1,345 @@
+{
+ "schema_version": "3.1",
+ "image_id": "smv_0328",
+ "file_name": "IMG_2428.jpg",
+ "file_sha256": "db60f86049b63fbff44c11d3559ab6ae14585b346daac8bcfa58c60111d52e13",
+ "group_id": "G_1341",
+ "near_duplicate_of": "",
+ "split": "test",
+ "ccl": 3,
+ "tags": [
+  "P_FORMAT",
+  "P_UNIT_BUNDLE",
+  "N_NORMALIZE",
+  "L_COMBO_SET",
+  "V_DAMAGE",
+  "V_QUALITY"
+ ],
+ "venue_tier": "small_shop",
+ "venue_type": "ăn vặt",
+ "medium": "bảng đèn",
+ "lighting": "đủ sáng",
+ "angle": "thẳng",
+ "source": "",
+ "city": "",
+ "languages": [
+  "vi"
+ ],
+ "price_unit_default": "k_vnd",
+ "tax_note": "not_stated",
+ "has_prices": true,
+ "pii_present": false,
+ "pii_types": [],
+ "redaction_checked": false,
+ "consent_id": "",
+ "sections": [
+  {
+   "section_id": "s1",
+   "raw_title": "Combo 4 món",
+   "norm_title": "combo 4 món",
+   "shared_price_raw": "",
+   "notes": ""
+  }
+ ],
+ "items": [
+  {
+   "section_id": "s1",
+   "item_code": "6",
+   "raw_name": "COMBO 6",
+   "raw_name_2": "",
+   "norm_name": "combo 6",
+   "alt_norm_names": [],
+   "description": "MÌ (MIẾN) TRỨNG XX SỐT + 1 CUỘN KIMBAP + 4 MANDU + 4 TÔM CHIÊN",
+   "category": "combo – set",
+   "is_add_on": false,
+   "is_combo": true,
+   "combo_components": [
+    {
+     "name": "Mì (miến) trứng xúc xích sốt",
+     "qty": "1",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Kimbap",
+     "qty": "1 cuộn",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Mandu",
+     "qty": "4",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Tôm chiên",
+     "qty": "4",
+     "ref_price_vnd": null
+    }
+   ],
+   "serves": "",
+   "option_groups": "Chọn 1 Sốt Trộn: Tỏi Cay, Bơ Bắp, Mắm Tỏi, Xá Xíu, Cay, Me Cay, Tương Đen",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "95K",
+     "raw_old_price": "",
+     "price_vnd": 95000,
+     "old_price_vnd": null,
+     "price_kind": "bundle",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 1
+  },
+  {
+   "section_id": "s1",
+   "item_code": "7",
+   "raw_name": "COMBO 7",
+   "raw_name_2": "",
+   "norm_name": "combo 7",
+   "alt_norm_names": [],
+   "description": "MÌ (MIẾN) TRỨNG XX SỐT + 1 CUỘN KIMBAP + GÀ (SỤN) SỐT + 4 MANDU",
+   "category": "combo – set",
+   "is_add_on": false,
+   "is_combo": true,
+   "combo_components": [
+    {
+     "name": "Mì (miến) trứng xúc xích sốt",
+     "qty": "1",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Kimbap",
+     "qty": "1 cuộn",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Gà (sụn) sốt",
+     "qty": "1",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Mandu",
+     "qty": "4",
+     "ref_price_vnd": null
+    }
+   ],
+   "serves": "",
+   "option_groups": "Chọn 1 Sốt Trộn: Tỏi Cay, Bơ Bắp, Mắm Tỏi, Xá Xíu, Cay, Me Cay, Tương Đen",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "110K",
+     "raw_old_price": "",
+     "price_vnd": 110000,
+     "old_price_vnd": null,
+     "price_kind": "bundle",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 2
+  },
+  {
+   "section_id": "s1",
+   "item_code": "8",
+   "raw_name": "COMBO 8",
+   "raw_name_2": "",
+   "norm_name": "combo 8",
+   "alt_norm_names": [],
+   "description": "2 CUỘN KIMBAP + GÀ (SỤN) SỐT TỰ CHỌN + 3 CHEESE BALL + 4 TÔM CHIÊN",
+   "category": "combo – set",
+   "is_add_on": false,
+   "is_combo": true,
+   "combo_components": [
+    {
+     "name": "Kimbap",
+     "qty": "2 cuộn",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Gà (sụn) sốt tự chọn",
+     "qty": "1",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Cheese ball",
+     "qty": "3",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Tôm chiên",
+     "qty": "4",
+     "ref_price_vnd": null
+    }
+   ],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "105K",
+     "raw_old_price": "",
+     "price_vnd": 105000,
+     "old_price_vnd": null,
+     "price_kind": "bundle",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 3
+  },
+  {
+   "section_id": "s1",
+   "item_code": "9",
+   "raw_name": "COMBO 9",
+   "raw_name_2": "",
+   "norm_name": "combo 9",
+   "alt_norm_names": [],
+   "description": "GÀ (SỤN) PHỦ SỐT + PM MOZZARELA + 1 CUỘN KIMBAP + 4 TÔM + KHOAI (TOK)",
+   "category": "combo – set",
+   "is_add_on": false,
+   "is_combo": true,
+   "combo_components": [
+    {
+     "name": "Gà (sụn) phủ sốt và phô mai mozzarella",
+     "qty": "1",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Kimbap",
+     "qty": "1 cuộn",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Tôm",
+     "qty": "4",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Khoai (tok)",
+     "qty": "1",
+     "ref_price_vnd": null
+    }
+   ],
+   "serves": "",
+   "option_groups": "Chọn 1 Sốt Trộn: Tỏi Cay, Bơ Bắp, Mắm Tỏi, Xá Xíu, Cay, Me Cay, Kem Cay",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "110K",
+     "raw_old_price": "",
+     "price_vnd": 110000,
+     "old_price_vnd": null,
+     "price_kind": "bundle",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 4
+  }
+ ],
+ "ignore_regions": [],
+ "annotator": "B",
+ "status": "adjudicated",
+ "version": 2,
+ "notes": "Hộp đèn phủ giọt nước. Có lẽ cùng quán với IMG_1341 (cùng danh sách sốt). 'PM' viết tắt phô mai, 'XX' viết tắt xúc xích. Tham chiếu 'bên combo 2' nằm ngoài ảnh này.",
+ "domain": "food_menu",
+ "image_width": 1920,
+ "image_height": 1550,
+ "label_origin": "claude_draft",
+ "review": {
+  "status": "edited",
+  "reviewer": "B",
+  "changed": true,
+  "seconds": 48,
+  "reviewed_at": "2026-11-12T17:56:00.937Z",
+  "flag_note": "",
+  "pii_note": ""
+ },
+ "redactions": [],
+ "adjudication": {
+  "by": "claude_rule_pass+manual_image_check",
+  "date": "2026-11-14",
+  "version": "1.0",
+  "n_changes": 1,
+  "reviewer_status": "edited",
+  "reviewer": "B"
+ }
+}

@@ -1,0 +1,51 @@
+# Normalisation lexicon applied to both gold and predicted names before fuzzy matching.
+# Keys and values are lowercase NFC. Whole-word replacements.
+words:
+  cf: cà phê
+  cafe: cà phê
+  café: cà phê
+  coffee: cà phê
+  "c/phê": cà phê
+  thơm: dứa
+  sapoche: sa-pô-chê
+  sampoche: sa-pô-chê
+  yaourt: sữa chua
+  yogurt: sữa chua
+  "đậu hủ": tàu hũ
+  "đậu hũ": tàu hũ
+  "tàu hủ": tàu hũ
+  olong: ô long
+  oolong: ô long
+  plan: flan
+  "ba rọi": ba chỉ
+  tc: trân châu
+  pm: phô mai
+  sting: sting
+# Size synonyms -> canonical label and rank
+sizes:
+  s: {label: s, rank: 1}
+  small: {label: s, rank: 1}
+  nhỏ: {label: s, rank: 1}
+  "ly nhỏ": {label: s, rank: 1}
+  m: {label: m, rank: 2}
+  medium: {label: m, rank: 2}
+  vừa: {label: m, rank: 2}
+  "ly vừa": {label: m, rank: 2}
+  l: {label: l, rank: 3}
+  large: {label: l, rank: 3}
+  lớn: {label: l, rank: 3}
+  "ly lớn": {label: l, rank: 3}
+  to: {label: l, rank: 3}
+  xl: {label: xl, rank: 4}
+  p: {label: p, rank: 1}
+  r: {label: r, rank: 2}
+temps:
+  nóng: nóng
+  nong: nóng
+  hot: nóng
+  đá: đá
+  da: đá
+  lạnh: đá
+  iced: đá
+  ice: đá
+  cold: đá

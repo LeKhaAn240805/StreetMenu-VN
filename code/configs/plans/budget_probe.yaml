@@ -1,0 +1,18 @@
+# Gate for the budget study (scripts/check_budget_probe.py): the smallest budget of each family on 12 test images. If the
+# prompt tokens do not drop against the ordinary P1 run, the family ignores per-request kwargs and `budget.yaml` is skipped.
+name: budget_probe
+seeds: [0]
+splits: [test]
+limit: 12
+prefetch: true
+keep_weights: false
+stages:
+  - role: vlm
+    models: [qwen3vl_8b]
+    prompts: [{id: P1, tag: px0p25m, mm: {size: {longest_edge: 262144, shortest_edge: 65536}}}]
+  - role: vlm
+    models: [gemma4_e4b]
+    prompts: [{id: P1, tag: tok70, mm: {max_soft_tokens: 70}}]
+  - role: vlm
+    models: [internvl35_8b]
+    prompts: [{id: P1, tag: tile1, mm: {max_dynamic_patch: 1}}]

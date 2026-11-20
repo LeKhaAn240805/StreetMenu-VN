@@ -1,0 +1,14 @@
+\begin{tabular}{@{}llp{9.0cm}@{}}
+\toprule
+Rule & Case & Convention \\
+\midrule
+R1 & Price range & An unsized ``A--B'' is one \texttt{range} offer priced A. The lenient score accepts either end or two offers. \\
+R2 & Surcharge & ``+X'' after an explicit base price is coded as the absolute price. The \texttt{delta} kind is kept for add-ons and unknown bases. \\
+R3 & Unlabeled sizes & A bare price sequence is read as sizes \#1, \#2, \#3 from left to right. \\
+R4 & Exclusions & Ambiguous offers and crossed-out, taped-over or illegible items are excluded. Predictions matched to them are neutral. \\
+R5 & Override & An overwritten or pasted-over price is scored at its current value. \\
+R6 & Market price & Market-price lines have no price: only abstaining is correct. \\
+R7 & Null attribute & A null size or temperature in the prediction matches any gold value. \\
+R8 & Repeated board & Identical items on two boards of one stall are merged before matching. \\
+\bottomrule
+\end{tabular}

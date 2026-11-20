@@ -1,0 +1,56 @@
+# Global defaults. Environment variables (see .env.example) override the path/hardware keys.
+gpu_id: 0                         # SMV_GPU_ID overrides
+cpu_affinity: "0-9"       # CPU cores used for preprocessing and scoring
+num_threads: 10
+gpu_free_threshold_mib: 1024      # GPU counts as free when memory.used is below this
+gpu_release_timeout_s: 300        # wait for GPU memory to drop after stopping a server
+schema_config: ref/schema_config.json
+prompts_dir: prompts
+models_dir_configs: configs/models
+
+ingest:
+  image_exts: [.jpg, .jpeg, .png, .heic, .heif, .webp, .bmp, .tif, .tiff]
+  skip_dirs: [_labels, labels, adjudicated, .git, __MACOSX]
+  gold_annotators: []             # priority list of annotator names; empty = unique `done` label
+  image_id_prefix: "smv_"         # used when an image has no label (web tool default: smv_<stem>)
+
+preprocess:
+  max_side: 2048
+  jpeg_quality: 95
+  workers: 10
+
+splits:
+  ratio: {dev: 0.2, test: 0.8}
+  seed: 2027
+  write_back: true                # write $SMV_DATA_DIR/splits.csv if it does not exist
+
+dense_threshold: 60               # offers per image above which an image is "dense"
+
+vllm:
+  host: 127.0.0.1
+  port: 18011
+  health_timeout_s: 2400          # first start may compile kernels / read weights from NFS
+  request_timeout_s: 1200
+  max_retries: 3
+  retry_backoff_s: 5
+  server_restarts: 4              # restarts per model after a crash
+  generation_config: vllm         # ignore model generation_config.json so every model gets the same sampling
+  trust_request_mm_kwargs: true   # accept per-request mm_processor_kwargs (image-budget study); clients are local
+  extra_env:
+    # flashinfer-cubin is not published for this flashinfer build and the host nvcc is too old to JIT it,
+    # so sampling uses vLLM's PyTorch top-k/top-p path (identical results at temperature 0).
+    VLLM_USE_FLASHINFER_SAMPLER: "0"
+
+sampling:
+  temperature: 0.0
+  max_tokens: 8192
+  seed: 0
+
+download:
+  min_free_gb: 30
+  margin: 0.2
+  max_workers: 8
+  prefetch: true
+
+hf_backend:
+  request_timeout_s: 1800

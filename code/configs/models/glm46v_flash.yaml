@@ -1,0 +1,82 @@
+key: glm46v_flash
+hf_id: zai-org/GLM-4.6V-Flash
+revision: 411bb4d77144a3f03accbf4b780f5acb8b7cde4e
+family: GLM-V
+org: Zhipu AI
+params_b: 10.3
+license: mit
+gated: false
+download_gb: 20.61
+role: vlm
+groups:
+- G1
+- G3
+tier: pilot
+priority: 40
+backend: vllm
+text_only: false
+dtype: bfloat16
+keep_weights: false
+enabled: true
+note: ''
+vllm:
+  max_model_len: 16384
+  max_num_seqs: 8
+  gpu_memory_utilization: 0.94
+  limit_mm_per_prompt:
+    image: 1
+    video: 0
+  trust_remote_code: false
+  # 40 requests of the first run were refused ("image item with 2646 embedding tokens exceeds the pre-allocated encoder
+  # cache size 2601"): vLLM sizes that cache as max(max_num_batched_tokens, tokens of a square image at the pixel limit),
+  # and non-square images at the limit need a few tokens more. A larger batch-token budget only enlarges the cache.
+  max_num_batched_tokens: 4096
+  mm_processor_kwargs:
+    size:
+      longest_edge: 4194304
+      shortest_edge: 12544
+  enforce_eager: false
+  extra_args: []
+  env: {}
+autotune:
+  max_num_seqs:
+  - 8
+  - 4
+  - 2
+  - 1
+  max_model_len:
+  - 16384
+  - 12288
+  - 8192
+  mm_processor_kwargs:
+  - size:
+      longest_edge: 2097152
+      shortest_edge: 12544
+  - size:
+      longest_edge: 1048576
+      shortest_edge: 12544
+  preemption_limit: 200
+thinking:
+  supported: true
+  default_on: true
+  'off':
+    chat_template_kwargs:
+      enable_thinking: false
+  'on':
+    chat_template_kwargs:
+      enable_thinking: true
+  strip:
+  - <think>
+  - </think>
+sampling: {}
+hf:
+  adapter: generic
+  model_class: AutoModelForImageTextToText
+  batch_size: 4
+  batch_ladder:
+  - 4
+  - 2
+  - 1
+  python: main
+  dtype: bfloat16
+mock: {}

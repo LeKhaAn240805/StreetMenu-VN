@@ -1,0 +1,20 @@
+# End-to-end smoke test with mock servers on the synthetic menus (no GPU, no download).
+# make smoke  (sets SMV_DATA_DIR=tests/fixtures/menus and a separate output/cache/models dir)
+name: smoke
+require_gpu: false
+seeds: [0]
+splits: [dev, test]
+include_optional: true
+prefetch: true
+stages:
+  - role: ocr
+    models: [mock_ocr]
+  - role: vlm
+    models: [mock_vlm_a, mock_vlm_oom, mock_vlm_crash]
+    prompts: [P0, P1, {id: P2, optional: true}, P-T, P-2S, P-NL]
+    thinking: ["off", "on"]
+  - role: llm
+    models: [mock_llm]
+    prompts:
+      - {id: P-OCR+, ocr_from: [mock_ocr]}
+      - P-Oracle

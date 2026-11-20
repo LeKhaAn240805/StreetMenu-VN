@@ -1,0 +1,67 @@
+key: minicpmv45
+hf_id: openbmb/MiniCPM-V-4_5
+revision: daef484c35ec93210ec93c5e901f8f3e9b78ee34
+family: MiniCPM-V
+org: OpenBMB
+params_b: 8.7
+license: MiniCPM model licence (apache-2.0 tag)
+gated: false
+download_gb: 17.41
+role: vlm
+groups:
+- G1
+- G3
+tier: pilot
+priority: 50
+backend: vllm
+text_only: false
+dtype: bfloat16
+keep_weights: false
+enabled: true
+note: ''
+vllm:
+  max_model_len: 16384
+  max_num_seqs: 8
+  gpu_memory_utilization: 0.9
+  limit_mm_per_prompt:
+    image: 1
+  trust_remote_code: true
+  enforce_eager: false
+  extra_args: []
+  env: {}
+autotune:
+  max_num_seqs:
+  - 16
+  - 8
+  - 4
+  - 2
+  - 1
+  max_model_len:
+  - 16384
+  - 12288
+  - 8192
+  mm_processor_kwargs: []
+  preemption_limit: 200
+thinking:
+  supported: true
+  default_on: false
+  'off':
+    chat_template_kwargs:
+      enable_thinking: false
+  'on':
+    chat_template_kwargs:
+      enable_thinking: true
+  strip:
+  - <think>
+  - </think>
+sampling: {}
+hf:
+  adapter: minicpmv
+  model_class: AutoModelForImageTextToText
+  batch_size: 1
+  batch_ladder:
+  - 1
+  python: main
+  dtype: bfloat16
+fallback_backend: hf
+mock: {}

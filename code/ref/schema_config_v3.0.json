@@ -1,0 +1,871 @@
+{
+  "schema_version": "3.0",
+  "note": "File cấu hình nhãn. Sửa file này (đặt ở <thư mục ảnh>/_labels/schema_config.json) để đổi danh mục, thẻ, mô tả mà không cần sửa code.",
+  "price_min_warn": 1000,
+  "price_max_warn": 5000000,
+  "image_fields": [
+    {
+      "key": "image_id",
+      "label": "Mã ảnh",
+      "type": "text",
+      "desc": "Mã ẩn danh, không đổi khi đổi tên file. Mặc định tự sinh từ tên file.",
+      "example": "smv_0031 (cho 31.jpg)"
+    },
+    {
+      "key": "group_id",
+      "label": "Mã quán (group_id)",
+      "type": "text",
+      "desc": "Mọi ảnh của cùng một quán/cùng một menu dùng chung mã, và phải nằm cùng một tập (dev/test). Không dùng ảnh này để sửa nhãn ảnh kia.",
+      "example": "12.jpg và 13.jpg là cùng trang COMBO → cùng G012; 16.jpg và 17.jpg cùng menu Ghai Market"
+    },
+    {
+      "key": "near_duplicate_of",
+      "label": "Gần trùng với ảnh",
+      "type": "text",
+      "desc": "Nếu ảnh này chụp lại gần như cùng nội dung với ảnh khác (khác góc/cắt), ghi file_name của ảnh kia. Khi chấm chỉ giữ một ảnh trong test.",
+      "example": "13.jpg gần trùng 12.jpg"
+    },
+    {
+      "key": "split",
+      "label": "Tập",
+      "type": "select",
+      "options": [
+        "unassigned",
+        "dev",
+        "test",
+        "ood"
+      ],
+      "desc": "dev: ảnh dùng làm ví dụ/hiệu chuẩn; test: ảnh đóng băng để chấm; ood: không phải menu đồ ăn uống. Để unassigned khi chưa chia.",
+      "example": "19 ảnh mẫu S01–S19 → dev; biển thuê xe → ood"
+    },
+    {
+      "key": "ccl",
+      "label": "Mức CCL",
+      "type": "select",
+      "options": [
+        "",
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "desc": "Mức phức tạp ngữ cảnh CAO NHẤT có trong ảnh. Kiểm tra theo thứ tự 4 → 3 → 2 → 1. Để trống nếu OOD.",
+      "example": "30.jpg (in rõ, mỗi món 1 giá cùng dòng) = 1; 4.jpg (Lươn Xứ Nghệ, có 'Gà Chặt (1/2 Con)') = 3; IMG_1397 (giấy dán viết tay phủ nhóm dòng) = 4",
+      "help": "ccl"
+    },
+    {
+      "key": "tags",
+      "label": "Thẻ hiện tượng",
+      "type": "tags",
+      "desc": "Chọn MỌI hiện tượng có trong ảnh (đa nhãn). 22 thẻ gộp, mỗi nhóm ứng với một loại ngữ cảnh trong bài. Rê chuột lên thẻ để xem định nghĩa, ví dụ và các mã cũ đã gộp.",
+      "example": "IMG_1454: P_IMPLICIT_K, L_VARIANT, N_FOREIGN; IMG_1397: P_INHERITED, P_MULTI_UNLABELED, P_HANDWRITTEN_OVERRIDE, V_HANDWRITING"
+    },
+    {
+      "key": "venue_tier",
+      "label": "Loại cơ sở",
+      "type": "select",
+      "options": [
+        "",
+        "street_vendor",
+        "small_shop",
+        "chain",
+        "supermarket_foodcourt"
+      ],
+      "desc": "street_vendor: xe đẩy, gánh, vỉa hè; small_shop: quán/tiệm độc lập; chain: chuỗi có thương hiệu (KFC, Lotteria, McCafé, Sukiya…); supermarket_foodcourt: quầy trong siêu thị/food court. Dùng để báo kết quả riêng cho 'đường phố' và kiểm tra rò rỉ dữ liệu (menu chuỗi có thể đã có trên mạng).",
+      "example": "temp_image_9A03… (xe bánh xèo) = street_vendor; 6.jpg (KFC) = chain; IMG_1470 (quầy K-Style trong Emart) = supermarket_foodcourt"
+    },
+    {
+      "key": "venue_type",
+      "label": "Loại hình",
+      "type": "select",
+      "options": [
+        "",
+        "cà phê",
+        "trà sữa",
+        "nước ép – sinh tố",
+        "ăn vặt",
+        "cơm",
+        "bún – phở – hủ tiếu",
+        "bánh mì – xôi",
+        "quán nhậu – ốc",
+        "tiệm bánh – tráng miệng",
+        "lẩu – nướng",
+        "nhà hàng",
+        "fast food",
+        "khác"
+      ],
+      "desc": "Loại hình chính của quán.",
+      "example": "IMG_1422 Hủ tiếu Chú Hải = bún – phở – hủ tiếu"
+    },
+    {
+      "key": "medium",
+      "label": "Chất liệu / dạng menu",
+      "type": "select",
+      "options": [
+        "",
+        "in sẵn để bàn",
+        "sổ menu (trang)",
+        "bảng đèn",
+        "băng rôn / bảng hiệu",
+        "giấy in dán tạm",
+        "viết tay trên giấy",
+        "bảng phấn / kính",
+        "poster một món",
+        "phiếu gọi món (có cột SL)",
+        "khác"
+      ],
+      "desc": "Vật mang menu.",
+      "example": "IMG_1481 = bảng phấn / kính; IMG_1464, IMG_1475 = phiếu gọi món; IMG_1469 = poster một món"
+    },
+    {
+      "key": "lighting",
+      "label": "Ánh sáng",
+      "type": "select",
+      "options": [
+        "",
+        "đủ sáng",
+        "thiếu sáng",
+        "lóa / phản chiếu",
+        "ngược sáng"
+      ],
+      "desc": "Điều kiện sáng nổi bật nhất.",
+      "example": "temp_image_78CF… (bảng đèn lóa) = lóa / phản chiếu"
+    },
+    {
+      "key": "angle",
+      "label": "Góc chụp",
+      "type": "select",
+      "options": [
+        "",
+        "thẳng",
+        "nghiêng nhẹ",
+        "nghiêng mạnh",
+        "cong / gấp"
+      ],
+      "desc": "Góc chụp so với mặt menu.",
+      "example": "28.jpg = nghiêng nhẹ; 18.jpg (trang sổ cong) = cong / gấp"
+    },
+    {
+      "key": "source",
+      "label": "Nguồn ảnh",
+      "type": "select",
+      "options": [
+        "",
+        "tự chụp",
+        "người khác gửi",
+        "ảnh chụp màn hình"
+      ],
+      "desc": "Phục vụ phần đạo đức dữ liệu trong bài.",
+      "example": "IMG_14xx.PNG thường là ảnh chụp màn hình"
+    },
+    {
+      "key": "city",
+      "label": "Thành phố",
+      "type": "text",
+      "desc": "Chỉ ghi thành phố (có thể thêm quận). Không ghi địa chỉ chi tiết.",
+      "example": "Đà Lạt; TP.HCM – Thủ Đức"
+    },
+    {
+      "key": "languages",
+      "label": "Ngôn ngữ",
+      "type": "list",
+      "desc": "Mã ngôn ngữ xuất hiện trên menu, phân cách bằng dấu phẩy.",
+      "example": "vi, en, ko (20.jpg có tiếng Hàn); vi, en, th (16.jpg có tiếng Thái)"
+    },
+    {
+      "key": "price_unit_default",
+      "label": "Quy ước giá",
+      "type": "select",
+      "options": [
+        "",
+        "k_vnd",
+        "vnd",
+        "mixed"
+      ],
+      "desc": "k_vnd: số trên menu là nghìn đồng ('30' = 30.000 đ, '15k'); vnd: ghi đủ ('65.000'); mixed: cả hai. Web dùng trường này để tự tính price_vnd.",
+      "example": "IMG_1454 ('30', '25 / 40') = k_vnd; 4.jpg ('75.000') = vnd"
+    },
+    {
+      "key": "tax_note",
+      "label": "Ghi chú thuế",
+      "type": "select",
+      "options": [
+        "",
+        "not_stated",
+        "included",
+        "excluded"
+      ],
+      "desc": "Menu có ghi giá đã/chưa gồm VAT không. Không cộng VAT vào price_vnd; chỉ ghi lại.",
+      "example": "20.jpg 'Giá trên chưa bao gồm 10% VAT' = excluded; IMG_1355 '*Giá trên đã bao gồm thuế VAT' = included"
+    },
+    {
+      "key": "has_prices",
+      "label": "Menu có giá",
+      "type": "bool",
+      "desc": "Bỏ chọn nếu cả menu chỉ có tên món, không có giá. Ảnh này chỉ dùng để chấm tên món.",
+      "example": "IMG_1414 (Gỏi đu đủ), IMG_1483 (Kem tươi, xoài lắc…) = không có giá"
+    },
+    {
+      "key": "pii_present",
+      "label": "Có thông tin cá nhân",
+      "type": "bool",
+      "desc": "SĐT, QR/số tài khoản, mặt người, địa chỉ, Wi-Fi. Không gán nội dung này thành món.",
+      "example": "IMG_1475 có Wi-Fi + mật khẩu + QR"
+    },
+    {
+      "key": "pii_types",
+      "label": "Loại thông tin cá nhân",
+      "type": "multi",
+      "options": [
+        "phone",
+        "qr_bank",
+        "face",
+        "address",
+        "wifi"
+      ],
+      "desc": "Chỉ để kiểm soát việc che trước khi công bố; không gán nội dung.",
+      "example": "IMG_1475: wifi, qr_bank; 35.jpg: address"
+    },
+    {
+      "key": "redaction_checked",
+      "label": "Đã kiểm tra che",
+      "type": "bool",
+      "desc": "Người thứ hai đã xác nhận ảnh đã được che thông tin cá nhân trước khi công bố.",
+      "example": ""
+    },
+    {
+      "key": "consent_id",
+      "label": "Mã đồng ý",
+      "type": "text",
+      "desc": "Mã xin phép chủ quán, không ghi tên người.",
+      "example": "C-017"
+    },
+    {
+      "key": "notes",
+      "label": "Ghi chú ảnh",
+      "type": "textarea",
+      "desc": "Quyết định khó, lý do, những gì cố ý không gán.",
+      "example": "Giá mờ '25.000' giữa dòng là giá cũ, không gán."
+    }
+  ],
+  "section_fields": [
+    {
+      "key": "section_id",
+      "label": "Mã mục",
+      "type": "text",
+      "desc": "s1, s2… tự sinh.",
+      "example": "s1"
+    },
+    {
+      "key": "raw_title",
+      "label": "Tiêu đề (nguyên văn)",
+      "type": "text",
+      "desc": "Chép đúng như menu.",
+      "example": "SINH TỐ (LY NHỎ 17K – LỚN 30)"
+    },
+    {
+      "key": "norm_title",
+      "label": "Tiêu đề chuẩn hóa",
+      "type": "text",
+      "desc": "Chữ thường, có dấu, bỏ phần giá.",
+      "example": "sinh tố"
+    },
+    {
+      "key": "shared_price_raw",
+      "label": "Giá chung (nguyên văn)",
+      "type": "text",
+      "desc": "Nếu tiêu đề mang giá áp cho cả mục. Món trong mục sẽ có price_source = section_header.",
+      "example": "LY NHỎ 17K – LỚN 30; ĐỒNG GIÁ 15K; TOPPINGS ĐỒNG GIÁ 10K (19.jpg)"
+    },
+    {
+      "key": "notes",
+      "label": "Ghi chú",
+      "type": "text",
+      "desc": "",
+      "example": "Áp cho 11 món sinh tố"
+    }
+  ],
+  "item_fields": [
+    {
+      "key": "item_code",
+      "label": "Mã món trên menu",
+      "type": "text",
+      "adv": true,
+      "desc": "Mã số/mã chữ in cạnh món (nếu có). Không đưa vào tên.",
+      "example": "4102 (12.jpg), A20 (16.jpg), 2309 (14.jpg), số ① trên menu đánh số"
+    },
+    {
+      "key": "raw_name",
+      "label": "Tên nguyên văn",
+      "type": "text",
+      "req": true,
+      "desc": "Chép ĐÚNG như menu: giữ sai chính tả, hoa/thường, viết tắt. Ký tự không đọc được ghi '?'.",
+      "example": "BÒ LÁ LỐP; BÁNH ?ÈO; Café đen/ sữa rum nóng"
+    },
+    {
+      "key": "raw_name_2",
+      "label": "Tên phụ / dịch",
+      "type": "text",
+      "adv": true,
+      "desc": "Dòng tên tiếng nước ngoài của CÙNG món.",
+      "example": "King Spicy Pork Back Bone; Black coffee/ Iced black coffee"
+    },
+    {
+      "key": "norm_name",
+      "label": "Tên chuẩn hóa",
+      "type": "text",
+      "req": true,
+      "desc": "Tiếng Việt có dấu, chữ thường. Ghép tiêu đề mục khi tên trên menu là phần rút gọn; sửa lỗi chính tả khi CHẮC CHẮN; bỏ số thứ tự, mã món, biểu tượng. Tên thương hiệu/sáng tạo giữ nguyên (viết thường).",
+      "example": "'Dâu' dưới mục Sinh tố → sinh tố dâu; 'Miếng măng gà' → miến măng gà; 'Phê sầu Daklak' → phê sầu daklak"
+    },
+    {
+      "key": "alt_norm_names",
+      "label": "Tên khác chấp nhận",
+      "type": "list",
+      "desc": "Các cách gọi khác cũng tính là đúng khi chấm, phân cách bằng dấu phẩy.",
+      "example": "nước ép thơm → nước ép dứa, thơm"
+    },
+    {
+      "key": "description",
+      "label": "Mô tả",
+      "type": "text",
+      "adv": true,
+      "desc": "Dòng thành phần, chú thích trong ngoặc, dòng phụ không có giá. KHÔNG tạo món riêng cho dòng mô tả.",
+      "example": "MATCHALATTE + TRÂN CHÂU O LONG (mô tả của Lục ngọc trân); (Bò, giò, trứng cút, chả cá…)"
+    },
+    {
+      "key": "category",
+      "label": "Nhóm món",
+      "type": "select",
+      "req": true,
+      "options": [
+        "",
+        "cà phê",
+        "trà",
+        "trà sữa",
+        "sinh tố",
+        "nước ép",
+        "sữa chua – yaourt",
+        "đá xay",
+        "nước giải khát",
+        "bia rượu",
+        "bánh",
+        "tráng miệng – kem",
+        "ăn vặt",
+        "món nước (bún, phở, hủ tiếu, mì)",
+        "cơm – xôi",
+        "bánh mì – burger",
+        "lẩu",
+        "nướng",
+        "món chính khác",
+        "combo – set",
+        "topping – món thêm",
+        "không phải đồ ăn",
+        "khác"
+      ],
+      "desc": "Một nhóm chính. 'không phải đồ ăn' dùng cho thuốc lá, khăn lạnh… vẫn gán vì có trên menu.",
+      "example": "Thuốc 555 (31.jpg) → không phải đồ ăn; Khăn lạnh 2k (IMG_1464) → không phải đồ ăn"
+    },
+    {
+      "key": "is_add_on",
+      "label": "Topping / món thêm",
+      "type": "bool",
+      "desc": "Món chỉ gọi kèm: topping, 'gà thêm', 'bún thêm', sốt thêm, phụ thu nâng cấp.",
+      "example": "Trân châu trắng 5k; Rau thêm 8K; Đổi súp miso +5.000"
+    },
+    {
+      "key": "is_combo",
+      "label": "Combo / set",
+      "type": "bool",
+      "desc": "Một giá cho nhiều món con. Món con KHÔNG thành món riêng.",
+      "example": "Combo Phuket 269K; SET ĂN 'YÊU THÍCH' 280.000"
+    },
+    {
+      "key": "combo_components",
+      "label": "Thành phần combo",
+      "type": "components",
+      "adv": true,
+      "desc": "Mỗi dòng: tên ; số lượng ; giá lẻ (nếu menu ghi). Giá lẻ chỉ để tham khảo, không phải offer.",
+      "example": "mực vòng chiên ; 4 miếng ; 30000"
+    },
+    {
+      "key": "serves",
+      "label": "Số người",
+      "type": "text",
+      "adv": true,
+      "desc": "Số người dùng cho combo/set.",
+      "example": "2–3 người; 5–6 người"
+    },
+    {
+      "key": "option_groups",
+      "label": "Lựa chọn không đổi giá",
+      "type": "text",
+      "adv": true,
+      "desc": "Các lựa chọn khách chọn mà KHÔNG làm đổi giá (chọn sốt, chọn nước, mức đường/đá). Ghi gọn, không tạo offer.",
+      "example": "Chọn 1 sốt: xá xíu, cay, me cay… (IMG_1341); Chọn nước: trà lúa mạch, Pepsi… (21.jpg)"
+    },
+    {
+      "key": "attributes",
+      "label": "Thuộc tính",
+      "type": "multi",
+      "adv": true,
+      "options": [
+        "spicy",
+        "vegetarian",
+        "vegetarian_option",
+        "bestseller",
+        "new",
+        "signature",
+        "recommended",
+        "seasonal",
+        "limited_time"
+      ],
+      "desc": "Biểu tượng/nhãn gắn với món, thường phải tra chú thích biểu tượng (thẻ S_LAYOUT).",
+      "example": "IMG_1355: 🌿 'Món chay' / 'Món có thể làm chay', 👨‍🍳 'Best seller'; 'Lựu (THEO MÙA)' → seasonal"
+    },
+    {
+      "key": "availability",
+      "label": "Thời gian bán",
+      "type": "text",
+      "adv": true,
+      "desc": "Giới hạn ngày/giờ áp dụng cho món hoặc giá.",
+      "example": "Thứ 2 – Thứ 7 (Bún riêu, IMG_1422); chỉ áp dụng Thứ 2 đến Thứ 6 (8.jpg)"
+    },
+    {
+      "key": "item_status",
+      "label": "Trạng thái",
+      "type": "select",
+      "adv": true,
+      "options": [
+        "active",
+        "crossed_out",
+        "taped_over",
+        "sold_out"
+      ],
+      "desc": "Món bị gạch, dán đè hoặc ghi hết hàng: vẫn gán nhưng loại khỏi chỉ số chính.",
+      "example": "IMG_1348: giấy dán đè 'Nước mía tắc / Sinh tố dừa' lên dòng cũ"
+    },
+    {
+      "key": "legibility",
+      "label": "Độ đọc được",
+      "type": "select",
+      "adv": true,
+      "options": [
+        "clear",
+        "partial",
+        "illegible"
+      ],
+      "desc": "Của tên và giá món này.",
+      "example": "'40.0??' bị cháy → partial"
+    },
+    {
+      "key": "ambiguous",
+      "label": "Mơ hồ",
+      "type": "bool",
+      "adv": true,
+      "desc": "Người gán không chắc chắn. Offer mơ hồ được báo riêng khi chấm.",
+      "example": ""
+    },
+    {
+      "key": "ambig_reason",
+      "label": "Lý do mơ hồ",
+      "type": "select",
+      "adv": true,
+      "options": [
+        "",
+        "scope_of_shared_price",
+        "occluded_char",
+        "burnt_digits",
+        "overwritten_digit",
+        "unknown_unit",
+        "abbreviation_unclear",
+        "price_missing_or_misaligned",
+        "variant_label_unknown",
+        "other"
+      ],
+      "desc": "variant_label_unknown: có nhiều giá nhưng menu không nói giá nào ứng với lựa chọn nào.",
+      "example": "Ốc Tỏi 30-35-37-40k/1 con (C98E…): không rõ theo kích cỡ gì → variant_label_unknown"
+    },
+    {
+      "key": "bbox",
+      "label": "Khung bao",
+      "type": "bbox",
+      "adv": true,
+      "desc": "(Tùy chọn) Vẽ khung quanh tên + giá của món trên ảnh. Dùng cho phân tích không gian ở ảnh CCL-4.",
+      "example": ""
+    },
+    {
+      "key": "notes",
+      "label": "Ghi chú món",
+      "type": "text",
+      "adv": true,
+      "desc": "",
+      "example": "Gộp 2 dòng '…rum nóng' và '…rum đá'"
+    }
+  ],
+  "offer_fields": [
+    {
+      "key": "size",
+      "label": "Size",
+      "type": "text",
+      "desc": "Nhãn size như menu, chuẩn hóa nhẹ: S, M, L, XL, nhỏ, vừa, lớn, P/R/L, 2X, Mega, 500 ml. Nếu có nhiều giá mà menu KHÔNG ghi size, ghi #1, #2, #3 theo thứ tự trái → phải.",
+      "example": "IMG_1356 'Xôi gà xé 20k 25k 30k' → #1, #2, #3; 11.jpg 'P 149.000 R 239.000 L 309.000' → P, R, L"
+    },
+    {
+      "key": "size_rank",
+      "label": "Thứ hạng size",
+      "type": "int",
+      "adv": true,
+      "desc": "1 = nhỏ nhất. Giúp so sánh các hệ size khác nhau (S/M/L, nhỏ/lớn, P/R/L).",
+      "example": "S=1, M=2, L=3"
+    },
+    {
+      "key": "temp",
+      "label": "Nóng/đá",
+      "type": "select",
+      "options": [
+        "",
+        "nóng",
+        "đá",
+        "nóng|đá"
+      ],
+      "desc": "'nóng|đá' = một giá dùng chung cho cả hai (khi chấm sẽ tách thành 2 offer). Từ 'nóng' nằm trong tên món mà không có bản đá thì giữ trong tên, để trống ở đây.",
+      "example": "'Café đen nóng/ đá 30' → nóng|đá; 'Trà lipton nóng/ đá 25 / 40' → 2 offer: nóng 25.000, đá 40.000"
+    },
+    {
+      "key": "portion",
+      "label": "Khẩu phần",
+      "type": "text",
+      "desc": "Khẩu phần/số người/vật chứa của MỘT lựa chọn.",
+      "example": "1 người, 2 người; tô; phần (500g bún – 2 người) (IMG_1475); 1/2 con"
+    },
+    {
+      "key": "quantity",
+      "label": "Số lượng",
+      "type": "num",
+      "adv": true,
+      "desc": "Số đơn vị trong lựa chọn khi giá đổi theo số lượng (bậc số lượng). Dùng cùng qty_unit.",
+      "example": "Gà rán 1 miếng 35.000, 2 miếng 70.000 (6.jpg) → quantity 1, 2; Pygmy Platter (4) 225.000 (25.jpg) → 4"
+    },
+    {
+      "key": "qty_unit",
+      "label": "Đơn vị SL",
+      "type": "text",
+      "adv": true,
+      "desc": "Đơn vị đi với quantity.",
+      "example": "miếng, viên, cái, xiên, sườn"
+    },
+    {
+      "key": "raw_price",
+      "label": "Giá nguyên văn",
+      "type": "text",
+      "req": true,
+      "desc": "Chép đúng chuỗi giá trên menu, kể cả k, đ, /100g. Giá thừa hưởng thì ghi nguồn trong ngoặc.",
+      "example": "25 / 40; 19.000 đ/100G; 15K (tiêu đề); 6k-12k"
+    },
+    {
+      "key": "price_vnd",
+      "label": "Giá (đồng)",
+      "type": "int",
+      "req": true,
+      "desc": "Giá HIỆN HÀNH, số nguyên đồng. Web tự đề xuất từ raw_price theo 'Quy ước giá'; kiểm tra lại. Để trống nếu không xác định.",
+      "example": "'57' trên menu bánh → 57000; '40K/1cặp' → 40000"
+    },
+    {
+      "key": "old_price_vnd",
+      "label": "Giá cũ",
+      "type": "int",
+      "desc": "Giá bị gạch, giá in bị viết tay đè.",
+      "example": "159.000 gạch → 99.000 (IMG_1471): old 159000; '10K' in bị viết '12' (temp_image_78CF…): old 10000"
+    },
+    {
+      "key": "price_kind",
+      "label": "Kiểu giá",
+      "type": "select",
+      "options": [
+        "fixed",
+        "unit_price",
+        "bundle",
+        "starting_from",
+        "range",
+        "delta"
+      ],
+      "desc": "fixed: giá một lựa chọn. unit_price: giá theo đơn vị (100g, phần, cặp, con, cây). bundle: giá cho N đơn vị gộp (combo 3 hộp, 2 cái/20k). starting_from: 'chỉ từ'. range: khoảng giá không gán được cho lựa chọn cụ thể (điền min/max). delta: phụ thu cộng thêm vào món khác ('+25.000', 'tự mix +2K').",
+      "example": "'Dĩa: 2 cái/ 20k' → bundle, unit_qty 2, unit cái; 'Mì xào ốc móng tay 45k-55k/dĩa' → range 45000–55000; 'Set rau muống +32.000' → delta"
+    },
+    {
+      "key": "price_min_vnd",
+      "label": "Giá min",
+      "type": "int",
+      "adv": true,
+      "desc": "Chỉ dùng với price_kind = range.",
+      "example": "45000"
+    },
+    {
+      "key": "price_max_vnd",
+      "label": "Giá max",
+      "type": "int",
+      "adv": true,
+      "desc": "Chỉ dùng với price_kind = range.",
+      "example": "55000"
+    },
+    {
+      "key": "unit_qty",
+      "label": "SL đơn vị giá",
+      "type": "num",
+      "adv": true,
+      "desc": "Với unit_price / bundle: số lượng mà giá áp dụng.",
+      "example": "100 (đ/100g); 2 (2 cái/20k); 3 (combo 3 hộp)"
+    },
+    {
+      "key": "unit",
+      "label": "Đơn vị giá",
+      "type": "text",
+      "adv": true,
+      "desc": "Đơn vị mà giá áp dụng.",
+      "example": "g, phần, cặp, con, cây, lổ, trứng, dĩa, hộp, chục"
+    },
+    {
+      "key": "price_source",
+      "label": "Giá lấy từ đâu",
+      "type": "select",
+      "options": [
+        "item_line",
+        "section_header",
+        "global_header",
+        "column_header",
+        "bracket",
+        "merged_cell",
+        "handwritten_override",
+        "badge"
+      ],
+      "desc": "Vị trí giá trên menu. item_line: cùng dòng với tên. section_header: tiêu đề mục. global_header: đồng giá cả menu. column_header: cột M | L. bracket: một giá phủ nhóm dòng (giấy dán, ngoặc). merged_cell: ô bảng gộp nhiều dòng. handwritten_override: số viết tay đè. badge: huy hiệu/vòng tròn tách khỏi tên.",
+      "example": "IMG_1464 '89k' gộp 5 dòng lẩu → merged_cell; IMG_1452 số trong vòng tròn trên ảnh bánh → badge"
+    },
+    {
+      "key": "evidence",
+      "label": "Bằng chứng",
+      "type": "select",
+      "options": [
+        "printed",
+        "handwritten",
+        "overwritten"
+      ],
+      "desc": "Giá in, viết tay, hay viết/dán đè lên giá in.",
+      "example": "IMG_1348 giấy dán '20K' đè → overwritten"
+    },
+    {
+      "key": "notes",
+      "label": "Ghi chú",
+      "type": "text",
+      "adv": true,
+      "desc": "",
+      "example": ""
+    }
+  ],
+  "tag_groups": [
+    {
+      "prefix": "P_",
+      "label": "Tiền tệ / giá (→ chỉ số PNA, IPA)",
+      "tags": [
+        {
+          "code": "P_IMPLICIT_K",
+          "desc": "Giá ẩn đơn vị nghìn: '30' nghĩa là 30.000 đ. Tách riêng vì đây là hiện tượng ngữ cảnh tiền tệ cốt lõi.",
+          "merges": "P_IMPLICIT_K",
+          "example": "IMG_1454 '30', '25 / 40'; IMG_1392 '32', '37'; IMG_1452 số trong vòng tròn"
+        },
+        {
+          "code": "P_FORMAT",
+          "desc": "Các dạng viết giá khác cần quy đổi: hậu tố k/K, chữ 'ngàn', dấu chấm nghìn, 'VND' đứng trước, '000' in nhỏ/chỉ số trên, nhãn size dính trước giá.",
+          "merges": "P_K_SUFFIX, P_WORD, P_FULL_DOTS, P_SUPERSCRIPT_000, P_INLINE_SIZE_PREFIX",
+          "example": "30.jpg '20k'; 16.jpg 'VND 85.000'; 6.jpg '35⁰⁰⁰'; 2.jpg 'S35 M45 L55'"
+        },
+        {
+          "code": "P_INHERITED",
+          "desc": "Giá không nằm cạnh tên mà thừa hưởng từ chỗ khác: tiêu đề mục, đồng giá, tiêu đề cột, giấy/ngoặc phủ nhóm dòng, ô bảng gộp.",
+          "merges": "P_SECTION, P_GLOBAL, P_COLUMN, P_BRACKET, P_MERGED_CELL, L_SCOPE_AMBIG",
+          "example": "IMG_1397 'SINH TỐ (LY NHỎ 17K – LỚN 30)'; IMG_1456 'ĐỒNG GIÁ 15K'; 28.jpg cột S M L; IMG_1464 '89k' gộp 5 dòng"
+        },
+        {
+          "code": "P_MULTI_UNLABELED",
+          "desc": "Một món nhiều giá mà menu KHÔNG nói rõ giá nào ứng với lựa chọn nào: dãy giá không nhãn, khoảng giá.",
+          "merges": "P_UNLABELED_TIERS, P_RANGE_SIZE, P_RANGE_UNKNOWN",
+          "example": "IMG_1356 'Xôi gà xé 20k 25k 30k'; IMG_1397 '6k-12k'; C98E… 'Ốc tỏi 30-35-37-40k/1 con'"
+        },
+        {
+          "code": "P_UNIT_BUNDLE",
+          "desc": "Giá theo đơn vị hoặc theo gói: /100g, /phần, /cặp, /con, /cây; 2 cái/20k; combo 3 hộp; 'chỉ từ'.",
+          "merges": "P_UNIT, P_BUNDLE, P_FROM",
+          "example": "35.jpg '50k/phần', '15k/cặp'; IMG_1470 '19.000 đ/100G'; IMG_1482 'Dĩa: 2 cái/ 20k'"
+        },
+        {
+          "code": "P_PROMO",
+          "desc": "Giá gạch → giá mới (khuyến mãi in sẵn).",
+          "merges": "P_PROMO",
+          "example": "IMG_1471 159.000 → 99.000; 12.jpg 140.000 → 130.000"
+        },
+        {
+          "code": "P_HANDWRITTEN_OVERRIDE",
+          "desc": "Giá in bị viết tay hoặc dán giấy đè lên (giá hiện hành là giá viết/dán).",
+          "merges": "P_HANDWRITTEN_OVERRIDE",
+          "example": "temp_image_78CF… '10K' in + '12' viết tay; IMG_1348 giấy '20K' dán đè"
+        },
+        {
+          "code": "P_MISSING",
+          "desc": "Có món không thấy giá, hoặc cả menu không có giá.",
+          "merges": "P_MISSING, P_NO_PRICES",
+          "example": "IMG_1348 'Nước ngọt các loại'; IMG_1414, IMG_1483 không có giá"
+        }
+      ]
+    },
+    {
+      "prefix": "N_",
+      "label": "Ngôn ngữ / tên món (→ chỉ số NNA)",
+      "tags": [
+        {
+          "code": "N_NORMALIZE",
+          "desc": "Tên cần chuẩn hóa: viết tắt, từ địa phương/lóng, lỗi chính tả, thiếu dấu, nhiều cách viết cùng một từ. Loại cụ thể ghi ở từ điển LEXICON, không cần thẻ riêng.",
+          "merges": "N_ABBR, N_SLANG_REGIONAL, N_MISSPELL, N_NO_DIACRITICS, N_SPELLING_VARIANTS",
+          "example": "'Thơm' = dứa; 'PM' = phô mai; 'BÒ LÁ LỐP'; 'Heiniken'; 'đậu hũ / đậu hủ / tàu hũ'"
+        },
+        {
+          "code": "N_SECTION_COMPOSE",
+          "desc": "Tên trên menu chỉ là phần rút gọn, phải ghép với tiêu đề mục mới đủ nghĩa.",
+          "merges": "N_SECTION_COMPOSE",
+          "example": "IMG_1422 mục 'HỦ TIẾU' + 'Thịt' → hủ tiếu thịt; 33.jpg 'TÀU HŨ' + 'Dâu'"
+        },
+        {
+          "code": "N_FOREIGN",
+          "desc": "Có tiếng nước ngoài: song ngữ, tên món nước ngoài phiên âm, tên sáng tạo/thương hiệu không diễn giải.",
+          "merges": "N_BILINGUAL, N_FOREIGN_DISH, N_BRAND_CREATIVE",
+          "example": "20.jpg Việt–Anh–Hàn; 'Tokbokki', 'Gyudon'; IMG_1453 'Dalat Rosy'"
+        }
+      ]
+    },
+    {
+      "prefix": "L_",
+      "label": "Logic món – offer (→ Item F1, Variant F1)",
+      "tags": [
+        {
+          "code": "L_VARIANT",
+          "desc": "Món có nhiều lựa chọn phục vụ, mỗi lựa chọn một giá: size, nóng/đá, khẩu phần, số người, bậc số lượng.",
+          "merges": "L_VARIANT_TEMP, L_VARIANT_SIZE, P_PORTION, P_QTY_TIERS",
+          "example": "IMG_1454 'nóng/ đá 25 / 40'; 28.jpg S/M/L; IMG_1355 '1 người / 2 người'; 6.jpg 'Gà rán 1/2/3 miếng'"
+        },
+        {
+          "code": "L_COMBO_SET",
+          "desc": "Combo/set nhiều món một giá, kể cả set chọn theo bước và lựa chọn trong set.",
+          "merges": "L_COMBO, L_SET_BUILDER, L_OPTION_GROUP",
+          "example": "26.jpg 'Có Huynh Có Muội 349.000'; 8.jpg 'Bước 1… Bước 2 Chọn mì'; IMG_1341 'Chọn 1 sốt'"
+        },
+        {
+          "code": "L_ADDON",
+          "desc": "Topping, món gọi thêm, phụ thu cộng thêm (+X).",
+          "merges": "L_TOPPING, P_DELTA",
+          "example": "IMG_1422 'TOPPING THÊM'; 21.jpg 'Set rau muống +32.000'; temp_image_1BC1… 'TỰ MIX +2K'"
+        },
+        {
+          "code": "L_ITEM_SPLIT",
+          "desc": "Phải quyết định tách/gộp món: tên có '/' gộp nhiều món, món lặp lại, dòng gộp hai món (đen/sữa).",
+          "merges": "N_SLASH_ALTERNATIVES, L_DUPLICATE",
+          "example": "IMG_1355 'Bánh đa/ Miến trộn đặc biệt'; IMG_1464 'Cá/ Bò/ Tôm viên'; IMG_1456 'Sữa đậu nành' ở hai khối"
+        }
+      ]
+    },
+    {
+      "prefix": "S_",
+      "label": "Không gian / bố cục (→ SAA)",
+      "tags": [
+        {
+          "code": "S_DETACHED",
+          "desc": "Giá tách xa tên: huy hiệu/vòng tròn trên ảnh món, giá lệch dòng, phải dóng hàng xa.",
+          "merges": "S_DETACHED_BADGE, S_MISALIGNED, S_GRID_ALIGN",
+          "example": "IMG_1452 số trong vòng tròn; IMG_1343 '50K Phần'; temp_image_9A03… giá lệch dòng"
+        },
+        {
+          "code": "S_LAYOUT",
+          "desc": "Bố cục khó đọc thứ tự: nhiều khối/cột, bố cục tự do quanh ảnh món, bảng/phiếu gọi món, cần tra chú thích biểu tượng.",
+          "merges": "S_MULTI_PANEL, S_FREE_LAYOUT, S_TABLE_FORM, S_PHOTO_HEAVY, S_ICON_LEGEND",
+          "example": "temp_image_1E5D… 8 khối; IMG_1394 vẽ tay tự do; IMG_1464 phiếu có cột SL; 24.jpg nhiều ảnh"
+        }
+      ]
+    },
+    {
+      "prefix": "V_",
+      "label": "Thị giác (→ báo theo điều kiện ảnh)",
+      "tags": [
+        {
+          "code": "V_HANDWRITING",
+          "desc": "Có chữ viết tay, một phần hoặc toàn bộ (bảng phấn, vẽ tay).",
+          "merges": "V_HANDWRITING, V_HANDWRITTEN_FULL",
+          "example": "IMG_1397 số viết tay; IMG_1481 bảng kính viết phấn; IMG_1394"
+        },
+        {
+          "code": "V_DAMAGE",
+          "desc": "Chữ bị mất: che khuất, cháy, băng keo, bị cắt khỏi khung (khai báo vùng bỏ qua).",
+          "merges": "V_OCCLUSION, V_BURN_DAMAGE, V_TRUNCATED",
+          "example": "temp_image_9A03… 'BÁNH ?ÈO'; IMG_1347 dây điện che giá; 1.jpg cắt mép"
+        },
+        {
+          "code": "V_QUALITY",
+          "desc": "Chất lượng ảnh/chữ kém: lóa, thiếu sáng, mờ, phông trang trí khó đọc.",
+          "merges": "V_GLARE, V_LOWLIGHT, V_BLUR, V_DECORATIVE_FONT",
+          "example": "temp_image_78CF… bảng đèn lóa; IMG_1378 tối; IMG_1344 mờ"
+        },
+        {
+          "code": "V_GEOMETRY",
+          "desc": "Hình học khó: chụp nghiêng mạnh, trang cong/gấp, chữ xoay hoặc uốn cong.",
+          "merges": "V_PERSPECTIVE, S_ROTATED",
+          "example": "17.jpg chụp nghiêng; IMG_1346 chữ nghiêng; 3.jpg chữ dọc"
+        }
+      ]
+    },
+    {
+      "prefix": "D_",
+      "label": "Bẫy gây ảo giác (→ Hallucination)",
+      "tags": [
+        {
+          "code": "D_DISTRACTOR",
+          "desc": "Chữ/số dễ bị mô hình xuất nhầm thành món hoặc giá: dòng mô tả, số thứ tự/mã món, giá 'ma' mờ, 'tiết kiệm X', 'chỉ X/người', số lượng khách ghi tay, khẩu hiệu.",
+          "merges": "N_DESC_LINE, N_NUMBERED, V_GHOST, P_PROMO_INFO, V_ORDER_MARKS",
+          "example": "IMG_1355 dòng thành phần; 12.jpg mã '4102'; 26.jpg 'Chỉ 88.000/người'; IMG_1475 số '2', '1' ở cột SL"
+        }
+      ]
+    }
+  ],
+  "ccl_help": [
+    {
+      "level": "4",
+      "label": "Không gian & thị giác",
+      "desc": "Có ít nhất một: giá tách khỏi tên (huy hiệu, cột xa), bố cục tự do/nhiều khối không rõ thứ tự, chữ xoay/cong, viết tay đè giá in, che khuất/cháy/băng keo làm mất chữ, chữ ma, dòng lệch, số SL viết tay trên phiếu gọi món.",
+      "example": "IMG_1452, IMG_1397, temp_image_9A03…, IMG_1475"
+    },
+    {
+      "level": "3",
+      "label": "Logic",
+      "desc": "Có: biến thể size/nóng-đá/khẩu phần/bậc số lượng; combo/set; giá thừa hưởng (mục, đồng giá, cột, ngoặc, ô gộp); giá theo đơn vị; giá gạch; phụ thu delta; món trùng.",
+      "example": "IMG_1454, 28.jpg, 6.jpg, 21.jpg"
+    },
+    {
+      "level": "2",
+      "label": "Ngôn ngữ",
+      "desc": "Từ 3 món trở lên cần giải nghĩa: viết tắt, từ địa phương, lỗi chính tả, thiếu dấu, cần ghép tiêu đề mục.",
+      "example": "IMG_1422 (ghép mục hủ tiếu)"
+    },
+    {
+      "level": "1",
+      "label": "Tường minh",
+      "desc": "Chữ in rõ, mỗi món một giá cùng dòng. Dạng giá (k, dấu chấm, ẩn nghìn) KHÔNG quyết định CCL.",
+      "example": "30.jpg, 34.jpg, 4.jpg"
+    }
+  ],
+  "golden_rules": [
+    "Ground truth = thứ một người Việt đọc menu này sẽ nhập vào máy bán hàng: tên món đầy đủ, mỗi lựa chọn (size, nóng/đá, khẩu phần, số lượng) một giá, giá là số nguyên đồng.",
+    "Hai lớp: raw_* chép đúng như menu (đo đọc chữ); norm_* và price_vnd là kết quả hiểu ngữ cảnh.",
+    "Chỉ gán những gì thấy hoặc suy ra CHẮC CHẮN từ chính ảnh này. Không dùng ảnh khác của cùng quán, không thêm món theo hiểu biết bên ngoài.",
+    "Không chắc thì đánh dấu (ambiguous, legibility, alt_norm_names), không đoán. Để price_vnd trống khi không xác định.",
+    "Không gán: SĐT, Wi-Fi, QR, số tài khoản, giờ mở cửa, địa chỉ, khẩu hiệu, 'tiết kiệm X', 'chỉ X/người', số lượng khách ghi tay.",
+    "Tách MÓN khi lựa chọn đổi bản chất sản phẩm (đen/sữa, vị dâu/đào). Tách OFFER khi lựa chọn chỉ đổi cách phục vụ (size, nóng/đá, khẩu phần, số lượng)."
+  ],
+  "derived_note": "Không cần gán thẻ cho: số offer > 60 (V_DENSE, tự tính khi xuất), thông tin VAT (trường tax_note), thông tin cá nhân (trường pii_types), OOD (split = ood), món theo mùa/không phải đồ ăn (trường attributes, category)."
+}

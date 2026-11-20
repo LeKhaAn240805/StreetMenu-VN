@@ -1,0 +1,62 @@
+key: llm_sailor2_8b
+hf_id: sail/Sailor2-8B-Chat
+revision: 577d5b2745863cec11e1b2f1c92586a91cea446e
+family: Sailor2
+org: Sea AI Lab
+params_b: 8.9
+license: apache-2.0
+gated: false
+download_gb: 17.11
+role: llm
+groups:
+- G4
+- G5
+tier: full
+priority: 50
+backend: vllm
+text_only: true
+dtype: bfloat16
+keep_weights: false
+enabled: true
+note: ''
+vllm:
+  max_model_len: 16384
+  max_num_seqs: 16
+  gpu_memory_utilization: 0.9
+  trust_remote_code: false
+  enforce_eager: false
+  extra_args: []
+  env: {}
+autotune:
+  max_num_seqs:
+  - 16
+  - 8
+  - 4
+  - 2
+  - 1
+  max_model_len:
+  - 16384
+  - 12288
+  - 8192
+  mm_processor_kwargs: []
+  preemption_limit: 200
+thinking:
+  supported: false
+  default_on: false
+  'off': {}
+  'on': {}
+  strip:
+  - <think>
+  - </think>
+sampling: {}
+hf:
+  adapter: generic
+  model_class: AutoModelForImageTextToText
+  batch_size: 4
+  batch_ladder:
+  - 4
+  - 2
+  - 1
+  python: main
+  dtype: bfloat16
+mock: {}

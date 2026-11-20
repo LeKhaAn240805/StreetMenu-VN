@@ -1,0 +1,31 @@
+# Scoring configuration. tau is chosen on dev (smv score --tune-tau).
+# tau = 0.70 (14/11/2026, dev only, 3 models x P0/P1/P2): item F1 rises as tau falls, so "maximise F1" would pick the loosest
+# value; the choice instead uses price agreement of the name-matched pairs, binned by name similarity (outputs/scores/
+# tau_evidence.csv): at similarity >= 0.60 at least 80% of matched pairs share a price (chance level 20%), at 0.50-0.60 only 59%.
+# 0.70 sits inside that plateau with a margin; the paper reports tau 0.60 and 0.80 as sensitivity checks.
+tau: 0.70
+main: {name_mode: strict, price_rule: strict}
+inactive_pred_policy: ignore      # predicted items matching gold items that are not in the main set (item_status
+                                  # != active, or legibility == illegible; rule R4): ignore | fp
+dedupe_repeats: true              # rule R8: an item repeated verbatim in one image (same name, same prices) counts
+                                  # once, in gold and in the prediction, before matching. false = secondary check.
+repetition_min_count: 5           # an item name repeated more than this -> repetition flag
+magnitude_threshold: 0.9          # |log10(pred/gold)| >= this -> order-of-magnitude error
+inherited_sources: [section_header, global_header, column_header, bracket, merged_cell]
+spatial_tags: [S_DETACHED, S_LAYOUT]
+spatial_sources: [badge]
+variant_tags: [L_VARIANT]
+name_tags: [N_NORMALIZE, N_SECTION_COMPOSE]
+distractor_tags: [D_DISTRACTOR]
+bootstrap: {n: 10000, seed: 2027, alpha: 0.05}
+slices: [ccl, tag, tag_group, venue_tier, non_chain, dense, medium, lighting, angle, split]
+error_codes:
+  E1: "Perception: text or digits misread (raw_price/raw_name differ from the image)"
+  E2: "Currency scale: digits right, scale wrong (implicit thousands, dots, k suffix)"
+  E3: "Inherited price not applied (section/global/column header, bracket, merged cell)"
+  E4: "Variant: options or sizes mis-assigned, missing or merged"
+  E5: "Spatial association: price paired with the wrong item"
+  E6: "Name normalisation or section composition wrong"
+  E7: "Hallucination: invented item or price, description/distractor output as an item"
+  E8: "Omission: item or offer missing"
+  E0: "Format: invalid JSON, truncation or repetition"

@@ -1,0 +1,352 @@
+﻿file_name,item_id,field,before,after,rule
+14.jpg,,tags,"[""D_DISTRACTOR"", ""N_FOREIGN"", ""N_NORMALIZE"", ""P_FORMAT""]","[""P_FORMAT"", ""P_UNIT_BUNDLE"", ""N_NORMALIZE"", ""N_FOREIGN"", ""D_DISTRACTOR""]",auto:retag_from_fields
+17.jpg,,tags,"[""D_DISTRACTOR"", ""L_COMBO_SET"", ""L_ITEM_SPLIT"", ""N_FOREIGN"", ""P_FORMAT"", ""P_PROMO"", ""S_LAYOUT"", ""V_DAMAGE""]","[""P_FORMAT"", ""P_UNIT_BUNDLE"", ""P_PROMO"", ""N_FOREIGN"", ""L_COMBO_SET"", ""L_ITEM_SPLIT"", ""S_LAYOUT"", ""V_DAMAGE"", ""D_DISTRACTOR""]",auto:retag_from_fields
+20.jpg,,tags,"[""D_DISTRACTOR"", ""L_COMBO_SET"", ""N_FOREIGN"", ""N_NORMALIZE"", ""P_FORMAT"", ""S_DETACHED"", ""S_LAYOUT"", ""V_DAMAGE""]","[""P_FORMAT"", ""P_UNIT_BUNDLE"", ""N_NORMALIZE"", ""N_FOREIGN"", ""L_COMBO_SET"", ""S_DETACHED"", ""S_LAYOUT"", ""V_DAMAGE"", ""D_DISTRACTOR""]",auto:retag_from_fields
+33.jpg,35,raw_price,"""35 - 100K""","""100K""",manual:raw_price_is_price_token_only
+33.jpg,36,raw_price,"""39 - 110K""","""110K""",manual:raw_price_is_price_token_only
+33.jpg,,tags,"[""D_DISTRACTOR"", ""L_COMBO_SET"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""P_FORMAT""]","[""P_FORMAT"", ""P_UNIT_BUNDLE"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""L_COMBO_SET"", ""D_DISTRACTOR""]",auto:retag_from_fields
+35.jpg,,ccl,4,2,auto:ccl_rule_v3.1
+4_heic.jpg,,*strings*,2,"""NFC+trim""",auto:string_normalize
+4_heic.jpg,3,ambig_reason,"""price_missing_or_misaligned""","""""",auto:item_ambiguous_follows_offers
+4_heic.jpg,,tags,"[""N_FOREIGN"", ""N_NORMALIZE"", ""P_FORMAT"", ""P_MISSING"", ""P_MULTI_UNLABELED""]","[""P_FORMAT"", ""P_MULTI_UNLABELED"", ""P_MISSING"", ""N_NORMALIZE"", ""N_FOREIGN"", ""L_ADDON""]",auto:retag_from_fields
+6.jpg,,tags,"[""L_VARIANT"", ""N_FOREIGN"", ""N_NORMALIZE"", ""P_FORMAT"", ""V_QUALITY""]","[""P_FORMAT"", ""P_UNIT_BUNDLE"", ""N_NORMALIZE"", ""N_FOREIGN"", ""L_VARIANT"", ""V_QUALITY""]",auto:retag_from_fields
+C98E0307-474A-4235-BD45-FB925A8E569B.jpg,,*strings*,59,"""NFC+trim""",auto:string_normalize
+C98E0307-474A-4235-BD45-FB925A8E569B.jpg,24,ambig_reason,"""variant_label_unknown""","""""",auto:item_ambiguous_follows_offers
+FullSizeRender_11.jpg,10,ambiguous,false,true,R4:illegible_item
+FullSizeRender_11.jpg,10,ambig_reason,"""""","""occluded_char""",R4:illegible_item
+FullSizeRender_11.jpg,10,ambiguous,false,true,R4:illegible_item
+FullSizeRender_11.jpg,11,ambiguous,false,true,R4:illegible_item
+FullSizeRender_11.jpg,11,ambig_reason,"""""","""occluded_char""",R4:illegible_item
+FullSizeRender_11.jpg,11,ambiguous,false,true,R4:illegible_item
+FullSizeRender_11.jpg,,ccl,2,4,auto:ccl_rule_v3.1
+FullSizeRender_2.jpg,,tags,"[""D_DISTRACTOR"", ""L_COMBO_SET"", ""N_FOREIGN"", ""N_NORMALIZE"", ""P_FORMAT"", ""P_INHERITED"", ""P_MISSING"", ""P_UNIT_BUNDLE""]","[""P_FORMAT"", ""P_INHERITED"", ""P_UNIT_BUNDLE"", ""N_NORMALIZE"", ""N_FOREIGN"", ""L_COMBO_SET"", ""D_DISTRACTOR""]",auto:retag_from_fields
+FullSizeRender_4.jpg,,tags,"[""L_VARIANT"", ""P_FORMAT"", ""V_QUALITY""]","[""P_FORMAT"", ""P_UNIT_BUNDLE"", ""L_VARIANT"", ""V_QUALITY""]",auto:retag_from_fields
+FullSizeRender_5.jpg,1,ambig_reason,"""occluded_char""","""""",auto:item_ambiguous_follows_offers
+FullSizeRender_5.jpg,3,ambig_reason,"""occluded_char""","""""",auto:item_ambiguous_follows_offers
+FullSizeRender_7.jpg,,tags,"[""P_FORMAT"", ""P_MISSING"", ""P_MULTI_UNLABELED""]","[""P_FORMAT"", ""P_MULTI_UNLABELED""]",auto:retag_from_fields
+IMG_1341.jpg,,tags,"[""L_COMBO_SET"", ""L_ITEM_SPLIT"", ""L_VARIANT"", ""N_FOREIGN"", ""N_NORMALIZE"", ""P_FORMAT"", ""P_HANDWRITTEN_OVERRIDE"", ""P_INHERITED"", ""S_LAYOUT"", ""V_DAMAGE"", ""V_HANDWRITING"", ""V_QUALITY""]","[""P_FORMAT"", ""P_INHERITED"", ""P_UNIT_BUNDLE"", ""N_NORMALIZE"", ""N_FOREIGN"", ""L_VARIANT"", ""L_COMBO_SET"", ""L_ITEM_SPLIT"", ""S_LAYOUT"", ""V_HANDWRITING"", ""V_DAMAGE"", ""V_QUALITY""]",auto:retag_from_fields
+IMG_1343.jpg,,tags,"[""D_DISTRACTOR"", ""L_ADDON"", ""P_FORMAT"", ""P_HANDWRITTEN_OVERRIDE"", ""P_UNIT_BUNDLE"", ""S_DETACHED"", ""S_LAYOUT"", ""V_GEOMETRY"", ""V_HANDWRITING""]","[""P_FORMAT"", ""P_UNIT_BUNDLE"", ""L_ADDON"", ""S_DETACHED"", ""S_LAYOUT"", ""V_HANDWRITING"", ""V_GEOMETRY"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_1347.jpg,10,ambig_reason,"""occluded_char""","""""",auto:item_ambiguous_follows_offers
+IMG_1355.jpg,,*strings*,1,"""NFC+trim""",auto:string_normalize
+IMG_1355.jpg,18,offers,1,2,manual:golden_rule_portion_is_offer
+IMG_1355.jpg,33,*item*,"""Bún đậu combo 3 người""","""merged into item 18""",manual:golden_rule_portion_is_offer
+IMG_1356.jpg,,tags,"[""L_VARIANT"", ""P_FORMAT"", ""P_MULTI_UNLABELED"", ""V_QUALITY""]","[""P_FORMAT"", ""P_MULTI_UNLABELED"", ""V_QUALITY""]",auto:retag_from_fields
+IMG_1361.jpg,,ccl,4,3,auto:ccl_rule_v3.1
+IMG_1369.jpg,,*strings*,1,"""NFC+trim""",auto:string_normalize
+IMG_1369.jpg,,tags,"[""L_ADDON"", ""L_ITEM_SPLIT"", ""L_VARIANT"", ""N_FOREIGN"", ""N_NORMALIZE"", ""P_FORMAT"", ""P_INHERITED"", ""S_LAYOUT"", ""V_DAMAGE"", ""V_GEOMETRY"", ""V_QUALITY""]","[""P_FORMAT"", ""P_INHERITED"", ""P_UNIT_BUNDLE"", ""N_NORMALIZE"", ""N_FOREIGN"", ""L_VARIANT"", ""L_ADDON"", ""L_ITEM_SPLIT"", ""S_LAYOUT"", ""V_DAMAGE"", ""V_QUALITY"", ""V_GEOMETRY""]",auto:retag_from_fields
+IMG_1397.jpg,27,price_kind,"""unit_price""","""fixed""",manual:no_unit_printed
+IMG_1397.jpg,29,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,29,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,29,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,29,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,30,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,30,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,30,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,30,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,31,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,31,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,31,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,31,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,32,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,32,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,32,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,32,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,33,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,33,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,33,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,34,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,34,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,34,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,34,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,35,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,35,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,35,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,35,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,36,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,36,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,36,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,36,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,37,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,37,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,37,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,37,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,38,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,38,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,38,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,38,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,39,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,39,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,39,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,39,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,40,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,40,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,40,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,40,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,41,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,41,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,41,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,41,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,42,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,42,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,42,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,42,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,43,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,43,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,43,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,43,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,44,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,44,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,44,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,44,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,45,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,45,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,45,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,45,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,46,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,46,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,46,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,46,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,47,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,47,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,47,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,47,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,48,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,48,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,48,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,48,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,49,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,49,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,49,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,49,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,50,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,50,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,50,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,50,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,51,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,51,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,51,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,51,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,52,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,52,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1397.jpg,52,unit,"""ly""","""""",manual:serving_unit_ly_not_printed
+IMG_1397.jpg,52,unit_qty,1,null,manual:serving_unit_ly_not_printed
+IMG_1452.jpg,7,ambig_reason,"""price_missing_or_misaligned""","""""",auto:ambig_reason_only_when_ambiguous
+IMG_1452.jpg,7,ambig_reason,"""price_missing_or_misaligned""","""""",auto:item_ambiguous_follows_offers
+IMG_1452.jpg,10,ambig_reason,"""price_missing_or_misaligned""","""""",auto:item_ambiguous_follows_offers
+IMG_1456.jpg,,tags,"[""D_DISTRACTOR"", ""L_ITEM_SPLIT"", ""N_NORMALIZE"", ""P_FORMAT"", ""P_INHERITED""]","[""P_FORMAT"", ""P_INHERITED"", ""P_MISSING"", ""N_NORMALIZE"", ""L_ITEM_SPLIT"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_1464.jpg,19,price_kind,"""unit_price""","""fixed""",auto:unit_price_needs_unit
+IMG_1464.jpg,,tags,"[""L_ADDON"", ""L_COMBO_SET"", ""L_ITEM_SPLIT"", ""N_NORMALIZE"", ""P_FORMAT"", ""P_INHERITED"", ""P_MULTI_UNLABELED"", ""S_LAYOUT""]","[""P_FORMAT"", ""P_INHERITED"", ""P_MULTI_UNLABELED"", ""P_UNIT_BUNDLE"", ""N_NORMALIZE"", ""L_COMBO_SET"", ""L_ADDON"", ""L_ITEM_SPLIT"", ""S_LAYOUT""]",auto:retag_from_fields
+IMG_1472.jpg,,tags,"[""N_FOREIGN"", ""P_FORMAT""]","[""P_FORMAT"", ""P_UNIT_BUNDLE"", ""N_FOREIGN"", ""L_COMBO_SET""]",auto:retag_from_fields
+IMG_1472.jpg,,ccl,1,3,auto:ccl_rule_v3.1
+IMG_1473.jpg,,tags,"[""L_COMBO_SET"", ""N_FOREIGN"", ""P_FORMAT"", ""P_INHERITED"", ""P_PROMO"", ""P_UNIT_BUNDLE""]","[""P_FORMAT"", ""P_UNIT_BUNDLE"", ""P_PROMO"", ""N_FOREIGN"", ""L_COMBO_SET""]",auto:retag_from_fields
+IMG_1481.jpg,6,ambig_reason,"""scope_of_shared_price""","""""",auto:item_ambiguous_follows_offers
+IMG_1486.jpg,3,raw_price,"""45.000đ/dĩa""","""45.000đ/dĩa - 90.000đ/dĩa""",manual:R1_range_raw_full_string
+IMG_1486.jpg,4,raw_price,"""45.000đ/dĩa""","""45.000đ/dĩa - 90.000đ/dĩa""",manual:R1_range_raw_full_string
+IMG_1486.jpg,5,raw_price,"""90.000đ/dĩa""","""90.000đ/dĩa - 180.000đ/dĩa""",manual:R1_range_raw_full_string
+IMG_1486.jpg,9,raw_price,"""60.000đ/dĩa""","""60.000đ/dĩa - 120.000đ/dĩa""",manual:R1_range_raw_full_string
+IMG_1486.jpg,15,raw_price,"""60.000đ/dĩa""","""60.000đ/dĩa - 120.000đ/dĩa""",manual:R1_range_raw_full_string
+IMG_1486.jpg,3,ambig_reason,"""variant_label_unknown""","""""",auto:item_ambiguous_follows_offers
+IMG_1486.jpg,4,ambig_reason,"""variant_label_unknown""","""""",auto:item_ambiguous_follows_offers
+IMG_1486.jpg,5,ambig_reason,"""variant_label_unknown""","""""",auto:item_ambiguous_follows_offers
+IMG_1486.jpg,8,ambig_reason,"""variant_label_unknown""","""""",auto:item_ambiguous_follows_offers
+IMG_1486.jpg,9,ambig_reason,"""variant_label_unknown""","""""",auto:item_ambiguous_follows_offers
+IMG_1486.jpg,15,ambig_reason,"""variant_label_unknown""","""""",auto:item_ambiguous_follows_offers
+IMG_1486.jpg,,price_unit_default,"""vnd""","""k_vnd""",auto:bare_numbers_are_thousands
+IMG_1486.jpg,,tags,"[""N_NORMALIZE"", ""P_FORMAT"", ""P_MULTI_UNLABELED"", ""P_UNIT_BUNDLE"", ""S_DETACHED"", ""V_DAMAGE"", ""V_QUALITY""]","[""P_FORMAT"", ""P_MULTI_UNLABELED"", ""P_UNIT_BUNDLE"", ""N_NORMALIZE"", ""L_ADDON"", ""S_DETACHED"", ""V_DAMAGE"", ""V_QUALITY""]",auto:retag_from_fields
+IMG_1487.jpg,,tags,"[""L_COMBO_SET"", ""N_FOREIGN"", ""N_NORMALIZE"", ""P_FORMAT"", ""P_MISSING"", ""V_HANDWRITING"", ""V_QUALITY""]","[""P_FORMAT"", ""N_NORMALIZE"", ""N_FOREIGN"", ""L_COMBO_SET"", ""V_HANDWRITING"", ""V_QUALITY""]",auto:retag_from_fields
+IMG_1492.jpg,1,evidence,"""handwritten""","""overwritten""",R5:handwritten_change_is_override
+IMG_1492.jpg,2,evidence,"""handwritten""","""overwritten""",R5:handwritten_change_is_override
+IMG_1492.jpg,3,evidence,"""handwritten""","""overwritten""",R5:handwritten_change_is_override
+IMG_1492.jpg,4,evidence,"""handwritten""","""overwritten""",R5:handwritten_change_is_override
+IMG_1492.jpg,5,evidence,"""handwritten""","""overwritten""",R5:handwritten_change_is_override
+IMG_1492.jpg,6,evidence,"""handwritten""","""overwritten""",R5:handwritten_change_is_override
+IMG_1492.jpg,7,evidence,"""handwritten""","""overwritten""",R5:handwritten_change_is_override
+IMG_1492.jpg,8,evidence,"""handwritten""","""overwritten""",R5:handwritten_change_is_override
+IMG_1492.jpg,9,evidence,"""handwritten""","""overwritten""",R5:handwritten_change_is_override
+IMG_1492.jpg,11,evidence,"""handwritten""","""overwritten""",R5:handwritten_change_is_override
+IMG_1492.jpg,13,evidence,"""handwritten""","""overwritten""",R5:handwritten_change_is_override
+IMG_1492.jpg,14,evidence,"""handwritten""","""overwritten""",R5:handwritten_change_is_override
+IMG_1492.jpg,15,evidence,"""handwritten""","""overwritten""",R5:handwritten_change_is_override
+IMG_1492.jpg,,tags,"[""L_ADDON"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""P_FORMAT"", ""P_HANDWRITTEN_OVERRIDE"", ""P_IMPLICIT_K"", ""P_INHERITED"", ""P_PROMO"", ""V_HANDWRITING"", ""V_QUALITY""]","[""P_IMPLICIT_K"", ""P_FORMAT"", ""P_INHERITED"", ""P_HANDWRITTEN_OVERRIDE"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""L_ADDON"", ""V_HANDWRITING"", ""V_QUALITY""]",auto:retag_from_fields
+IMG_1493.jpg,10,is_add_on,false,true,manual:R2_upcharge_line_is_addon
+IMG_1493.jpg,12,evidence,"""handwritten""","""overwritten""",R5:handwritten_change_is_override
+IMG_1493.jpg,,tags,"[""L_ADDON"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""P_FORMAT"", ""P_HANDWRITTEN_OVERRIDE"", ""P_INHERITED"", ""P_PROMO"", ""V_HANDWRITING"", ""V_QUALITY""]","[""P_FORMAT"", ""P_INHERITED"", ""P_HANDWRITTEN_OVERRIDE"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""L_ADDON"", ""V_HANDWRITING"", ""V_QUALITY""]",auto:retag_from_fields
+IMG_1495.jpg,2,evidence,"""handwritten""","""overwritten""",R5:handwritten_change_is_override
+IMG_1495.jpg,,tags,"[""D_DISTRACTOR"", ""L_ADDON"", ""N_FOREIGN"", ""N_NORMALIZE"", ""P_FORMAT"", ""P_HANDWRITTEN_OVERRIDE"", ""P_IMPLICIT_K"", ""P_PROMO"", ""V_DAMAGE"", ""V_HANDWRITING"", ""V_QUALITY""]","[""P_IMPLICIT_K"", ""P_FORMAT"", ""P_HANDWRITTEN_OVERRIDE"", ""N_NORMALIZE"", ""N_FOREIGN"", ""L_ADDON"", ""V_HANDWRITING"", ""V_DAMAGE"", ""V_QUALITY"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_1497.jpg,21,ambig_reason,"""other""","""""",auto:item_ambiguous_follows_offers
+IMG_1497.jpg,,tags,"[""D_DISTRACTOR"", ""L_VARIANT"", ""N_FOREIGN"", ""N_SECTION_COMPOSE"", ""P_FORMAT"", ""P_IMPLICIT_K"", ""P_INHERITED"", ""P_MISSING"", ""P_UNIT_BUNDLE"", ""S_LAYOUT"", ""V_DAMAGE"", ""V_HANDWRITING"", ""V_QUALITY""]","[""P_IMPLICIT_K"", ""P_FORMAT"", ""P_INHERITED"", ""P_UNIT_BUNDLE"", ""N_SECTION_COMPOSE"", ""N_FOREIGN"", ""S_LAYOUT"", ""V_HANDWRITING"", ""V_DAMAGE"", ""V_QUALITY"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_1503.jpg,,price_unit_default,"""vnd""","""k_vnd""",manual:bare_numbers_are_thousands
+IMG_1505.jpg,,*strings*,1,"""NFC+trim""",auto:string_normalize
+IMG_1510.jpg,,tags,"[""D_DISTRACTOR"", ""L_COMBO_SET"", ""N_FOREIGN"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""P_MISSING""]","[""P_UNIT_BUNDLE"", ""P_MISSING"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""N_FOREIGN"", ""L_COMBO_SET"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_1511.jpg,35,ambig_reason,"""occluded_char""","""""",auto:item_ambiguous_follows_offers
+IMG_1537.jpg,3,ambig_reason,"""price_missing_or_misaligned""","""""",auto:item_ambiguous_follows_offers
+IMG_1568.jpg,16,ambig_reason,"""burnt_digits""","""""",auto:item_ambiguous_follows_offers
+IMG_1570.jpg,,tags,"[""L_COMBO_SET"", ""N_FOREIGN"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""P_FORMAT"", ""P_INHERITED"", ""S_DETACHED"", ""S_LAYOUT"", ""V_HANDWRITING"", ""V_QUALITY""]","[""P_FORMAT"", ""P_INHERITED"", ""P_UNIT_BUNDLE"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""N_FOREIGN"", ""L_COMBO_SET"", ""S_DETACHED"", ""S_LAYOUT"", ""V_HANDWRITING"", ""V_QUALITY""]",auto:retag_from_fields
+IMG_1574.jpg,,tags,"[""D_DISTRACTOR"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""P_FORMAT"", ""P_HANDWRITTEN_OVERRIDE"", ""P_IMPLICIT_K"", ""P_MULTI_UNLABELED"", ""V_DAMAGE"", ""V_QUALITY""]","[""P_IMPLICIT_K"", ""P_FORMAT"", ""P_MULTI_UNLABELED"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""V_DAMAGE"", ""V_QUALITY"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_1574.jpg,,ccl,4,3,auto:ccl_rule_v3.1
+IMG_1579.jpg,,tags,"[""D_DISTRACTOR"", ""L_ADDON"", ""N_FOREIGN"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""P_FORMAT"", ""S_DETACHED"", ""S_LAYOUT""]","[""P_FORMAT"", ""P_UNIT_BUNDLE"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""N_FOREIGN"", ""L_ADDON"", ""S_DETACHED"", ""S_LAYOUT"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_1585.jpg,1,ambig_reason,"""scope_of_shared_price""","""""",auto:item_ambiguous_follows_offers
+IMG_1585.jpg,2,ambig_reason,"""scope_of_shared_price""","""""",auto:item_ambiguous_follows_offers
+IMG_1585.jpg,3,ambig_reason,"""scope_of_shared_price""","""""",auto:item_ambiguous_follows_offers
+IMG_1585.jpg,4,ambig_reason,"""scope_of_shared_price""","""""",auto:item_ambiguous_follows_offers
+IMG_1586.jpg,,*strings*,4,"""NFC+trim""",auto:string_normalize
+IMG_1586.jpg,42,ambig_reason,"""burnt_digits""","""""",auto:item_ambiguous_follows_offers
+IMG_1591.jpg,,ccl,4,3,auto:ccl_rule_v3.1
+IMG_1592.jpg,5,ambig_reason,"""occluded_char""","""""",auto:item_ambiguous_follows_offers
+IMG_1592.jpg,6,ambig_reason,"""occluded_char""","""""",auto:item_ambiguous_follows_offers
+IMG_1600.jpg,1,ambig_reason,"""unknown_unit""","""""",auto:item_ambiguous_follows_offers
+IMG_1601.jpg,,tags,"[""D_DISTRACTOR"", ""L_ITEM_SPLIT"", ""N_FOREIGN"", ""P_FORMAT"", ""P_INHERITED"", ""S_DETACHED"", ""V_DAMAGE""]","[""P_FORMAT"", ""N_FOREIGN"", ""L_ITEM_SPLIT"", ""S_DETACHED"", ""V_DAMAGE"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_1605.jpg,10,ambig_reason,"""occluded_char""","""""",auto:item_ambiguous_follows_offers
+IMG_1609.jpg,,tags,"[""D_DISTRACTOR"", ""N_FOREIGN"", ""N_NORMALIZE"", ""P_IMPLICIT_K"", ""P_INHERITED"", ""P_UNIT_BUNDLE""]","[""P_IMPLICIT_K"", ""P_UNIT_BUNDLE"", ""N_NORMALIZE"", ""N_FOREIGN"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_1614.jpg,,*strings*,1,"""NFC+trim""",auto:string_normalize
+IMG_1614.jpg,,tags,"[""D_DISTRACTOR"", ""L_COMBO_SET"", ""N_FOREIGN"", ""N_NORMALIZE"", ""P_FORMAT"", ""P_MULTI_UNLABELED"", ""P_PROMO"", ""S_LAYOUT""]","[""P_FORMAT"", ""P_MULTI_UNLABELED"", ""P_UNIT_BUNDLE"", ""P_PROMO"", ""N_NORMALIZE"", ""N_FOREIGN"", ""L_VARIANT"", ""L_COMBO_SET"", ""S_LAYOUT"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_1615.jpg,,*strings*,2,"""NFC+trim""",auto:string_normalize
+IMG_1616.jpg,17,norm_name,"""thập cẩm""","""phở thập cẩm""",manual:section_compose_like_siblings
+IMG_1616.jpg,19,norm_name,"""đùi gà lớn""","""phở đùi gà lớn""",manual:section_compose_like_siblings
+IMG_1617.jpg,,tags,"[""D_DISTRACTOR"", ""L_COMBO_SET"", ""L_VARIANT"", ""N_NORMALIZE"", ""P_FORMAT"", ""P_INHERITED"", ""S_DETACHED"", ""S_LAYOUT""]","[""P_FORMAT"", ""P_INHERITED"", ""P_UNIT_BUNDLE"", ""N_NORMALIZE"", ""L_VARIANT"", ""L_COMBO_SET"", ""S_DETACHED"", ""S_LAYOUT"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_1618.jpg,,tags,"[""D_DISTRACTOR"", ""L_ADDON"", ""L_VARIANT"", ""N_FOREIGN"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""P_IMPLICIT_K"", ""P_INHERITED"", ""P_MISSING"", ""S_DETACHED"", ""V_DAMAGE""]","[""P_IMPLICIT_K"", ""P_INHERITED"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""N_FOREIGN"", ""L_VARIANT"", ""L_ADDON"", ""S_DETACHED"", ""V_DAMAGE"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_1620.jpg,17,ambig_reason,"""occluded_char""","""""",auto:item_ambiguous_follows_offers
+IMG_1620.jpg,20,ambig_reason,"""occluded_char""","""""",auto:item_ambiguous_follows_offers
+IMG_1620.jpg,21,ambig_reason,"""occluded_char""","""""",auto:item_ambiguous_follows_offers
+IMG_1643.jpg,2,ambig_reason,"""variant_label_unknown""","""""",auto:item_ambiguous_follows_offers
+IMG_1647.jpg,,tags,"[""L_ADDON"", ""L_VARIANT"", ""N_FOREIGN"", ""P_FORMAT"", ""P_INHERITED"", ""S_LAYOUT""]","[""P_FORMAT"", ""P_INHERITED"", ""N_FOREIGN"", ""L_ADDON"", ""S_LAYOUT""]",auto:retag_from_fields
+IMG_1651.jpg,11,ambig_reason,"""occluded_char""","""""",auto:item_ambiguous_follows_offers
+IMG_1655.jpg,,tags,"[""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""P_FORMAT"", ""P_INHERITED"", ""P_MISSING"", ""S_DETACHED"", ""S_LAYOUT"", ""V_GEOMETRY"", ""V_HANDWRITING""]","[""P_FORMAT"", ""P_MISSING"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""S_DETACHED"", ""S_LAYOUT"", ""V_HANDWRITING"", ""V_GEOMETRY""]",auto:retag_from_fields
+IMG_1660.jpg,,tags,"[""D_DISTRACTOR"", ""P_INHERITED"", ""P_MISSING"", ""P_UNIT_BUNDLE"", ""V_QUALITY""]","[""P_UNIT_BUNDLE"", ""P_MISSING"", ""V_QUALITY"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_1673.jpg,17,ambiguous,false,true,R4:illegible_item
+IMG_1673.jpg,17,ambig_reason,"""""","""occluded_char""",R4:illegible_item
+IMG_1673.jpg,17,ambiguous,false,true,R4:illegible_item
+IMG_1673.jpg,17,ambig_reason,"""""","""occluded_char""",auto:item_ambiguous_follows_offers
+IMG_1673.jpg,18,ambiguous,false,true,R4:illegible_item
+IMG_1673.jpg,18,ambig_reason,"""""","""occluded_char""",R4:illegible_item
+IMG_1673.jpg,18,ambiguous,false,true,R4:illegible_item
+IMG_1673.jpg,18,ambig_reason,"""""","""occluded_char""",auto:item_ambiguous_follows_offers
+IMG_1676.jpg,1,ambig_reason,"""occluded_char""","""""",auto:item_ambiguous_follows_offers
+IMG_1679.jpg,,tags,"[""N_FOREIGN"", ""P_FORMAT"", ""P_INHERITED"", ""P_UNIT_BUNDLE""]","[""P_FORMAT"", ""P_UNIT_BUNDLE"", ""N_FOREIGN""]",auto:retag_from_fields
+IMG_1684.jpg,6,ambig_reason,"""occluded_char""","""""",auto:item_ambiguous_follows_offers
+IMG_1694.jpg,,ccl,4,1,auto:ccl_rule_v3.1
+IMG_1714.jpg,26,ambig_reason,"""overwritten_digit""","""""",auto:item_ambiguous_follows_offers
+IMG_1742.jpg,,ccl,4,1,auto:ccl_rule_v3.1
+IMG_1760.jpg,6,ambig_reason,"""occluded_char""","""""",auto:item_ambiguous_follows_offers
+IMG_1760.jpg,7,ambig_reason,"""occluded_char""","""""",auto:item_ambiguous_follows_offers
+IMG_1773.jpg,,ccl,4,3,auto:ccl_rule_v3.1
+IMG_1774.jpg,27,ambig_reason,"""occluded_char""","""""",auto:item_ambiguous_follows_offers
+IMG_1822.jpg,,tags,"[""D_DISTRACTOR"", ""P_FORMAT"", ""P_MISSING"", ""S_DETACHED""]","[""P_FORMAT"", ""S_DETACHED"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_1828.jpg,5,ambig_reason,"""occluded_char""","""""",auto:item_ambiguous_follows_offers
+IMG_1834.jpg,,tags,"[""N_SECTION_COMPOSE"", ""P_FORMAT"", ""P_MISSING"", ""S_DETACHED"", ""V_DAMAGE"", ""V_QUALITY""]","[""P_FORMAT"", ""N_SECTION_COMPOSE"", ""S_DETACHED"", ""V_DAMAGE"", ""V_QUALITY""]",auto:retag_from_fields
+IMG_1864.jpg,2,ambig_reason,"""scope_of_shared_price""","""""",auto:item_ambiguous_follows_offers
+IMG_1864.jpg,,tags,"[""P_FORMAT"", ""P_INHERITED"", ""V_DAMAGE"", ""V_QUALITY""]","[""P_FORMAT"", ""P_INHERITED"", ""P_MISSING"", ""V_DAMAGE"", ""V_QUALITY""]",auto:retag_from_fields
+IMG_1869.jpg,,*strings*,6,"""NFC+trim""",auto:string_normalize
+IMG_1869.jpg,,tags,"[""L_VARIANT"", ""N_NORMALIZE"", ""P_FORMAT"", ""P_MISSING""]","[""P_FORMAT"", ""N_NORMALIZE"", ""L_VARIANT""]",auto:retag_from_fields
+IMG_1871.jpg,1,ambig_reason,"""scope_of_shared_price""","""""",auto:item_ambiguous_follows_offers
+IMG_1871.jpg,2,ambig_reason,"""scope_of_shared_price""","""""",auto:item_ambiguous_follows_offers
+IMG_1871.jpg,3,ambig_reason,"""scope_of_shared_price""","""""",auto:item_ambiguous_follows_offers
+IMG_1871.jpg,4,ambig_reason,"""scope_of_shared_price""","""""",auto:item_ambiguous_follows_offers
+IMG_1900.jpg,,tags,"[""P_FORMAT"", ""P_INHERITED"", ""P_MISSING""]","[""P_FORMAT"", ""P_INHERITED""]",auto:retag_from_fields
+IMG_1909.jpg,,tags,"[""L_ITEM_SPLIT"", ""N_NORMALIZE"", ""P_FORMAT"", ""P_HANDWRITTEN_OVERRIDE"", ""P_INHERITED"", ""P_MULTI_UNLABELED"", ""V_DAMAGE""]","[""P_FORMAT"", ""P_MULTI_UNLABELED"", ""N_NORMALIZE"", ""L_ITEM_SPLIT"", ""V_DAMAGE""]",auto:retag_from_fields
+IMG_1909.jpg,,ccl,4,3,auto:ccl_rule_v3.1
+IMG_1911.jpg,,tags,"[""L_COMBO_SET"", ""P_FORMAT"", ""P_INHERITED"", ""S_DETACHED"", ""V_DAMAGE""]","[""P_FORMAT"", ""L_COMBO_SET"", ""S_DETACHED"", ""V_DAMAGE""]",auto:retag_from_fields
+IMG_1943.jpg,1,ambig_reason,"""scope_of_shared_price""","""""",auto:item_ambiguous_follows_offers
+IMG_1943.jpg,2,ambig_reason,"""scope_of_shared_price""","""""",auto:item_ambiguous_follows_offers
+IMG_1983.jpg,21,ambig_reason,"""occluded_char""","""""",auto:item_ambiguous_follows_offers
+IMG_2060.jpg,32,ambig_reason,"""occluded_char""","""""",auto:item_ambiguous_follows_offers
+IMG_2060.jpg,,tags,"[""L_VARIANT"", ""N_FOREIGN"", ""N_NORMALIZE"", ""P_FORMAT"", ""V_DAMAGE"", ""V_QUALITY""]","[""P_FORMAT"", ""N_NORMALIZE"", ""N_FOREIGN"", ""V_DAMAGE"", ""V_QUALITY""]",auto:retag_from_fields
+IMG_2065.jpg,1,price_kind,"""fixed""","""unit_price""",manual:per_kg_price_digits_erased
+IMG_2065.jpg,1,unit,"""""","""kg""",manual:per_kg_price_digits_erased
+IMG_2065.jpg,1,unit_qty,null,1,manual:per_kg_price_digits_erased
+IMG_2069.jpg,,*strings*,1,"""NFC+trim""",auto:string_normalize
+IMG_2074.jpg,12,norm_name,"""""","""?? à""",manual:taped_over_keep_raw
+IMG_2074.jpg,12,ambiguous,false,true,R4:illegible_item
+IMG_2074.jpg,12,ambig_reason,"""""","""occluded_char""",R4:illegible_item
+IMG_2074.jpg,12,ambiguous,false,true,R4:illegible_item
+IMG_2074.jpg,,tags,"[""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""P_FORMAT"", ""P_MISSING"", ""V_DAMAGE""]","[""P_FORMAT"", ""P_MISSING"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""L_ADDON"", ""V_DAMAGE""]",auto:retag_from_fields
+IMG_2282.jpg,15,norm_name,"""trà đào""","""trà đé""",manual:do_not_guess_name_duplicate_of_tra_dao
+IMG_2282.jpg,15,alt_norm_names,"[""trà đé""]",[],manual:user_decision_tra_de
+IMG_2282.jpg,15,notes,"""""","""Menu in rõ 'Trà đé' (khối trà trái cây 18K). Giữ nguyên văn theo quyết định của chủ nhiệm đề tài; không chuẩn hoá thành 'trà đào' (đã có dòng riêng) hay 'trà đá'.""",manual:user_decision_tra_de
+IMG_2282.jpg,,notes,"""Giá chung 18K ở tiêu đề Trà trái cây. UP SIZE là phụ thu theo nhóm. F4 chỉ khẩu hiệu. Cuối ảnh có logo bị cắt.""","""Giá chung 18K ở tiêu đề Trà trái cây. UP SIZE là phụ thu theo nhóm. Khối 'F4 HÓT HÒN HỌT' là tiêu đề của 4 món, mỗi món 3 size M/L/XL (bản nháp bỏ sót, người kiểm đã bổ sung). Cuối ảnh có logo bị cắt.""",manual:stale_draft_note
+IMG_2284.jpg,,tags,"[""D_DISTRACTOR"", ""L_VARIANT"", ""P_FORMAT"", ""V_QUALITY""]","[""P_FORMAT"", ""V_QUALITY"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_2284.jpg,,ccl,3,1,auto:ccl_rule_v3.1
+IMG_2288.jpg,,tags,"[""N_FOREIGN"", ""N_NORMALIZE"", ""P_IMPLICIT_K"", ""S_DETACHED"", ""S_LAYOUT"", ""V_GEOMETRY"", ""V_QUALITY""]","[""P_IMPLICIT_K"", ""P_UNIT_BUNDLE"", ""N_NORMALIZE"", ""N_FOREIGN"", ""S_DETACHED"", ""S_LAYOUT"", ""V_QUALITY"", ""V_GEOMETRY""]",auto:retag_from_fields
+IMG_2297.jpg,14,norm_name,"""rươu vang trắng""","""rượu vang trắng""",manual:typo
+IMG_2297.jpg,3,ambig_reason,"""scope_of_shared_price""","""""",auto:item_ambiguous_follows_offers
+IMG_2297.jpg,9,price_kind,"""fixed""","""market""",auto:market_price
+IMG_2297.jpg,9,ambiguous,true,false,auto:market_price
+IMG_2297.jpg,9,ambiguous,true,false,auto:item_ambiguous_follows_offers
+IMG_2297.jpg,14,price_kind,"""fixed""","""market""",auto:market_price
+IMG_2297.jpg,14,ambiguous,true,false,auto:market_price
+IMG_2297.jpg,14,ambiguous,true,false,auto:item_ambiguous_follows_offers
+IMG_2297.jpg,,tags,"[""L_ITEM_SPLIT"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""P_FORMAT"", ""P_INHERITED"", ""P_MISSING"", ""P_UNIT_BUNDLE"", ""S_LAYOUT"", ""V_GEOMETRY"", ""V_QUALITY""]","[""P_FORMAT"", ""P_INHERITED"", ""P_UNIT_BUNDLE"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""L_ITEM_SPLIT"", ""S_LAYOUT"", ""V_QUALITY"", ""V_GEOMETRY""]",auto:retag_from_fields
+IMG_2299.jpg,,tags,"[""D_DISTRACTOR"", ""L_ADDON"", ""L_VARIANT"", ""N_FOREIGN"", ""N_NORMALIZE"", ""P_IMPLICIT_K"", ""P_INHERITED"", ""V_DAMAGE"", ""V_QUALITY""]","[""P_IMPLICIT_K"", ""P_INHERITED"", ""P_UNIT_BUNDLE"", ""N_NORMALIZE"", ""N_FOREIGN"", ""L_VARIANT"", ""L_ADDON"", ""V_DAMAGE"", ""V_QUALITY"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_2299.jpg,,ccl,4,3,auto:ccl_rule_v3.1
+IMG_2301.jpg,6,price_kind,"""bundle""","""range""",manual:R1_two_bounds_is_range
+IMG_2302.jpg,,tags,"[""L_ADDON"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""P_FORMAT"", ""P_HANDWRITTEN_OVERRIDE"", ""P_IMPLICIT_K"", ""S_LAYOUT"", ""V_DAMAGE"", ""V_HANDWRITING""]","[""P_IMPLICIT_K"", ""P_FORMAT"", ""P_UNIT_BUNDLE"", ""P_HANDWRITTEN_OVERRIDE"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""L_ADDON"", ""S_LAYOUT"", ""V_HANDWRITING"", ""V_DAMAGE""]",auto:retag_from_fields
+IMG_2303.jpg,,tags,"[""L_ADDON"", ""L_ITEM_SPLIT"", ""L_VARIANT"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""P_FORMAT"", ""P_INHERITED"", ""S_LAYOUT"", ""V_DAMAGE""]","[""P_FORMAT"", ""P_INHERITED"", ""P_UNIT_BUNDLE"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""L_VARIANT"", ""L_ADDON"", ""L_ITEM_SPLIT"", ""S_LAYOUT"", ""V_DAMAGE""]",auto:retag_from_fields
+IMG_2307.jpg,,tags,"[""D_DISTRACTOR"", ""L_COMBO_SET"", ""N_NORMALIZE"", ""P_FORMAT"", ""V_QUALITY""]","[""P_FORMAT"", ""P_UNIT_BUNDLE"", ""N_NORMALIZE"", ""L_COMBO_SET"", ""V_QUALITY"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_2315.jpg,,tags,"[""L_ADDON"", ""L_ITEM_SPLIT"", ""N_NORMALIZE"", ""P_FORMAT"", ""P_HANDWRITTEN_OVERRIDE"", ""P_MULTI_UNLABELED"", ""V_DAMAGE"", ""V_HANDWRITING""]","[""P_FORMAT"", ""P_MULTI_UNLABELED"", ""N_NORMALIZE"", ""L_ADDON"", ""L_ITEM_SPLIT"", ""V_HANDWRITING"", ""V_DAMAGE""]",auto:retag_from_fields
+IMG_2317.jpg,,*strings*,9,"""NFC+trim""",auto:string_normalize
+IMG_2317.jpg,7,raw_name,"""KHÔNG ĐỌC ĐƯỢC""","""???""",manual:R4_illegible_name
+IMG_2317.jpg,7,norm_name,"""""","""???""",manual:R4_illegible_name
+IMG_2317.jpg,7,legibility,"""clear""","""illegible""",manual:R4_illegible_name
+IMG_2317.jpg,7,ambiguous,false,true,manual:R4_illegible_name
+IMG_2317.jpg,7,ambiguous,false,true,manual:R4_illegible_name
+IMG_2317.jpg,7,ambig_reason,"""""","""occluded_char""",manual:R4_illegible_name
+IMG_2317.jpg,,tags,"[""D_DISTRACTOR"", ""P_FORMAT"", ""P_INHERITED"", ""P_UNIT_BUNDLE"", ""S_DETACHED"", ""S_LAYOUT"", ""V_DAMAGE"", ""V_QUALITY""]","[""P_FORMAT"", ""P_UNIT_BUNDLE"", ""S_DETACHED"", ""S_LAYOUT"", ""V_DAMAGE"", ""V_QUALITY"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_2318.jpg,,tags,"[""D_DISTRACTOR"", ""L_ADDON"", ""N_NORMALIZE"", ""P_IMPLICIT_K"", ""P_INHERITED"", ""S_DETACHED"", ""S_LAYOUT"", ""V_DAMAGE""]","[""P_IMPLICIT_K"", ""P_INHERITED"", ""P_UNIT_BUNDLE"", ""N_NORMALIZE"", ""L_ADDON"", ""S_DETACHED"", ""S_LAYOUT"", ""V_DAMAGE"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_2320.jpg,1,ambig_reason,"""variant_label_unknown""","""""",auto:item_ambiguous_follows_offers
+IMG_2321.jpg,,tags,"[""L_VARIANT"", ""N_FOREIGN"", ""N_NORMALIZE"", ""P_FORMAT"", ""S_DETACHED"", ""S_LAYOUT"", ""V_HANDWRITING""]","[""P_FORMAT"", ""N_NORMALIZE"", ""N_FOREIGN"", ""S_DETACHED"", ""S_LAYOUT"", ""V_HANDWRITING""]",auto:retag_from_fields
+IMG_2326.jpg,11,offers,1,2,manual:golden_rule_size_is_offer
+IMG_2326.jpg,17,*item*,"""Xoài lắc size lớn""","""merged into item 11""",manual:golden_rule_size_is_offer
+IMG_2326.jpg,16,price_kind,"""fixed""","""market""",auto:market_price
+IMG_2326.jpg,16,ambiguous,true,false,auto:market_price
+IMG_2326.jpg,16,ambiguous,true,false,auto:item_ambiguous_follows_offers
+IMG_2326.jpg,,tags,"[""L_VARIANT"", ""N_NORMALIZE"", ""P_FORMAT"", ""P_MISSING"", ""V_DAMAGE"", ""V_QUALITY""]","[""P_FORMAT"", ""N_NORMALIZE"", ""L_VARIANT"", ""V_DAMAGE"", ""V_QUALITY""]",auto:retag_from_fields
+IMG_2327.jpg,,ccl,4,3,auto:ccl_rule_v3.1
+IMG_2337.jpg,,tags,"[""D_DISTRACTOR"", ""L_ADDON"", ""L_ITEM_SPLIT"", ""L_VARIANT"", ""N_FOREIGN"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""P_FORMAT"", ""P_INHERITED"", ""P_MISSING"", ""P_MULTI_UNLABELED"", ""S_LAYOUT"", ""V_GEOMETRY"", ""V_HANDWRITING"", ""V_QUALITY""]","[""P_FORMAT"", ""P_INHERITED"", ""P_MULTI_UNLABELED"", ""P_MISSING"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""N_FOREIGN"", ""L_ADDON"", ""L_ITEM_SPLIT"", ""S_LAYOUT"", ""V_HANDWRITING"", ""V_QUALITY"", ""V_GEOMETRY"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_2376.jpg,,*strings*,1,"""NFC+trim""",auto:string_normalize
+IMG_2377.jpg,1,ambig_reason,"""variant_label_unknown""","""""",auto:item_ambiguous_follows_offers
+IMG_2377.jpg,,tags,"[""L_VARIANT"", ""N_NORMALIZE"", ""P_FORMAT"", ""P_IMPLICIT_K"", ""P_MISSING"", ""P_MULTI_UNLABELED"", ""V_DAMAGE"", ""V_QUALITY""]","[""P_IMPLICIT_K"", ""P_FORMAT"", ""P_MULTI_UNLABELED"", ""P_MISSING"", ""N_NORMALIZE"", ""V_DAMAGE"", ""V_QUALITY""]",auto:retag_from_fields
+IMG_2379.jpg,,tags,"[""D_DISTRACTOR"", ""L_VARIANT"", ""N_FOREIGN"", ""P_FORMAT"", ""P_UNIT_BUNDLE""]","[""P_FORMAT"", ""N_FOREIGN"", ""L_VARIANT"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_2380.jpg,,tags,"[""D_DISTRACTOR"", ""L_VARIANT"", ""N_FOREIGN"", ""P_FORMAT"", ""P_INHERITED"", ""P_UNIT_BUNDLE"", ""V_QUALITY""]","[""P_FORMAT"", ""P_INHERITED"", ""N_FOREIGN"", ""L_VARIANT"", ""V_QUALITY"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_2383.jpg,2,ambig_reason,"""price_missing_or_misaligned""","""""",auto:item_ambiguous_follows_offers
+IMG_2383.jpg,3,ambig_reason,"""price_missing_or_misaligned""","""""",auto:item_ambiguous_follows_offers
+IMG_2383.jpg,4,ambig_reason,"""price_missing_or_misaligned""","""""",auto:item_ambiguous_follows_offers
+IMG_2383.jpg,5,ambig_reason,"""price_missing_or_misaligned""","""""",auto:item_ambiguous_follows_offers
+IMG_2383.jpg,6,ambig_reason,"""price_missing_or_misaligned""","""""",auto:item_ambiguous_follows_offers
+IMG_2383.jpg,7,ambig_reason,"""price_missing_or_misaligned""","""""",auto:item_ambiguous_follows_offers
+IMG_2383.jpg,8,ambig_reason,"""price_missing_or_misaligned""","""""",auto:item_ambiguous_follows_offers
+IMG_2383.jpg,9,ambig_reason,"""price_missing_or_misaligned""","""""",auto:item_ambiguous_follows_offers
+IMG_2383.jpg,10,ambig_reason,"""price_missing_or_misaligned""","""""",auto:item_ambiguous_follows_offers
+IMG_2383.jpg,12,ambig_reason,"""variant_label_unknown""","""""",auto:item_ambiguous_follows_offers
+IMG_2384.jpg,6,ambig_reason,"""other""","""""",auto:item_ambiguous_follows_offers
+IMG_2384.jpg,,ccl,4,3,auto:ccl_rule_v3.1
+IMG_2415.jpg,,tags,"[""L_COMBO_SET"", ""N_FOREIGN"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""P_FORMAT"", ""P_HANDWRITTEN_OVERRIDE"", ""P_IMPLICIT_K"", ""P_INHERITED"", ""S_DETACHED"", ""S_LAYOUT"", ""V_HANDWRITING""]","[""P_IMPLICIT_K"", ""P_FORMAT"", ""P_INHERITED"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""N_FOREIGN"", ""L_COMBO_SET"", ""S_DETACHED"", ""S_LAYOUT"", ""V_HANDWRITING""]",auto:retag_from_fields
+IMG_2417.jpg,,tags,"[""D_DISTRACTOR"", ""L_ITEM_SPLIT"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""P_FORMAT"", ""P_INHERITED"", ""P_MISSING"", ""V_DAMAGE""]","[""P_FORMAT"", ""P_INHERITED"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""L_ITEM_SPLIT"", ""V_DAMAGE"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_2417.jpg,,ccl,4,3,auto:ccl_rule_v3.1
+IMG_2418.jpg,10,price_kind,"""delta""","""unit_price""",manual:overwritten_price_per_duck_not_delta
+IMG_2418.jpg,10,ambiguous,false,true,manual:overwritten_price_per_duck_not_delta
+IMG_2418.jpg,10,ambig_reason,"""""","""overwritten_digit""",manual:overwritten_price_per_duck_not_delta
+IMG_2418.jpg,10,raw_old_price,"""""","""350K/con""",manual:overwritten_old_price_350k
+IMG_2418.jpg,10,notes,"""""","""In sẵn 350K/con; số 5 bị viết đè bằng bút đen thành 7 (370K/con, khớp bảng trên). Giá cũ 350K. Mơ hồ vì chữ số viết đè.""",manual:overwritten_old_price_350k
+IMG_2418.jpg,10,ambiguous,false,true,manual:overwritten_price_per_duck_not_delta
+IMG_2418.jpg,10,ambig_reason,"""""","""overwritten_digit""",manual:overwritten_price_per_duck_not_delta
+IMG_2418.jpg,,notes,"""Hai tấm bảng của cùng xe, giá vịt quay khác nhau (370K/CON ở bảng trên, 350K/con dán đè ở bảng dưới). Tờ giấy dán che tên món ở dòng 250K/KG. Đã che QR thanh toán và hai số điện thoại.""","""Hai tấm bảng của cùng xe, vịt quay 370K/CON ở bảng trên; bảng dưới in 350K/con, số 5 bị viết đè thành 7 (370K/con). Tờ giấy dán che tên món ở dòng 250K/KG. Đã che QR thanh toán và hai số điện thoại.""",manual:overwritten_old_price_350k
+IMG_2421.jpg,1,ambig_reason,"""variant_label_unknown""","""""",auto:item_ambiguous_follows_offers
+IMG_2423.jpg,,*strings*,1,"""NFC+trim""",auto:string_normalize
+IMG_2423.jpg,,tags,"[""D_DISTRACTOR"", ""N_NORMALIZE"", ""P_FORMAT"", ""P_HANDWRITTEN_OVERRIDE"", ""P_MISSING"", ""P_UNIT_BUNDLE"", ""S_DETACHED"", ""V_DAMAGE""]","[""P_FORMAT"", ""P_UNIT_BUNDLE"", ""P_MISSING"", ""N_NORMALIZE"", ""S_DETACHED"", ""V_DAMAGE"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_2428.jpg,,tags,"[""L_COMBO_SET"", ""N_NORMALIZE"", ""P_FORMAT"", ""V_DAMAGE"", ""V_QUALITY""]","[""P_FORMAT"", ""P_UNIT_BUNDLE"", ""N_NORMALIZE"", ""L_COMBO_SET"", ""V_DAMAGE"", ""V_QUALITY""]",auto:retag_from_fields
+IMG_2430.jpg,,*strings*,1,"""NFC+trim""",auto:string_normalize
+IMG_7729.jpg,,tags,"[""N_NORMALIZE"", ""P_FORMAT"", ""P_MISSING"", ""S_DETACHED"", ""V_DAMAGE"", ""V_GEOMETRY"", ""V_QUALITY""]","[""P_FORMAT"", ""P_INHERITED"", ""P_MISSING"", ""N_NORMALIZE"", ""S_DETACHED"", ""V_DAMAGE"", ""V_QUALITY"", ""V_GEOMETRY""]",auto:retag_from_fields
+IMG_7742.jpg,,tags,"[""L_VARIANT"", ""N_FOREIGN"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""P_FORMAT"", ""S_LAYOUT"", ""V_DAMAGE"", ""V_QUALITY""]","[""P_FORMAT"", ""P_UNIT_BUNDLE"", ""N_NORMALIZE"", ""N_SECTION_COMPOSE"", ""N_FOREIGN"", ""L_VARIANT"", ""S_LAYOUT"", ""V_DAMAGE"", ""V_QUALITY""]",auto:retag_from_fields
+IMG_7812.jpg,1,ambig_reason,"""scope_of_shared_price""","""""",auto:item_ambiguous_follows_offers
+IMG_7812.jpg,2,ambig_reason,"""scope_of_shared_price""","""""",auto:item_ambiguous_follows_offers
+IMG_7812.jpg,3,ambig_reason,"""scope_of_shared_price""","""""",auto:item_ambiguous_follows_offers
+IMG_7812.jpg,7,ambig_reason,"""price_missing_or_misaligned""","""""",auto:item_ambiguous_follows_offers
+IMG_7812.jpg,8,ambig_reason,"""price_missing_or_misaligned""","""""",auto:item_ambiguous_follows_offers
+IMG_7812.jpg,9,ambig_reason,"""price_missing_or_misaligned""","""""",auto:item_ambiguous_follows_offers
+IMG_7812.jpg,10,ambig_reason,"""price_missing_or_misaligned""","""""",auto:item_ambiguous_follows_offers
+IMG_7812.jpg,11,ambig_reason,"""price_missing_or_misaligned""","""""",auto:item_ambiguous_follows_offers
+IMG_7812.jpg,12,ambig_reason,"""price_missing_or_misaligned""","""""",auto:item_ambiguous_follows_offers
+IMG_7839.jpg,,tags,"[""D_DISTRACTOR"", ""L_VARIANT"", ""P_FORMAT"", ""P_PROMO"", ""P_UNIT_BUNDLE""]","[""P_FORMAT"", ""P_UNIT_BUNDLE"", ""L_VARIANT"", ""D_DISTRACTOR""]",auto:retag_from_fields
+IMG_7853.jpg,1,ambig_reason,"""variant_label_unknown""","""""",auto:item_ambiguous_follows_offers
+IMG_7853.jpg,4,ambig_reason,"""variant_label_unknown""","""""",auto:item_ambiguous_follows_offers
+IMG_7853.jpg,,tags,"[""L_VARIANT"", ""N_NORMALIZE"", ""P_FORMAT"", ""P_MULTI_UNLABELED"", ""P_UNIT_BUNDLE"", ""V_HANDWRITING"", ""V_QUALITY""]","[""P_FORMAT"", ""P_MULTI_UNLABELED"", ""P_UNIT_BUNDLE"", ""N_NORMALIZE"", ""V_HANDWRITING"", ""V_QUALITY""]",auto:retag_from_fields

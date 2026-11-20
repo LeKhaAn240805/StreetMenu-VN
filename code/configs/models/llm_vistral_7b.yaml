@@ -1,0 +1,62 @@
+key: llm_vistral_7b
+hf_id: Viet-Mistral/Vistral-7B-Chat
+revision: d331b64e61b935cc43c2b3010ae9fb4fde599b45
+family: Vistral
+org: Viet-Mistral
+params_b: 7.3
+license: afl-3.0
+gated: manual
+download_gb: 29.18
+role: llm
+groups:
+- G4
+- G5
+tier: optional
+priority: 50
+backend: vllm
+text_only: true
+dtype: bfloat16
+keep_weights: false
+enabled: false
+note: 'dropped 2026-11-02: gated repo, no HF token (user decision)'
+vllm:
+  max_model_len: 16384
+  max_num_seqs: 16
+  gpu_memory_utilization: 0.9
+  trust_remote_code: false
+  enforce_eager: false
+  extra_args: []
+  env: {}
+autotune:
+  max_num_seqs:
+  - 16
+  - 8
+  - 4
+  - 2
+  - 1
+  max_model_len:
+  - 16384
+  - 12288
+  - 8192
+  mm_processor_kwargs: []
+  preemption_limit: 200
+thinking:
+  supported: false
+  default_on: false
+  'off': {}
+  'on': {}
+  strip:
+  - <think>
+  - </think>
+sampling: {}
+hf:
+  adapter: generic
+  model_class: AutoModelForImageTextToText
+  batch_size: 4
+  batch_ladder:
+  - 4
+  - 2
+  - 1
+  python: main
+  dtype: bfloat16
+mock: {}

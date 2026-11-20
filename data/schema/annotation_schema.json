@@ -1,0 +1,749 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "StreetMenu-VN annotation v3.1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "image_id",
+    "file_name",
+    "group_id",
+    "split",
+    "domain",
+    "items"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "3.1"
+    },
+    "image_id": {
+      "type": "string"
+    },
+    "file_name": {
+      "type": "string"
+    },
+    "file_sha256": {
+      "type": "string"
+    },
+    "group_id": {
+      "type": "string"
+    },
+    "near_duplicate_of": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "split": {
+      "enum": [
+        "unassigned",
+        "dev",
+        "test",
+        "ood"
+      ]
+    },
+    "domain": {
+      "enum": [
+        "food_menu",
+        "service",
+        "retail",
+        "notice"
+      ]
+    },
+    "image_width": {
+      "type": "integer"
+    },
+    "image_height": {
+      "type": "integer"
+    },
+    "ccl": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 4
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "P_IMPLICIT_K",
+          "P_FORMAT",
+          "P_INHERITED",
+          "P_MULTI_UNLABELED",
+          "P_UNIT_BUNDLE",
+          "P_PROMO",
+          "P_HANDWRITTEN_OVERRIDE",
+          "P_MISSING",
+          "N_NORMALIZE",
+          "N_SECTION_COMPOSE",
+          "N_FOREIGN",
+          "L_VARIANT",
+          "L_COMBO_SET",
+          "L_ADDON",
+          "L_ITEM_SPLIT",
+          "S_DETACHED",
+          "S_LAYOUT",
+          "V_HANDWRITING",
+          "V_DAMAGE",
+          "V_QUALITY",
+          "V_GEOMETRY",
+          "D_DISTRACTOR"
+        ]
+      }
+    },
+    "venue_tier": {
+      "enum": [
+        "",
+        "street_vendor",
+        "small_shop",
+        "chain",
+        "supermarket_foodcourt"
+      ]
+    },
+    "venue_type": {
+      "enum": [
+        "",
+        "cà phê",
+        "trà sữa",
+        "nước ép – sinh tố",
+        "ăn vặt",
+        "cơm",
+        "bún – phở – hủ tiếu",
+        "bánh mì – xôi",
+        "quán nhậu – ốc",
+        "tiệm bánh – tráng miệng",
+        "lẩu – nướng",
+        "nhà hàng",
+        "fast food",
+        "khác"
+      ]
+    },
+    "medium": {
+      "enum": [
+        "",
+        "in sẵn để bàn",
+        "sổ menu (trang)",
+        "bảng đèn",
+        "băng rôn / bảng hiệu",
+        "giấy in dán tạm",
+        "viết tay trên giấy",
+        "bảng phấn / kính",
+        "poster một món",
+        "phiếu gọi món (có cột SL)",
+        "màn hình điện tử",
+        "tờ rơi / catalog",
+        "danh thiếp",
+        "khác"
+      ]
+    },
+    "lighting": {
+      "enum": [
+        "",
+        "đủ sáng",
+        "thiếu sáng",
+        "lóa / phản chiếu",
+        "ngược sáng"
+      ]
+    },
+    "angle": {
+      "enum": [
+        "",
+        "thẳng",
+        "nghiêng nhẹ",
+        "nghiêng mạnh",
+        "cong / gấp"
+      ]
+    },
+    "source": {
+      "enum": [
+        "",
+        "tự chụp",
+        "người khác gửi",
+        "ảnh chụp màn hình"
+      ]
+    },
+    "city": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "price_unit_default": {
+      "enum": [
+        "",
+        "k_vnd",
+        "vnd",
+        "mixed"
+      ]
+    },
+    "tax_note": {
+      "enum": [
+        "",
+        "not_stated",
+        "included",
+        "excluded"
+      ]
+    },
+    "has_prices": {
+      "type": "boolean"
+    },
+    "pii_present": {
+      "type": "boolean"
+    },
+    "pii_types": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "phone",
+          "address",
+          "qr_bank",
+          "wifi",
+          "face",
+          "name",
+          "social",
+          "plate"
+        ]
+      }
+    },
+    "redactions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "bbox"
+        ],
+        "properties": {
+          "type": {
+            "enum": [
+              "phone",
+              "address",
+              "qr_bank",
+              "wifi",
+              "face",
+              "name",
+              "social",
+              "plate"
+            ]
+          },
+          "bbox": {
+            "type": "array",
+            "items": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "origin": {
+            "enum": [
+              "auto",
+              "manual"
+            ]
+          }
+        }
+      }
+    },
+    "redaction_checked": {
+      "type": "boolean"
+    },
+    "consent_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "section_id",
+          "raw_title"
+        ],
+        "properties": {
+          "section_id": {
+            "type": "string"
+          },
+          "raw_title": {
+            "type": "string"
+          },
+          "norm_title": {
+            "type": "string"
+          },
+          "shared_price_raw": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    },
+    "ignore_regions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "desc": {
+            "type": "string"
+          },
+          "bbox": {
+            "oneOf": [
+              {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "minItems": 4,
+                "maxItems": 4
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "label_origin": {
+      "enum": [
+        "human",
+        "claude_draft"
+      ]
+    },
+    "review": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "pending",
+            "confirmed",
+            "edited",
+            "flagged"
+          ]
+        },
+        "reviewer": {
+          "type": "string"
+        },
+        "changed": {
+          "type": "boolean"
+        },
+        "seconds": {
+          "type": "number"
+        },
+        "reviewed_at": {
+          "type": "string"
+        },
+        "flag_note": {
+          "type": "string"
+        }
+      }
+    },
+    "annotator": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "done",
+        "needs_review"
+      ]
+    },
+    "version": {
+      "type": "integer"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "$defs": {
+    "item": {
+      "type": "object",
+      "required": [
+        "item_id",
+        "raw_name",
+        "norm_name",
+        "offers"
+      ],
+      "properties": {
+        "item_id": {
+          "type": "integer"
+        },
+        "section_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "item_code": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "raw_name": {
+          "type": "string"
+        },
+        "raw_name_2": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "norm_name": {
+          "type": "string"
+        },
+        "alt_norm_names": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "category": {
+          "enum": [
+            "",
+            "cà phê",
+            "trà",
+            "trà sữa",
+            "sinh tố",
+            "nước ép",
+            "sữa chua – yaourt",
+            "đá xay",
+            "nước giải khát",
+            "bia rượu",
+            "bánh",
+            "tráng miệng – kem",
+            "ăn vặt",
+            "món nước (bún, phở, hủ tiếu, mì)",
+            "cơm – xôi",
+            "bánh mì – burger",
+            "lẩu",
+            "nướng",
+            "món chính khác",
+            "combo – set",
+            "topping – món thêm",
+            "không phải đồ ăn",
+            "khác"
+          ]
+        },
+        "is_add_on": {
+          "type": "boolean"
+        },
+        "is_combo": {
+          "type": "boolean"
+        },
+        "combo_components": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "name"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "qty": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ref_price_vnd": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              }
+            }
+          }
+        },
+        "serves": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "option_groups": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "attributes": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "spicy",
+              "vegetarian",
+              "vegetarian_option",
+              "bestseller",
+              "new",
+              "signature",
+              "recommended",
+              "seasonal",
+              "limited_time"
+            ]
+          }
+        },
+        "availability": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "item_status": {
+          "enum": [
+            "active",
+            "crossed_out",
+            "taped_over",
+            "sold_out"
+          ]
+        },
+        "legibility": {
+          "enum": [
+            "clear",
+            "partial",
+            "illegible"
+          ]
+        },
+        "ambiguous": {
+          "type": "boolean"
+        },
+        "ambig_reason": {
+          "enum": [
+            "",
+            "scope_of_shared_price",
+            "occluded_char",
+            "burnt_digits",
+            "overwritten_digit",
+            "unknown_unit",
+            "abbreviation_unclear",
+            "price_missing_or_misaligned",
+            "variant_label_unknown",
+            "other"
+          ]
+        },
+        "bbox": {
+          "oneOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "minItems": 4,
+              "maxItems": 4
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "offers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/offer"
+          }
+        }
+      }
+    },
+    "offer": {
+      "type": "object",
+      "required": [
+        "raw_price",
+        "price_vnd",
+        "price_kind",
+        "price_source",
+        "evidence",
+        "ambiguous"
+      ],
+      "properties": {
+        "size": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "size_rank": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "temp": {
+          "enum": [
+            "",
+            "nóng",
+            "đá",
+            "nóng|đá"
+          ]
+        },
+        "portion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "quantity": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "qty_unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "raw_price": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "raw_old_price": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "price_vnd": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "old_price_vnd": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "price_kind": {
+          "enum": [
+            "fixed",
+            "unit_price",
+            "bundle",
+            "starting_from",
+            "range",
+            "delta",
+            "market"
+          ]
+        },
+        "price_min_vnd": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "price_max_vnd": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "unit_qty": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "price_source": {
+          "enum": [
+            "item_line",
+            "section_header",
+            "global_header",
+            "column_header",
+            "bracket",
+            "merged_cell",
+            "handwritten_override",
+            "badge"
+          ]
+        },
+        "evidence": {
+          "enum": [
+            "printed",
+            "handwritten",
+            "overwritten"
+          ]
+        },
+        "ambiguous": {
+          "type": "boolean"
+        },
+        "ambig_reason": {
+          "enum": [
+            "",
+            "scope_of_shared_price",
+            "occluded_char",
+            "burnt_digits",
+            "overwritten_digit",
+            "unknown_unit",
+            "abbreviation_unclear",
+            "price_missing_or_misaligned",
+            "variant_label_unknown",
+            "other"
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+[image]
+Rules:
+- Extract every item for sale, including toppings and add-ons. No shop names, slogans, addresses, phone numbers, opening hours, Wi-Fi, bank or QR details. Description lines go in "description" of their item. A heading that groups items ("SODA: 22K" above a list of flavours) is not an item: list each flavour or dish as its own item.
+- raw_name, raw_price: copy exactly as written, mistakes and missing accents included; a printed translation in another language stays out of raw_name and name.
+- name: full standard Vietnamese name with diacritics; expand abbreviations and fix misspellings only when confident; add the section heading when it is part of the item's identity; if unsure, copy raw_name.
+- price_vnd: integer dong. "15k", "15K", "15 ngàn", "15.000", "15.000đ" = 15000. A bare "15" usually means 15000 when other prices are written the same way. "12k5" = 12500, "1tr9" = 1900000, "Free" = 0.
+- Shared prices (same-price heading, priced section heading, size column headers, bracket or note over several lines) apply to every item they cover.
+- One "offers" entry per option (size, hot/iced, portion, several prices). "nóng/đá 25 / 40" = hot 25000, iced 40000. Unlabeled prices in a row ("20k 25k 30k") = one offer each in reading order, size null. "+5k" for a bigger size on an item with a clear base price: price_vnd = base + 5000, raw_price "+5k"; only a separate add-on or topping line keeps the increment as price_vnd, with is_topping true.
+- Crossed-out price with a new one: price_vnd = new, old_price_vnd = crossed-out. A handwritten number over a printed price replaces it, even if higher (old price -> old_price_vnd).
+- Per-weight or per-quantity prices: put the unit in "unit". Range such as 45k-55k: lower bound in price_vnd, upper bound in price_max_vnd.
+- Pair each price with the item it visually belongs to, even when it is far away, in a badge, in a separate column or linked by a line.
+- Report only what you can see; unreadable or unassignable price -> price_vnd null; a word instead of a number ("tùy loại", "thời giá", "liên hệ") or no price -> price_vnd null with the words in raw_price. Do not invent items.
+Return one JSON object that follows this schema exactly:
+{SCHEMA}

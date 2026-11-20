@@ -1,0 +1,162 @@
+{
+ "schema_version": "3.1",
+ "image_id": "smv_0269",
+ "file_name": "IMG_2284.jpg",
+ "file_sha256": "8242a6daf5f9e8887c91bb097d66643870e5104204611d547b26fc30cf627d55",
+ "group_id": "G_2284",
+ "near_duplicate_of": "",
+ "split": "test",
+ "ccl": 1,
+ "tags": [
+  "P_FORMAT",
+  "V_QUALITY",
+  "D_DISTRACTOR"
+ ],
+ "venue_tier": "small_shop",
+ "venue_type": "trà sữa",
+ "medium": "poster một món",
+ "lighting": "đủ sáng",
+ "angle": "thẳng",
+ "source": "",
+ "city": "",
+ "languages": [
+  "vi"
+ ],
+ "price_unit_default": "k_vnd",
+ "tax_note": "not_stated",
+ "has_prices": true,
+ "pii_present": false,
+ "pii_types": [],
+ "redaction_checked": false,
+ "consent_id": "",
+ "sections": [],
+ "items": [
+  {
+   "item_id": 1,
+   "section_id": null,
+   "item_code": "",
+   "raw_name": "Trà Cherry",
+   "raw_name_2": "",
+   "norm_name": "trà cherry",
+   "alt_norm_names": [],
+   "description": "",
+   "category": "trà",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [
+    "new"
+   ],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "3 lít",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "39K",
+     "price_vnd": 39000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "raw_old_price": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ]
+  },
+  {
+   "item_id": 2,
+   "section_id": null,
+   "item_code": "",
+   "raw_name": "CHERRY THẠCH PHA LÊ",
+   "raw_name_2": "",
+   "norm_name": "cherry thạch pha lê",
+   "alt_norm_names": [
+    "siêu phẩm cherry thạch pha lê"
+   ],
+   "description": "",
+   "category": "trà",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [
+    "new"
+   ],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "45K",
+     "price_vnd": 45000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "raw_old_price": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ]
+  }
+ ],
+ "ignore_regions": [],
+ "annotator": "B",
+ "status": "adjudicated",
+ "version": 2,
+ "notes": "Poster hai món. 'LY 1 LÍT 3' là size của Trà Cherry, ghi vào size. Các dòng 'chua ngọt, đậm trà' là khẩu hiệu.",
+ "domain": "food_menu",
+ "image_width": 382,
+ "image_height": 603,
+ "label_origin": "claude_draft",
+ "review": {
+  "status": "confirmed",
+  "reviewer": "B",
+  "changed": false,
+  "seconds": 48,
+  "reviewed_at": "2026-11-12T17:50:28.740Z",
+  "flag_note": "",
+  "pii_note": ""
+ },
+ "redactions": [],
+ "adjudication": {
+  "by": "claude_rule_pass+manual_image_check",
+  "date": "2026-11-14",
+  "version": "1.0",
+  "n_changes": 2,
+  "reviewer_status": "confirmed",
+  "reviewer": "B"
+ }
+}

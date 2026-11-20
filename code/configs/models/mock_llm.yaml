@@ -1,0 +1,12 @@
+# Test double: text-only LLM (P-OCR+ / P-Oracle) behind the mock server.
+key: mock_llm
+role: llm
+tier: test
+backend: mock
+family: Mock
+dtype: null
+text_only: true
+vllm: {max_num_seqs: 8, max_model_len: 8192, limit_mm_per_prompt: null}
+mock:
+  fake_weights_mb: 1
+  env: {MOCK_GOLD_MAP: "{out_dir}/mock_gold_map.json"}

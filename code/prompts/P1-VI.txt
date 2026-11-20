@@ -1,0 +1,45 @@
+[image]
+Bối cảnh: ảnh chụp thực đơn, bảng giá hoặc biển hiệu của một quán ăn đường phố,
+quán cà phê, quán nước hoặc quán ăn nhỏ ở Việt Nam. Thực đơn có thể in sẵn hoặc
+viết tay, bị sửa tay một phần, chụp nghiêng, hoặc bị che một phần.
+Hướng dẫn:
+1. Đọc toàn bộ ảnh trước. Trích xuất mọi món được bán, kể cả topping và món
+thêm. Không xuất tên quán, khẩu hiệu, địa chỉ, số điện thoại, giờ mở cửa,
+thông tin Wi-Fi, ngân hàng, mã QR, hay dòng mô tả thành món. Dòng mô tả đưa
+vào trường "description" của món tương ứng. Tiêu đề gom nhiều món (ví dụ "SODA:
+22K" đứng trên danh sách các vị) không phải là một món: liệt kê từng vị hay từng
+món bên dưới thành món riêng.
+2. raw_name và raw_price: chép đúng như trên ảnh, giữ cả lỗi chính tả và chữ
+thiếu dấu. Nếu cạnh tên có bản dịch sang ngôn ngữ khác thì không đưa vào raw_name
+và name.
+3. name: tên tiếng Việt chuẩn, đầy đủ, có dấu. Chỉ mở rộng viết tắt và sửa lỗi
+chính tả rõ ràng khi chắc chắn. Nếu tiêu đề mục là một phần tên món (một vị
+nằm dưới tiêu đề loại đồ uống), ghép tiêu đề vào tên. Không chắc thì chép
+lại raw_name.
+4. price_vnd: số nguyên, đơn vị đồng. "15k", "15K", "15 ngàn", "15.000",
+"15.000đ" đều là 15000. Số trần như "15" thường là nghìn đồng nếu các giá
+khác trên thực đơn cũng ghi như vậy. "12k5" là 12500, "1tr9" là 1900000, "Free" là 0.
+5. Giá chung: một giá ghi một lần có thể áp cho nhiều món, ví dụ tiêu đề ghi mọi
+món cùng giá, tiêu đề mục có giá, tiêu đề cột theo size, hoặc dấu ngoặc,
+ghi chú phủ nhiều dòng. Áp giá đó cho mọi món nó bao phủ.
+6. Lựa chọn: món có nhiều size, nóng/đá, khẩu phần hoặc nhiều giá thì tạo một
+phần tử trong "offers" cho mỗi lựa chọn. "nóng/đá 25 / 40" là nóng 25000 và
+đá 40000. Nhiều giá viết liền nhau không có nhãn ("20k 25k 30k") là mỗi giá một
+lựa chọn, theo thứ tự đọc, size để null. Phụ thu như "+5k" cho size lớn, trên món
+đã có giá gốc rõ, thì giá của lựa chọn đó là giá đầy đủ (giá gốc + 5000), raw_price
+"+5k". Chỉ dòng món thêm hoặc topping riêng ("Trân châu +5k") mới giữ số cộng thêm
+làm price_vnd, với is_topping true.
+7. Sửa giá và khuyến mãi: giá bị gạch và có giá mới thì price_vnd là giá mới,
+old_price_vnd là giá bị gạch. Số viết tay đè lên giá in thì thay giá in, kể cả khi giá mới cao
+hơn; giá bị thay là old_price_vnd.
+8. Giá theo đơn vị và theo gói: giá tính theo khối lượng hoặc số lượng thì ghi
+vào "unit". Giá là một khoảng như 45k-55k thì ghi cận dưới vào price_vnd và
+cận trên vào price_max_vnd.
+9. Bố cục: giá có thể nằm xa tên món, trong huy hiệu trên ảnh, ở cột riêng, hoặc
+nối bằng đường kẻ. Ghép mỗi giá với món mà nó thuộc về theo hình ảnh.
+10. Chỉ ghi những gì nhìn thấy. Giá không đọc được hoặc không biết thuộc món
+nào thì để price_vnd là null, không đoán. Nếu thực đơn ghi chữ thay cho số ("tùy
+loại", "thời giá", "liên hệ"), hoặc món không có giá, thì để price_vnd là null và
+chép chữ vào raw_price. Không bịa món.
+Trả về một đối tượng JSON theo đúng schema sau:
+{SCHEMA}

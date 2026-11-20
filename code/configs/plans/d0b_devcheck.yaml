@@ -1,0 +1,12 @@
+# Dev format check of P1-C and P-Conf, lane B (side by side with d0a_devcheck; see there).
+name: d0b_devcheck
+gpu_share: 0.41
+seeds: [0]
+splits: [dev]
+include_optional: false
+prefetch: true
+keep_weights: false
+stages:
+  - role: vlm
+    models: [qwen35_2b, internvl35_2b]
+    prompts: [P1, P1-C, P-Conf]

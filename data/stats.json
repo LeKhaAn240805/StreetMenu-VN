@@ -1,0 +1,458 @@
+{
+ "version": "1.0",
+ "date": "2026-11-14",
+ "seed": 2027,
+ "all": {
+  "images": 346,
+  "items": 5244,
+  "offers": 6245,
+  "offers_scored_main": 6181,
+  "offers_ambiguous": 59,
+  "offers_null_price": 275,
+  "items_inactive": 10,
+  "dense_images_gt60_offers": 21,
+  "ccl": {
+   "1": 35,
+   "2": 16,
+   "3": 82,
+   "4": 180,
+   "None": 33
+  },
+  "venue_tier": {
+   "small_shop": 157,
+   "street_vendor": 141,
+   "chain": 43,
+   "supermarket_foodcourt": 5
+  },
+  "price_kind": {
+   "fixed": 5468,
+   "unit_price": 332,
+   "range": 321,
+   "delta": 54,
+   "bundle": 35,
+   "starting_from": 25,
+   "market": 10
+  },
+  "price_source": {
+   "item_line": 4193,
+   "column_header": 925,
+   "section_header": 389,
+   "badge": 291,
+   "merged_cell": 147,
+   "handwritten_override": 127,
+   "bracket": 93,
+   "global_header": 80
+  },
+  "tags": {
+   "P_FORMAT": 302,
+   "N_NORMALIZE": 210,
+   "V_QUALITY": 148,
+   "D_DISTRACTOR": 139,
+   "N_FOREIGN": 126,
+   "V_DAMAGE": 110,
+   "S_LAYOUT": 106,
+   "P_UNIT_BUNDLE": 104,
+   "N_SECTION_COMPOSE": 86,
+   "P_INHERITED": 83,
+   "S_DETACHED": 73,
+   "L_ADDON": 70,
+   "P_MISSING": 65,
+   "L_VARIANT": 64,
+   "P_MULTI_UNLABELED": 61,
+   "V_HANDWRITING": 53,
+   "L_COMBO_SET": 47,
+   "P_IMPLICIT_K": 42,
+   "L_ITEM_SPLIT": 31,
+   "V_GEOMETRY": 31,
+   "P_HANDWRITTEN_OVERRIDE": 24,
+   "P_PROMO": 10
+  }
+ },
+ "menu": {
+  "images": 313,
+  "items": 4935,
+  "offers": 5869,
+  "offers_scored_main": 5806,
+  "offers_ambiguous": 58,
+  "offers_null_price": 253,
+  "items_inactive": 10,
+  "dense_images_gt60_offers": 20,
+  "ccl": {
+   "1": 35,
+   "2": 16,
+   "3": 82,
+   "4": 180
+  },
+  "venue_tier": {
+   "street_vendor": 138,
+   "small_shop": 135,
+   "chain": 35,
+   "supermarket_foodcourt": 5
+  },
+  "price_kind": {
+   "fixed": 5173,
+   "unit_price": 296,
+   "range": 287,
+   "delta": 54,
+   "bundle": 32,
+   "starting_from": 17,
+   "market": 10
+  },
+  "price_source": {
+   "item_line": 3876,
+   "column_header": 871,
+   "section_header": 389,
+   "badge": 290,
+   "merged_cell": 147,
+   "handwritten_override": 127,
+   "bracket": 89,
+   "global_header": 80
+  },
+  "tags": {
+   "P_FORMAT": 272,
+   "N_NORMALIZE": 196,
+   "V_QUALITY": 137,
+   "D_DISTRACTOR": 119,
+   "N_FOREIGN": 112,
+   "S_LAYOUT": 102,
+   "V_DAMAGE": 100,
+   "P_UNIT_BUNDLE": 88,
+   "N_SECTION_COMPOSE": 86,
+   "P_INHERITED": 78,
+   "L_ADDON": 70,
+   "S_DETACHED": 70,
+   "P_MISSING": 59,
+   "L_VARIANT": 53,
+   "P_MULTI_UNLABELED": 52,
+   "V_HANDWRITING": 52,
+   "L_COMBO_SET": 43,
+   "P_IMPLICIT_K": 41,
+   "L_ITEM_SPLIT": 30,
+   "V_GEOMETRY": 28,
+   "P_HANDWRITTEN_OVERRIDE": 24,
+   "P_PROMO": 7
+  }
+ },
+ "dev": {
+  "images": 39,
+  "items": 590,
+  "offers": 788,
+  "offers_scored_main": 776,
+  "offers_ambiguous": 12,
+  "offers_null_price": 23,
+  "items_inactive": 0,
+  "dense_images_gt60_offers": 3,
+  "ccl": {
+   "1": 4,
+   "2": 3,
+   "3": 8,
+   "4": 24
+  },
+  "venue_tier": {
+   "street_vendor": 18,
+   "small_shop": 17,
+   "chain": 4
+  },
+  "price_kind": {
+   "fixed": 699,
+   "unit_price": 64,
+   "market": 6,
+   "bundle": 5,
+   "starting_from": 5,
+   "range": 5,
+   "delta": 4
+  },
+  "price_source": {
+   "item_line": 493,
+   "column_header": 197,
+   "section_header": 47,
+   "handwritten_override": 18,
+   "global_header": 14,
+   "badge": 10,
+   "bracket": 9
+  },
+  "tags": {
+   "P_FORMAT": 33,
+   "N_NORMALIZE": 28,
+   "V_QUALITY": 25,
+   "D_DISTRACTOR": 16,
+   "N_FOREIGN": 14,
+   "S_LAYOUT": 14,
+   "V_DAMAGE": 14,
+   "P_UNIT_BUNDLE": 14,
+   "P_INHERITED": 13,
+   "L_ADDON": 11,
+   "N_SECTION_COMPOSE": 9,
+   "V_HANDWRITING": 9,
+   "L_VARIANT": 8,
+   "S_DETACHED": 8,
+   "P_MISSING": 7,
+   "L_COMBO_SET": 6,
+   "P_IMPLICIT_K": 6,
+   "V_GEOMETRY": 5,
+   "P_HANDWRITTEN_OVERRIDE": 3,
+   "P_MULTI_UNLABELED": 3,
+   "L_ITEM_SPLIT": 2
+  }
+ },
+ "test": {
+  "images": 274,
+  "items": 4345,
+  "offers": 5081,
+  "offers_scored_main": 5030,
+  "offers_ambiguous": 46,
+  "offers_null_price": 230,
+  "items_inactive": 10,
+  "dense_images_gt60_offers": 17,
+  "ccl": {
+   "1": 31,
+   "2": 13,
+   "3": 74,
+   "4": 156
+  },
+  "venue_tier": {
+   "street_vendor": 120,
+   "small_shop": 118,
+   "chain": 31,
+   "supermarket_foodcourt": 5
+  },
+  "price_kind": {
+   "fixed": 4474,
+   "range": 282,
+   "unit_price": 232,
+   "delta": 50,
+   "bundle": 27,
+   "starting_from": 12,
+   "market": 4
+  },
+  "price_source": {
+   "item_line": 3383,
+   "column_header": 674,
+   "section_header": 342,
+   "badge": 280,
+   "merged_cell": 147,
+   "handwritten_override": 109,
+   "bracket": 80,
+   "global_header": 66
+  },
+  "tags": {
+   "P_FORMAT": 239,
+   "N_NORMALIZE": 168,
+   "V_QUALITY": 112,
+   "D_DISTRACTOR": 103,
+   "N_FOREIGN": 98,
+   "S_LAYOUT": 88,
+   "V_DAMAGE": 86,
+   "N_SECTION_COMPOSE": 77,
+   "P_UNIT_BUNDLE": 74,
+   "P_INHERITED": 65,
+   "S_DETACHED": 62,
+   "L_ADDON": 59,
+   "P_MISSING": 52,
+   "P_MULTI_UNLABELED": 49,
+   "L_VARIANT": 45,
+   "V_HANDWRITING": 43,
+   "L_COMBO_SET": 37,
+   "P_IMPLICIT_K": 35,
+   "L_ITEM_SPLIT": 28,
+   "V_GEOMETRY": 23,
+   "P_HANDWRITTEN_OVERRIDE": 21,
+   "P_PROMO": 7
+  }
+ },
+ "ood": {
+  "images": 33,
+  "items": 309,
+  "offers": 376,
+  "offers_scored_main": 375,
+  "offers_ambiguous": 1,
+  "offers_null_price": 22,
+  "items_inactive": 0,
+  "dense_images_gt60_offers": 1,
+  "ccl": {
+   "None": 33
+  },
+  "venue_tier": {
+   "small_shop": 22,
+   "chain": 8,
+   "street_vendor": 3
+  },
+  "price_kind": {
+   "fixed": 295,
+   "unit_price": 36,
+   "range": 34,
+   "starting_from": 8,
+   "bundle": 3
+  },
+  "price_source": {
+   "item_line": 317,
+   "column_header": 54,
+   "bracket": 4,
+   "badge": 1
+  },
+  "tags": {
+   "P_FORMAT": 30,
+   "D_DISTRACTOR": 20,
+   "P_UNIT_BUNDLE": 16,
+   "N_FOREIGN": 14,
+   "N_NORMALIZE": 14,
+   "L_VARIANT": 11,
+   "V_QUALITY": 11,
+   "V_DAMAGE": 10,
+   "P_MULTI_UNLABELED": 9,
+   "P_MISSING": 6,
+   "P_INHERITED": 5,
+   "S_LAYOUT": 4,
+   "L_COMBO_SET": 4,
+   "P_PROMO": 3,
+   "S_DETACHED": 3,
+   "V_GEOMETRY": 3,
+   "L_ITEM_SPLIT": 1,
+   "V_HANDWRITING": 1,
+   "P_IMPLICIT_K": 1
+  }
+ },
+ "non_chain_menu": {
+  "images": 278,
+  "items": 4157,
+  "offers": 4472,
+  "offers_scored_main": 4412,
+  "offers_ambiguous": 55,
+  "offers_null_price": 249,
+  "items_inactive": 10,
+  "dense_images_gt60_offers": 9,
+  "ccl": {
+   "1": 34,
+   "2": 15,
+   "3": 73,
+   "4": 156
+  },
+  "venue_tier": {
+   "street_vendor": 138,
+   "small_shop": 135,
+   "supermarket_foodcourt": 5
+  },
+  "price_kind": {
+   "fixed": 3834,
+   "unit_price": 292,
+   "range": 287,
+   "bundle": 25,
+   "delta": 18,
+   "market": 10,
+   "starting_from": 6
+  },
+  "price_source": {
+   "item_line": 3454,
+   "section_header": 318,
+   "column_header": 223,
+   "badge": 191,
+   "handwritten_override": 109,
+   "bracket": 87,
+   "global_header": 71,
+   "merged_cell": 19
+  },
+  "tags": {
+   "P_FORMAT": 243,
+   "N_NORMALIZE": 176,
+   "V_QUALITY": 126,
+   "V_DAMAGE": 93,
+   "D_DISTRACTOR": 89,
+   "N_FOREIGN": 85,
+   "N_SECTION_COMPOSE": 83,
+   "S_LAYOUT": 83,
+   "P_UNIT_BUNDLE": 76,
+   "P_INHERITED": 61,
+   "P_MISSING": 58,
+   "S_DETACHED": 58,
+   "L_ADDON": 54,
+   "P_MULTI_UNLABELED": 50,
+   "V_HANDWRITING": 50,
+   "L_VARIANT": 36,
+   "P_IMPLICIT_K": 33,
+   "L_COMBO_SET": 31,
+   "L_ITEM_SPLIT": 27,
+   "V_GEOMETRY": 24,
+   "P_HANDWRITTEN_OVERRIDE": 23,
+   "P_PROMO": 3
+  }
+ },
+ "ccl4_only_S_LAYOUT": 36,
+ "ccl_if_S_LAYOUT_not_level4": {
+  "1": 37,
+  "2": 24,
+  "3": 108,
+  "4": 144
+ },
+ "review": {
+  "A": {
+   "images": 174,
+   "status": {
+    "edited": 101,
+    "confirmed": 71,
+    "flagged": 2
+   },
+   "median_seconds": 153.0,
+   "total_hours": 21.4,
+   "confirmed_under_2s_per_offer": 3,
+   "confirmed_under_30s": 25
+  },
+  "B": {
+   "images": 175,
+   "status": {
+    "edited": 79,
+    "confirmed": 95,
+    "flagged": 1
+   },
+   "median_seconds": 54,
+   "total_hours": 11.2,
+   "confirmed_under_2s_per_offer": 27,
+   "confirmed_under_30s": 43
+  },
+  "draft_corrections_by_reviewers": {
+   "items_added": 67,
+   "items_removed": 10,
+   "raw_name_changed": 68,
+   "norm_name_changed": 177,
+   "offers_changed": 168,
+   "offers_added": 137
+  },
+  "images_with_content_change": 88,
+  "draft_items": 5191,
+  "draft_offers": 6212
+ },
+ "adjudication": {
+  "changes": 351,
+  "images_touched": 121,
+  "by_rule": {
+   "manual:serving_unit_ly_not_printed": 95,
+   "auto:item_ambiguous_follows_offers": 79,
+   "auto:retag_from_fields": 69,
+   "auto:ccl_rule_v3.1": 15,
+   "R4:illegible_item": 15,
+   "R5:handwritten_change_is_override": 15,
+   "auto:string_normalize": 14,
+   "auto:market_price": 6,
+   "manual:R4_illegible_name": 6,
+   "manual:R1_range_raw_full_string": 5,
+   "manual:overwritten_price_per_duck_not_delta": 5,
+   "manual:per_kg_price_digits_erased": 3,
+   "manual:overwritten_old_price_350k": 3,
+   "manual:raw_price_is_price_token_only": 2,
+   "manual:golden_rule_portion_is_offer": 2,
+   "manual:section_compose_like_siblings": 2,
+   "manual:user_decision_tra_de": 2,
+   "manual:golden_rule_size_is_offer": 2,
+   "manual:no_unit_printed": 1,
+   "auto:ambig_reason_only_when_ambiguous": 1,
+   "auto:unit_price_needs_unit": 1,
+   "auto:bare_numbers_are_thousands": 1,
+   "manual:R2_upcharge_line_is_addon": 1,
+   "manual:bare_numbers_are_thousands": 1,
+   "manual:taped_over_keep_raw": 1,
+   "manual:do_not_guess_name_duplicate_of_tra_dao": 1,
+   "manual:stale_draft_note": 1,
+   "manual:typo": 1,
+   "manual:R1_two_bounds_is_range": 1
+  }
+ }
+}

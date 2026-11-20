@@ -1,0 +1,52 @@
+# Large models, one after another on the whole card. Every model is loaded once and does everything that is left for it:
+#   Gemma 4 E4B  compact output; thinking on, Vietnamese prompt, three paraphrases (from c4b); token log-probabilities and
+#                stated confidence; robustness set (from c5); five sampled answers at temperature 0.7 (variance between
+#                runs, self-consistency vote)
+#   Qwen3-VL-8B  compact output; Vietnamese prompt (from c4b); token log-probabilities; robustness set (from c5)
+#   Qwen3-VL-8B FP8 / AWQ   quantisation (from c4b)
+#   Qwen3-8B     OCR text to JSON and the human-transcript bound (from c4b)
+name: d2_core
+seeds: [0]
+splits: [test]
+include_optional: false
+prefetch: true
+keep_weights: false
+stages:
+  - role: vlm
+    name: Gemma 4 E4B
+    models: [gemma4_e4b]
+    prompts:
+      - {id: P1, tag: long, sampling: {max_tokens: 15000}}
+      - {id: P1, thinking: ["off", "on"]}
+      - P1-VI
+      - P1a
+      - P1b
+      - P1c
+      - {id: P1, tag: lp, sampling: {logprobs: true}}
+  - role: vlm
+    name: Qwen3-VL-8B
+    models: [qwen3vl_8b]
+    prompts:
+      - {id: P1, tag: long, sampling: {max_tokens: 15000}}
+      - P1-VI
+      - {id: P1, tag: lp, sampling: {logprobs: true}}
+  - role: vlm
+    name: robustness to rotation, perspective, blur, JPEG, half resolution and glare (from c5)
+    splits: [robust]
+    models: [gemma4_e4b, qwen3vl_8b]
+    prompts: [P1]
+  - role: vlm
+    name: five sampled answers per image (temperature 0.7)
+    models: [gemma4_e4b]
+    prompts:
+      - {id: P1, tag: t07, sampling: {temperature: 0.7, top_p: 0.95}, seeds: [1, 2, 3, 4, 5]}
+  - role: vlm
+    name: quantisation of Qwen3-VL-8B (from c4b)
+    models: [qwen3vl_8b_fp8, qwen3vl_8b_awq]
+    prompts: [P1]
+  - role: llm
+    name: cascade with Qwen3-8B (from c4b)
+    models: [llm_qwen3_8b]
+    prompts:
+      - {id: P-OCR+, ocr_from: [ocr_ppocr, ocr_paddleocr_vl]}
+      - P-Oracle

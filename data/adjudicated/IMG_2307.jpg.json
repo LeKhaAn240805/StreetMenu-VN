@@ -1,0 +1,415 @@
+{
+ "schema_version": "3.1",
+ "image_id": "smv_0286",
+ "file_name": "IMG_2307.jpg",
+ "file_sha256": "65e16fc8a3bdbf5d66dde0e5dc66366fadbbe5edd19999b00fa99400cdba9221",
+ "group_id": "G_2307",
+ "near_duplicate_of": "",
+ "split": "test",
+ "ccl": 3,
+ "tags": [
+  "P_FORMAT",
+  "P_UNIT_BUNDLE",
+  "N_NORMALIZE",
+  "L_COMBO_SET",
+  "V_QUALITY",
+  "D_DISTRACTOR"
+ ],
+ "venue_tier": "small_shop",
+ "venue_type": "lẩu – nướng",
+ "medium": "sổ menu (trang)",
+ "lighting": "đủ sáng",
+ "angle": "thẳng",
+ "source": "",
+ "city": "",
+ "languages": [
+  "vi"
+ ],
+ "price_unit_default": "k_vnd",
+ "tax_note": "not_stated",
+ "has_prices": true,
+ "pii_present": false,
+ "pii_types": [],
+ "redaction_checked": false,
+ "consent_id": "",
+ "sections": [
+  {
+   "section_id": "s1",
+   "raw_title": "COMBO SIÊU HỜI",
+   "norm_title": "combo siêu hời",
+   "shared_price_raw": "",
+   "notes": ""
+  }
+ ],
+ "items": [
+  {
+   "section_id": "s1",
+   "item_code": "1",
+   "raw_name": "COMBO 1: LẨU - NƯỚNG 2-3 NGƯỜI",
+   "raw_name_2": "",
+   "norm_name": "combo 1 lẩu nướng",
+   "alt_norm_names": [],
+   "description": "",
+   "category": "combo – set",
+   "is_add_on": false,
+   "is_combo": true,
+   "combo_components": [
+    {
+     "name": "Lẩu cá hú",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "diêu hồng",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Vú heo ướp chao",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "sate",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Bò lá lốt",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Cánh gà khúc giữa (muối ớt",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "BBQ",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "sate)",
+     "qty": "",
+     "ref_price_vnd": null
+    }
+   ],
+   "serves": "2-3 người",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "399K",
+     "raw_old_price": "",
+     "price_vnd": 399000,
+     "old_price_vnd": null,
+     "price_kind": "bundle",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 1
+  },
+  {
+   "section_id": "s1",
+   "item_code": "2",
+   "raw_name": "COMBO2: LẨU - NƯỚNG 3-4 NGƯỜI",
+   "raw_name_2": "",
+   "norm_name": "combo 2 lẩu nướng",
+   "alt_norm_names": [],
+   "description": "",
+   "category": "combo – set",
+   "is_add_on": false,
+   "is_combo": true,
+   "combo_components": [
+    {
+     "name": "Lẩu tự chọn",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Ba chỉ bò cuộn kim châm",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Bò lá lốt",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Chẳng dừng ướp chao",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Chân gà ướp muối",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "sate",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "2 ống cơm lam",
+     "qty": "",
+     "ref_price_vnd": null
+    }
+   ],
+   "serves": "3-4 người",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "599K",
+     "raw_old_price": "",
+     "price_vnd": 599000,
+     "old_price_vnd": null,
+     "price_kind": "bundle",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 2
+  },
+  {
+   "section_id": "s1",
+   "item_code": "3",
+   "raw_name": "COMBO3: NƯỚNG LỬA HỒNG",
+   "raw_name_2": "",
+   "norm_name": "combo 3 nướng lửa hồng",
+   "alt_norm_names": [],
+   "description": "",
+   "category": "combo – set",
+   "is_add_on": false,
+   "is_combo": true,
+   "combo_components": [
+    {
+     "name": "Vú heo ướp chao",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "sate",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Tôm thẻ nướng muối ớt",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "mọi",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Râu mực nướng sate",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "muối ớt",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Cánh gà khúc giữa nướng BBQ",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "2 cơm lam",
+     "qty": "",
+     "ref_price_vnd": null
+    }
+   ],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "399K",
+     "raw_old_price": "",
+     "price_vnd": 399000,
+     "old_price_vnd": null,
+     "price_kind": "bundle",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 3
+  },
+  {
+   "section_id": "s1",
+   "item_code": "4",
+   "raw_name": "COMBO4: NƯỚNG THỊT NGẬP VĨ",
+   "raw_name_2": "",
+   "norm_name": "combo 4 nướng thịt ngập vĩ",
+   "alt_norm_names": [],
+   "description": "",
+   "category": "combo – set",
+   "is_add_on": false,
+   "is_combo": true,
+   "combo_components": [
+    {
+     "name": "Ba chỉ bò cuộn kim châm",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Bò lá lốt",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Chân gà muối ớt",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Chẳng dừng ướp chao",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "sate",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Vú heo ướp chao",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "sate",
+     "qty": "",
+     "ref_price_vnd": null
+    }
+   ],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "459K",
+     "raw_old_price": "",
+     "price_vnd": 459000,
+     "old_price_vnd": null,
+     "price_kind": "bundle",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 4
+  }
+ ],
+ "ignore_regions": [],
+ "annotator": "B",
+ "status": "adjudicated",
+ "version": 2,
+ "notes": "Chữ nhỏ in trên nền ảnh thịt. Thành phần đưa vào combo. 'Lá lốp' là lỗi viết.",
+ "domain": "food_menu",
+ "image_width": 1408,
+ "image_height": 1161,
+ "label_origin": "claude_draft",
+ "review": {
+  "status": "edited",
+  "reviewer": "B",
+  "changed": true,
+  "seconds": 54,
+  "reviewed_at": "2026-11-12T18:41:55.134Z",
+  "flag_note": "",
+  "pii_note": ""
+ },
+ "redactions": [],
+ "adjudication": {
+  "by": "claude_rule_pass+manual_image_check",
+  "date": "2026-11-14",
+  "version": "1.0",
+  "n_changes": 1,
+  "reviewer_status": "edited",
+  "reviewer": "B"
+ }
+}

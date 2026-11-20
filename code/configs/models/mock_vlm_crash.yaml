@@ -1,0 +1,11 @@
+# Test double: the server dies after 5 answers (once) -> restart, pending requests are resent.
+key: mock_vlm_crash
+role: vlm
+tier: test
+backend: mock
+family: Mock
+dtype: null
+vllm: {max_num_seqs: 2, max_model_len: 8192}
+mock:
+  fake_weights_mb: 2
+  env: {MOCK_GOLD_MAP: "{out_dir}/mock_gold_map.json", MOCK_DIE_AFTER: "5", MOCK_STATE_DIR: "{out_dir}/mock_state/crash", MOCK_LATENCY: "0.1"}

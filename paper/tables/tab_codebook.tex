@@ -1,0 +1,19 @@
+\begin{tabular}{@{}llp{4.75cm}rrr@{}}
+\toprule
+Family & Code & Description & Chosen & Final & $p_s$ \\
+\midrule
+Perception & \texttt{read\_print} & printed text or price misread & 28 & 9 & 0.21 \\
+ & \texttt{read\_hand} & handwriting or overwriting misread & 1 & 1 & 0.00 \\
+ & \texttt{read\_scale} & right digits, wrong magnitude & 8 & 4 & 1.00 \\
+Structure & \texttt{struct\_inherit} & inherited price not propagated & 3 & 1 & 0.67 \\
+ & \texttt{struct\_variant} & variant prices dropped or merged & 1 & 1 & 0.00 \\
+ & \texttt{struct\_spatial} & price attached to the wrong item & 12 & 10 & 0.00 \\
+Naming & \texttt{name\_norm} & name or section wrong, price right & 5 & 0 & 0.00 \\
+Hallucination & \texttt{halluc} & invented item or non-item text & 42 & 21 & 0.52 \\
+Omission & \texttt{omit\_dense} & skipped in a complete output & 69 & 33 & 0.81 \\
+ & \texttt{omit\_trunc} & lost to output truncation & 19 & 5 & 0.00 \\
+Other & \texttt{other} & none of the above (memo required) & 34 & 15 & 0.59 \\
+\midrule
+\multicolumn{3}{@{}l}{Total (two codes per case, final after adjudication)} & 222 & 111 & \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,18 @@
+# Core 3: prompt study on the three tuning models: minimal P0, instructions + notes P2, transcript P-T (perception),
+# two-stage P-2S (transcribe, then structure; reuses P-T), and the dev check of the Vietnamese-language prompt P1-VI
+# (frozen by scripts/hooks/pre_c4b_extras.sh if its output is parseable; its test runs are in c4b).
+name: c3_ablate
+seeds: [0]
+splits: [test, ood]
+include_optional: false
+prefetch: true
+keep_weights: false
+stages:
+  - role: vlm
+    models: [qwen3vl_8b, gemma4_e4b, internvl35_8b]
+    prompts: [P0, P2, P-T, P-2S]
+  - role: vlm
+    name: dev check of the Vietnamese-language prompt and the three paraphrases of P1
+    splits: [dev]
+    models: [qwen3vl_8b, gemma4_e4b, internvl35_8b]
+    prompts: [P1-VI, P1a, P1b, P1c]

@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smv"
+version = "0.1.0"
+description = "StreetMenu-VN: evaluation pipeline for dish/price extraction from Vietnamese menu photos with local VLMs"
+requires-python = ">=3.10"
+dependencies = [
+  "typer", "pydantic>=2", "pyyaml", "pandas", "numpy", "scipy", "rapidfuzz", "json-repair",
+  "httpx", "huggingface_hub", "pillow", "pillow-heif", "matplotlib", "pyarrow",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[project.scripts]
+smv = "smv.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+smv = ["py.typed"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+src = ["src", "tests"]
+extend-exclude = ["papers/download_papers.py"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501", "B008", "UP007", "UP045", "B905"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q -p no:cacheprovider"
+markers = ["slow: end-to-end tests that start subprocesses"]

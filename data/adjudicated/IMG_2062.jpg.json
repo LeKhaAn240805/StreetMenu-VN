@@ -1,0 +1,121 @@
+{
+ "schema_version": "3.1",
+ "image_id": "smv_0237",
+ "file_name": "IMG_2062.jpg",
+ "file_sha256": "36cea7633bf0895a309cd7a3fdc842fa351929d05c376df946ebf20a3260d800",
+ "group_id": "G_2062",
+ "near_duplicate_of": "",
+ "split": "ood",
+ "ccl": null,
+ "tags": [
+  "P_FORMAT",
+  "P_UNIT_BUNDLE"
+ ],
+ "venue_tier": "small_shop",
+ "venue_type": "khác",
+ "medium": "băng rôn / bảng hiệu",
+ "lighting": "đủ sáng",
+ "angle": "thẳng",
+ "source": "",
+ "city": "",
+ "languages": [
+  "vi"
+ ],
+ "price_unit_default": "k_vnd",
+ "tax_note": "not_stated",
+ "has_prices": true,
+ "pii_present": true,
+ "pii_types": [
+  "phone"
+ ],
+ "redaction_checked": false,
+ "consent_id": "",
+ "sections": [],
+ "items": [
+  {
+   "item_id": 1,
+   "section_id": null,
+   "item_code": "",
+   "raw_name": "GIẶT SẤY NHANH",
+   "raw_name_2": "",
+   "norm_name": "giặt sấy nhanh",
+   "alt_norm_names": [],
+   "description": "",
+   "category": "không phải đồ ăn",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "9K/kg",
+     "price_vnd": 9000,
+     "old_price_vnd": null,
+     "price_kind": "unit_price",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": 1,
+     "unit": "kg",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "raw_old_price": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ]
+  }
+ ],
+ "ignore_regions": [],
+ "annotator": "A",
+ "status": "adjudicated",
+ "version": 2,
+ "notes": "OOD: biển giặt sấy. Số điện thoại đã che.",
+ "domain": "service",
+ "image_width": 699,
+ "image_height": 894,
+ "label_origin": "claude_draft",
+ "review": {
+  "status": "confirmed",
+  "reviewer": "A",
+  "changed": false,
+  "seconds": 137,
+  "reviewed_at": "2026-11-13T02:28:57.941Z",
+  "flag_note": "",
+  "pii_note": ""
+ },
+ "redactions": [
+  {
+   "type": "phone",
+   "bbox": [
+    0.0887,
+    0.8635,
+    0.9185,
+    0.9374
+   ],
+   "origin": "manual"
+  }
+ ],
+ "adjudication": {
+  "by": "claude_rule_pass+manual_image_check",
+  "date": "2026-11-14",
+  "version": "1.0",
+  "n_changes": 0,
+  "reviewer_status": "confirmed",
+  "reviewer": "A"
+ }
+}

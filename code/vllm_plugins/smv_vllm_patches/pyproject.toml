@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smv-vllm-patches"
+version = "0.1.0"
+description = "Compatibility shims loaded by vLLM as a general plugin (StreetMenu-VN)"
+requires-python = ">=3.10"
+
+[project.entry-points."vllm.general_plugins"]
+smv_patches = "smv_vllm_patches:register"

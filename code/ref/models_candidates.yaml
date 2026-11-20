@@ -1,0 +1,181 @@
+# Danh sách mô hình ứng viên cho StreetMenu-VN (bản nháp 01/11/2026).
+# GPU: 1 x RTX A5000 24 GB (Ampere, không có FP8 phần cứng). Chỉ chạy cục bộ.
+#
+# verify: true  = hf_id / cách chạy / hỗ trợ vLLM CHƯA được kiểm trên model card.
+#                 Claude Code phải gọi huggingface_hub.model_info(hf_id) để xác nhận repo tồn tại,
+#                 lấy commit sha để ghim revision, đọc license và kích thước file, rồi mới đưa vào plan.
+# tier: pilot   = nên chạy cho bản nộp 05/11 (5 họ + baseline OCR)
+#       full    = bản mở rộng
+#       optional= chỉ chạy nếu còn thời gian / còn VRAM
+# backend: vllm | hf (transformers) | ocr (pipeline OCR riêng)
+# size_gb: ước lượng dung lượng trọng số bf16 để kiểm tra ổ đĩa (Claude Code tính lại từ model_info).
+
+models:
+  # ---------------- G1: so sánh các họ, cỡ 7–12B (bf16 vừa 24 GB) ----------------
+  - key: qwen3vl_8b
+    family: Qwen (Alibaba)
+    hf_id: Qwen/Qwen3-VL-8B-Instruct
+    params_b: 8
+    group: [G1, G2, G3]
+    tier: pilot
+    backend: vllm
+    license: Apache-2.0
+    size_gb: 17
+    verify: false
+
+  - key: internvl35_8b
+    family: InternVL (Shanghai AI Lab / OpenGVLab)
+    hf_id: OpenGVLab/InternVL3_5-8B
+    params_b: 8
+    group: [G1, G2]
+    tier: pilot
+    backend: vllm            # cần trust_remote_code; bản -HF dành cho transformers
+    license: Apache-2.0
+    size_gb: 17
+    verify: false
+
+  - key: gemma4_12b
+    family: Gemma (Google)
+    hf_id: google/gemma-4-12B-it      # kiểm lại chữ hoa/thường của repo
+    params_b: 12
+    group: [G1, G3]
+    tier: full               # bf16 ~24 GB không vừa cùng KV cache trên A5000 → cần bản 8-bit/4-bit
+    backend: vllm            # nếu vLLM chưa hỗ trợ Gemma 4 thì dùng backend hf; thinking bật/tắt bằng enable_thinking
+    license: Apache-2.0
+    size_gb: 25              # 12B bf16 ~24 GB: có thể KHÔNG vừa cùng KV cache → thử max_model_len nhỏ hoặc bản 4-bit
+    verify: true
+    fallback_hf_id: google/gemma-3-12b-it
+
+  - key: glm46v_flash
+    family: GLM-V (Zhipu / Z.ai)
+    hf_id: zai-org/GLM-4.6V-Flash
+    params_b: 9
+    group: [G1, G3]
+    tier: pilot
+    backend: vllm
+    license: MIT
+    size_gb: 20
+    verify: true             # kiểm cờ tắt thinking trong chat template
+
+  - key: minicpmv45
+    family: MiniCPM-V (OpenBMB)
+    hf_id: openbmb/MiniCPM-V-4_5
+    params_b: 8
+    group: [G1, G3]
+    tier: pilot
+    backend: vllm            # trust_remote_code
+    license: "MiniCPM Model License (cho phép nghiên cứu; kiểm điều khoản thương mại)"
+    size_gb: 17
+    verify: true
+
+  - key: phi4_mm
+    family: Phi (Microsoft)
+    hf_id: microsoft/Phi-4-multimodal-instruct
+    params_b: 5.6
+    group: [G1]
+    tier: full
+    backend: vllm            # cần trust_remote_code; kiểm vLLM hỗ trợ phần ảnh (LoRA vision)
+    license: MIT
+    size_gb: 12
+    verify: true
+
+  - key: pixtral_12b
+    family: Pixtral (Mistral AI)
+    hf_id: mistralai/Pixtral-12B-2409
+    params_b: 12
+    group: [G1]
+    tier: full
+    backend: vllm            # --tokenizer-mode mistral --config-format mistral --load-format mistral
+    license: Apache-2.0
+    size_gb: 25              # sát giới hạn 24 GB; nếu OOM dùng bản AWQ/GPTQ 4-bit cộng đồng (ghi rõ trong bài)
+    verify: true
+
+  - key: molmo_7b
+    family: Molmo (Allen AI, mở hoàn toàn dữ liệu)
+    hf_id: allenai/Molmo-7B-D-0924
+    params_b: 7
+    group: [G1]
+    tier: full
+    backend: vllm            # trust_remote_code; kiểm Molmo2 nếu đã có model card chính thức
+    license: Apache-2.0
+    size_gb: 16
+    verify: false
+
+  - key: ovis25_9b
+    family: Ovis (Alibaba AIDC)
+    hf_id: AIDC-AI/Ovis2.5-9B
+    params_b: 9
+    group: [G1]
+    tier: optional
+    backend: hf
+    license: Apache-2.0
+    size_gb: 19
+    verify: true
+
+  - key: aya_vision_8b
+    family: Aya Vision (Cohere, đa ngôn ngữ có tiếng Việt)
+    hf_id: CohereLabs/aya-vision-8b
+    params_b: 8
+    group: [G1, G4]
+    tier: optional
+    backend: vllm
+    license: CC-BY-NC-4.0    # chỉ dùng cho nghiên cứu
+    size_gb: 17
+    verify: true
+
+  - key: qwen25vl_7b
+    family: Qwen (Alibaba)
+    hf_id: Qwen/Qwen2.5-VL-7B-Instruct
+    params_b: 7
+    group: [G1]
+    tier: optional            # giữ nếu đề cương bắt buộc; nếu không thì Qwen3-VL đủ đại diện họ Qwen
+    backend: vllm
+    license: Apache-2.0
+    size_gb: 16
+    verify: false
+
+  # ---------------- G2: quy mô (vẽ đường theo kích thước ở HAI họ khác nhau) ----------------
+  - {key: qwen3vl_2b, family: Qwen, hf_id: Qwen/Qwen3-VL-2B-Instruct, params_b: 2, group: [G2], tier: full, backend: vllm, size_gb: 5, verify: false}
+  - {key: qwen3vl_4b, family: Qwen, hf_id: Qwen/Qwen3-VL-4B-Instruct, params_b: 4, group: [G2], tier: full, backend: vllm, size_gb: 9, verify: false}
+  - {key: qwen3vl_32b_awq, family: Qwen, hf_id: "Qwen/Qwen3-VL-32B-Instruct-AWQ (hoặc bản AWQ cộng đồng)", params_b: 32, quant: awq-4bit, group: [G2, G6], tier: optional, backend: vllm, size_gb: 20, verify: true}
+  - {key: internvl35_1b, family: InternVL, hf_id: OpenGVLab/InternVL3_5-1B, params_b: 1, group: [G2], tier: full, backend: vllm, size_gb: 2, verify: false}
+  - {key: internvl35_2b, family: InternVL, hf_id: OpenGVLab/InternVL3_5-2B, params_b: 2, group: [G2], tier: full, backend: vllm, size_gb: 5, verify: false}
+  - {key: internvl35_4b, family: InternVL, hf_id: OpenGVLab/InternVL3_5-4B, params_b: 4, group: [G2], tier: full, backend: vllm, size_gb: 9, verify: false}
+  - {key: internvl35_14b, family: InternVL, hf_id: OpenGVLab/InternVL3_5-14B, params_b: 14, group: [G2], tier: optional, backend: vllm, size_gb: 30, note: "cần 4-bit hoặc 8-bit để vừa 24 GB", verify: true}
+  - {key: gemma4_e2b, family: Gemma, hf_id: google/gemma-4-E2B-it, params_b: 2, group: [G2], tier: full, backend: vllm, size_gb: 10, verify: true}
+  - {key: gemma4_e4b, family: Gemma, hf_id: google/gemma-4-E4B-it, params_b: 4, group: [G1, G2, G3], tier: pilot, note: "đại diện họ Gemma ở pilot vì vừa bf16", backend: vllm, size_gb: 16, verify: true}
+  - {key: gemma4_26b_a4b_4bit, family: Gemma, hf_id: "google/gemma-4-26B-A4B-it (bản 4-bit)", params_b: 26, quant: 4bit, group: [G2, G6], tier: optional, backend: vllm, size_gb: 16, verify: true}
+
+  # ---------------- G3: thinking (cùng trọng số, đổi chat_template_kwargs; trừ Qwen3-VL có bản riêng) ----------------
+  - {key: qwen3vl_8b_thinking, family: Qwen, hf_id: Qwen/Qwen3-VL-8B-Thinking, params_b: 8, group: [G3], tier: full, backend: vllm, size_gb: 17, verify: false}
+  # gemma4_12b, glm46v_flash, minicpmv45: chạy thêm biến thể thinking=on trong cùng phiên server (xem plan).
+
+  # ---------------- G4: chuyên tiếng Việt ----------------
+  - key: vintern_1b
+    family: Vintern (5CD-AI, nền InternVL)
+    hf_id: 5CD-AI/Vintern-1B-v3_5
+    params_b: 1
+    group: [G4]
+    tier: pilot
+    backend: hf              # thử vllm với kiến trúc InternVL nếu nạp được; nếu không dùng transformers
+    license: MIT
+    size_gb: 2
+    verify: true
+
+  # ---------------- G5: OCR chuyên dụng → LLM văn bản ----------------
+  - {key: ocr_ppocr, family: PaddleOCR cổ điển, hf_id: "pip paddleocr (PP-OCRv5/v6, lang=vi)", group: [G5], tier: pilot, backend: ocr, note: "baseline bắt buộc: OCR + regex + ghép dòng", verify: true}
+  - {key: ocr_easyocr, family: EasyOCR, hf_id: "pip easyocr (vi)", group: [G5], tier: full, backend: ocr, verify: false}
+  - {key: ocr_paddleocr_vl, family: PaddleOCR-VL (Baidu), hf_id: PaddlePaddle/PaddleOCR-VL, params_b: 0.9, group: [G5], tier: full, backend: ocr, note: "kiểm bản 1.5/1.6 mới nhất", verify: true}
+  - {key: ocr_glm_ocr, family: GLM-OCR (Zhipu), hf_id: zai-org/GLM-OCR, params_b: 0.9, group: [G5], tier: full, backend: ocr, license: MIT, verify: true}
+  - {key: ocr_deepseek_ocr2, family: DeepSeek-OCR (DeepSeek), hf_id: deepseek-ai/DeepSeek-OCR-2, params_b: 3, group: [G5], tier: full, backend: ocr, license: MIT, fallback_hf_id: deepseek-ai/DeepSeek-OCR, verify: true}
+  - {key: ocr_dots, family: dots.ocr (rednote), hf_id: rednote-hilab/dots.ocr, params_b: 3, group: [G5], tier: optional, backend: ocr, verify: true}
+  - {key: ocr_mineru25, family: MinerU (OpenDataLab), hf_id: opendatalab/MinerU2.5-2509-1.2B, params_b: 1.2, group: [G5], tier: optional, backend: ocr, verify: true}
+  # LLM văn bản cho bước 2 (dùng HAI họ để kết luận OCR→LLM không phụ thuộc một họ):
+  - {key: llm_qwen3_8b, family: Qwen, hf_id: Qwen/Qwen3-8B, params_b: 8, group: [G5], tier: full, backend: vllm, text_only: true, size_gb: 17, verify: false}
+  - {key: llm_gemma3_12b_text, family: Gemma, hf_id: google/gemma-3-12b-it, params_b: 12, group: [G5], tier: optional, backend: vllm, text_only: true, size_gb: 25, verify: false}
+
+  # ---------------- G6: lượng tử hóa (một mô hình chính) ----------------
+  # qwen3vl_8b ở bf16 / AWQ 4-bit / GGUF Q4 (llama.cpp). Ampere không có FP8 phần cứng: FP8 chỉ là weight-only qua Marlin, ghi rõ nếu dùng.
+
+# Loại vì không vừa 24 GB ở bf16 và không có bản lượng tử hóa chính thức đáng tin: Llama 4 Scout/Maverick,
+# Kimi-VL-A3B (16B tổng), Mistral Small 3.2 24B (chỉ chạy được ở 4-bit), InternVL3.5-38B.

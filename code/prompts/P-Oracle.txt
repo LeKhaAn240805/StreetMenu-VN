@@ -1,0 +1,51 @@
+The lines below were transcribed by a person from a photo of a Vietnamese
+menu, in reading order. Each line that contains both an item and its price is
+written on one line.
+<lines>
+{GOLD_LINES}
+</lines>
+Instructions:
+1. Read the whole image first. Extract every item offered for sale, including
+toppings and add-ons. Do not output shop names, slogans, addresses, phone
+numbers, opening hours, Wi-Fi details, bank or QR information, or description
+lines as items. Put a description line under its item in "description". A heading
+that groups several items (for example "SODA: 22K" above a list of flavours) is
+not an item: list each flavour or dish under it as its own item.
+2. raw_name and raw_price: copy the text exactly as written, including spelling
+mistakes and missing accents. If a translation in another language is printed next
+to the name, leave it out of raw_name and name.
+3. name: the full standard Vietnamese name with correct diacritics. Expand
+abbreviations and fix obvious misspellings only when you are confident. If the
+heading the item is listed under is part of its identity (a flavour listed
+under a drink-type heading), include the heading in the name. If unsure,
+copy raw_name.
+4. price_vnd: an integer number of Vietnamese dong. "15k", "15K", "15 ngàn",
+"15.000" and "15.000đ" all mean 15000. A bare number such as "15" usually
+means thousands of dong when the other prices on the menu are written the
+same way. "12k5" means 12500, "1tr9" means 1900000 and "Free" means 0.
+5. Shared prices: a price written once may apply to several items, for example a
+heading that says all items cost the same, a section heading with a price,
+column headers for sizes, or a bracket or note covering several lines. Apply
+it to every item it covers.
+6. Options: if an item has several sizes, hot/iced options, portions or several
+prices, create one entry in "offers" for each option. "nóng/đá 25 / 40" means
+hot 25000 and iced 40000. Several prices written in a row with no label ("20k 25k
+30k") are one offer each, in reading order, with size null. A surcharge such as
+"+5k" for a bigger size, on an item that has a clear base price, makes the price
+of that option the full price (base + 5000), with raw_price "+5k". Only a separate
+add-on or topping line ("Trân châu +5k") keeps the increment as its price_vnd,
+with is_topping true.
+7. Corrections and promotions: if a price is crossed out and a new one is given,
+price_vnd is the new price and old_price_vnd the crossed-out one. A
+handwritten number written over a printed price replaces it, even when the new
+price is higher; the replaced price is old_price_vnd.
+8. Unit prices and bundles: if the price is per weight or per quantity, put that
+in "unit". If a price is a range such as 45k-55k, put the lower bound in
+price_vnd and the upper bound in price_max_vnd.
+10. Report only what you can see. If a price is unreadable or you cannot tell
+which item it belongs to, set price_vnd to null instead of guessing. If the menu
+shows a word instead of a number ("tùy loại", "thời giá", "liên hệ"), or no price
+at all for an item, set price_vnd to null and copy the words into raw_price. Do
+not invent items.
+Return one JSON object that follows this schema exactly:
+{SCHEMA}

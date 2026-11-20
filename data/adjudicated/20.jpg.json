@@ -1,0 +1,161 @@
+{
+ "schema_version": "3.1",
+ "image_id": "smv_0009",
+ "file_name": "20.jpg",
+ "file_sha256": "1e019a204cb6acb4491ab52a31c1d096e4f5650dc2aecc405f5324435aff403a",
+ "group_id": "G_20",
+ "near_duplicate_of": "",
+ "split": "test",
+ "ccl": 4,
+ "tags": [
+  "P_FORMAT",
+  "P_UNIT_BUNDLE",
+  "N_NORMALIZE",
+  "N_FOREIGN",
+  "L_COMBO_SET",
+  "S_DETACHED",
+  "S_LAYOUT",
+  "V_DAMAGE",
+  "D_DISTRACTOR"
+ ],
+ "venue_tier": "chain",
+ "venue_type": "lẩu – nướng",
+ "medium": "sổ menu (trang)",
+ "lighting": "lóa / phản chiếu",
+ "angle": "nghiêng nhẹ",
+ "source": "",
+ "city": "",
+ "languages": [
+  "vi",
+  "en",
+  "ko"
+ ],
+ "price_unit_default": "vnd",
+ "tax_note": "excluded",
+ "has_prices": true,
+ "pii_present": false,
+ "pii_types": [],
+ "redaction_checked": false,
+ "consent_id": "",
+ "sections": [
+  {
+   "section_id": "s1",
+   "raw_title": "Menu 25 MÓN NƯỚNG",
+   "norm_title": "25 món nướng",
+   "shared_price_raw": "",
+   "notes": ""
+  }
+ ],
+ "items": [
+  {
+   "section_id": "s1",
+   "item_code": "",
+   "raw_name": "Menu 25 MÓN NƯỚNG",
+   "raw_name_2": "Grilled dishes",
+   "norm_name": "buffet 25 món nướng",
+   "alt_norm_names": [],
+   "description": "",
+   "category": "combo – set",
+   "is_add_on": false,
+   "is_combo": true,
+   "combo_components": [
+    {
+     "name": "Gầu bò sốt ớt chuông đỏ",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Gầu bò sốt Guang Yang",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Nạm cổ bò Mỹ sốt King BBQ",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Nạm cổ bò Mỹ sốt Tenjo",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Lõi cổ bò sốt Tenjo",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Lõi cổ bò sốt King BBQ",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Mực nang sốt muối ớt",
+     "qty": "",
+     "ref_price_vnd": null
+    }
+   ],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "Chỉ thấy các món 18-24 ở trang này; 'Thêm 8 món nướng' là khẩu hiệu.",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "289.000 VND",
+     "raw_old_price": "",
+     "price_vnd": 289000,
+     "old_price_vnd": null,
+     "price_kind": "bundle",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 1
+  }
+ ],
+ "ignore_regions": [],
+ "annotator": "B",
+ "status": "adjudicated",
+ "version": 2,
+ "notes": "Trang buffet: một giá 289.000 VND cho cả menu, các món đánh số không có giá riêng nên ghi là thành phần. Món đầu bị dán băng keo vàng. Khung mặt tự động tại đây là nhận nhầm hoa văn nên đã bỏ.",
+ "domain": "food_menu",
+ "image_width": 1500,
+ "image_height": 2000,
+ "label_origin": "claude_draft",
+ "review": {
+  "status": "edited",
+  "reviewer": "B",
+  "changed": true,
+  "seconds": 36,
+  "reviewed_at": "2026-11-11T11:36:29.017Z",
+  "flag_note": "",
+  "pii_note": ""
+ },
+ "redactions": [],
+ "adjudication": {
+  "by": "claude_rule_pass+manual_image_check",
+  "date": "2026-11-14",
+  "version": "1.0",
+  "n_changes": 1,
+  "reviewer_status": "edited",
+  "reviewer": "B"
+ }
+}

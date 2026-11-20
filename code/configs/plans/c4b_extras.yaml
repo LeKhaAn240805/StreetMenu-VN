@@ -1,0 +1,40 @@
+# Core 4b: OCR text to JSON and the human-transcript bound (needs P-OCR+ and P-Oracle frozen), thinking on/off, quantisation,
+# second Vietnamese-specialised sizes, and the remaining OCR engines (OCR + regex baselines).
+name: c4b_extras
+seeds: [0]
+splits: [test]
+include_optional: false
+prefetch: true
+keep_weights: false
+stages:
+  - role: llm
+    name: cascade
+    models: [llm_qwen3_8b, llm_vylinh_3b]
+    prompts:
+      - {id: P-OCR+, ocr_from: [ocr_ppocr, ocr_paddleocr_vl]}
+      - P-Oracle
+  - role: vlm
+    name: thinking on and off on the same weights
+    models: [gemma4_e4b, qwen35_4b]
+    prompts: [P1]
+    thinking: ["off", "on"]
+  - role: vlm
+    name: quantisation of Qwen3-VL-8B
+    models: [qwen3vl_8b_fp8, qwen3vl_8b_awq]
+    prompts: [P1]
+  - role: vlm
+    name: Vietnamese-specialised, other sizes
+    models: [vintern_3b_r, erax_vl_2b]
+    prompts: [P1]
+  - role: vlm
+    name: prompt language (Vietnamese P1-VI against English P1), two general and two Vietnamese-specialised models
+    models: [qwen3vl_8b, gemma4_e4b, vintern_3b_r, erax_vl_2b]
+    prompts: [P1-VI]
+  - role: vlm
+    name: wording sensitivity of P1 (three paraphrases with the same content)
+    models: [qwen3vl_8b, gemma4_e4b]
+    prompts: [P1a, P1b, P1c]
+  - role: ocr
+    name: remaining OCR engines
+    splits: [dev, test, ood]
+    models: [ocr_glm_ocr, ocr_dots, ocr_vietocr, ocr_easyocr, ocr_mineru25]

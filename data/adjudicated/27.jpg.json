@@ -1,0 +1,214 @@
+{
+ "schema_version": "3.1",
+ "image_id": "smv_0012",
+ "file_name": "27.jpg",
+ "file_sha256": "6361842345bc2f63a53c2a6d5ba0bed10ee746ed7e3affec05b471fa0335a462",
+ "group_id": "G_27",
+ "near_duplicate_of": "",
+ "split": "test",
+ "ccl": 3,
+ "tags": [
+  "P_FORMAT",
+  "N_NORMALIZE",
+  "N_SECTION_COMPOSE",
+  "N_FOREIGN",
+  "L_COMBO_SET",
+  "D_DISTRACTOR"
+ ],
+ "venue_tier": "chain",
+ "venue_type": "lẩu – nướng",
+ "medium": "sổ menu (trang)",
+ "lighting": "đủ sáng",
+ "angle": "nghiêng nhẹ",
+ "source": "",
+ "city": "",
+ "languages": [
+  "vi",
+  "en"
+ ],
+ "price_unit_default": "vnd",
+ "tax_note": "excluded",
+ "has_prices": true,
+ "pii_present": false,
+ "pii_types": [],
+ "redaction_checked": false,
+ "consent_id": "",
+ "sections": [
+  {
+   "section_id": "s1",
+   "raw_title": "COMBO",
+   "norm_title": "combo",
+   "shared_price_raw": "",
+   "notes": ""
+  }
+ ],
+ "items": [
+  {
+   "item_id": 1,
+   "section_id": "s1",
+   "item_code": "",
+   "raw_name": "Đông Mới Zui",
+   "raw_name_2": "",
+   "norm_name": "combo đông mới zui",
+   "alt_norm_names": [
+    "đông mới zui"
+   ],
+   "description": "",
+   "category": "lẩu",
+   "is_add_on": false,
+   "is_combo": true,
+   "combo_components": [
+    {
+     "name": "Nạc dăm heo",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Nạc vai bò Úc",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Ba chỉ bò Mỹ",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Gù hoa bò",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Tôm càng sen",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Cá diêu hồng phi-lê",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Chân gà rút xương",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Tàu hũ hải sản nhân phô mai",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Mực nút",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Nấm bào ngư",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Nấm kim châm",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Cải thảo",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Cải thìa",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Mồng tơi",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Bắp Mỹ",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Mì gói",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Lẩu Tomyum & Lẩu Bulgogi",
+     "qty": "",
+     "ref_price_vnd": null
+    }
+   ],
+   "serves": "5-6 người",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "699 000 VND",
+     "price_vnd": 699000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "raw_old_price": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ]
+  }
+ ],
+ "ignore_regions": [
+  {
+   "desc": "Mép phải cắt mất chữ cuối 'Lẩu Bulgogi'.",
+   "bbox": null
+  }
+ ],
+ "annotator": "A",
+ "status": "adjudicated",
+ "version": 2,
+ "notes": "'Chỉ 117.000 VND/người' là giá quy đổi, không gán. Mục 1-17 là thành phần combo. Hotline và website là của chuỗi, không phải thông tin cá nhân nên không che. Giá chưa gồm VAT và đồ uống.",
+ "domain": "food_menu",
+ "image_width": 1126,
+ "image_height": 2000,
+ "label_origin": "claude_draft",
+ "review": {
+  "status": "confirmed",
+  "reviewer": "A",
+  "changed": false,
+  "seconds": 76,
+  "reviewed_at": "2026-11-12T23:23:37.332Z",
+  "flag_note": "",
+  "pii_note": ""
+ },
+ "redactions": [],
+ "adjudication": {
+  "by": "claude_rule_pass+manual_image_check",
+  "date": "2026-11-14",
+  "version": "1.0",
+  "n_changes": 0,
+  "reviewer_status": "confirmed",
+  "reviewer": "A"
+ }
+}

@@ -1,0 +1,155 @@
+{
+ "schema_version": "3.1",
+ "image_id": "smv_0227",
+ "file_name": "IMG_1944.jpg",
+ "file_sha256": "0df4730533631da097492b24113278ca4885b128d27fae3be062acdd9b73be23",
+ "group_id": "G_1943",
+ "near_duplicate_of": "",
+ "split": "test",
+ "ccl": 3,
+ "tags": [
+  "P_FORMAT",
+  "P_UNIT_BUNDLE",
+  "L_COMBO_SET",
+  "D_DISTRACTOR"
+ ],
+ "venue_tier": "chain",
+ "venue_type": "cơm",
+ "medium": "poster một món",
+ "lighting": "đủ sáng",
+ "angle": "thẳng",
+ "source": "",
+ "city": "",
+ "languages": [
+  "vi"
+ ],
+ "price_unit_default": "k_vnd",
+ "tax_note": "excluded",
+ "has_prices": true,
+ "pii_present": true,
+ "pii_types": [
+  "address",
+  "phone",
+  "qr_bank"
+ ],
+ "redaction_checked": false,
+ "consent_id": "",
+ "sections": [],
+ "items": [
+  {
+   "item_id": 1,
+   "section_id": null,
+   "item_code": "",
+   "raw_name": "CƠM VĂN PHÒNG",
+   "raw_name_2": "",
+   "norm_name": "cơm văn phòng",
+   "alt_norm_names": [],
+   "description": "Một phần cơm sẽ bao gồm: 1 món canh + 1 món xào + 1 món mặn + 1 tráng miệng",
+   "category": "cơm – xôi",
+   "is_add_on": false,
+   "is_combo": true,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "Có ghi 'Giá 39.000/Phần chưa bao gồm VAT'.",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "Giá chỉ từ 39K",
+     "price_vnd": 39000,
+     "old_price_vnd": null,
+     "price_kind": "starting_from",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "raw_old_price": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ]
+  }
+ ],
+ "ignore_regions": [],
+ "annotator": "B",
+ "status": "adjudicated",
+ "version": 2,
+ "notes": "Cùng thương hiệu với IMG_1943. Phần cơm gồm 1 món canh + 1 món xào + 1 món mặn + 1 tráng miệng. Đã che QR Zalo, QR Befood, số điện thoại và địa chỉ. Logo quảng cáo giữ nguyên.",
+ "domain": "food_menu",
+ "image_width": 861,
+ "image_height": 1520,
+ "label_origin": "claude_draft",
+ "review": {
+  "status": "confirmed",
+  "reviewer": "B",
+  "changed": false,
+  "seconds": 12,
+  "reviewed_at": "2026-11-09T15:45:09.615Z",
+  "flag_note": "",
+  "pii_note": ""
+ },
+ "redactions": [
+  {
+   "type": "qr_bank",
+   "bbox": [
+    0.0858,
+    0.6434,
+    0.2301,
+    0.7306
+   ],
+   "origin": "auto"
+  },
+  {
+   "type": "qr_bank",
+   "bbox": [
+    0.0859,
+    0.7474,
+    0.23,
+    0.8276
+   ],
+   "origin": "manual"
+  },
+  {
+   "type": "phone",
+   "bbox": [
+    0.1487,
+    0.8579,
+    0.3461,
+    0.8789
+   ],
+   "origin": "manual"
+  },
+  {
+   "type": "address",
+   "bbox": [
+    0.1487,
+    0.8921,
+    0.7967,
+    0.9132
+   ],
+   "origin": "manual"
+  }
+ ],
+ "adjudication": {
+  "by": "claude_rule_pass+manual_image_check",
+  "date": "2026-11-14",
+  "version": "1.0",
+  "n_changes": 0,
+  "reviewer_status": "confirmed",
+  "reviewer": "B"
+ }
+}

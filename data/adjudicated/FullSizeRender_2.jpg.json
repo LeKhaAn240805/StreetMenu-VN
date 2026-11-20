@@ -1,0 +1,157 @@
+{
+ "schema_version": "3.1",
+ "image_id": "smv_0035",
+ "file_name": "FullSizeRender_2.jpg",
+ "file_sha256": "e36e77ac95f21a0e54991097cddd000c306c033876e57a46d6e868215c4247aa",
+ "group_id": "G_FSR2",
+ "near_duplicate_of": "",
+ "split": "dev",
+ "ccl": 3,
+ "tags": [
+  "P_FORMAT",
+  "P_INHERITED",
+  "P_UNIT_BUNDLE",
+  "N_NORMALIZE",
+  "N_FOREIGN",
+  "L_COMBO_SET",
+  "D_DISTRACTOR"
+ ],
+ "venue_tier": "small_shop",
+ "venue_type": "nhà hàng",
+ "medium": "poster một món",
+ "lighting": "đủ sáng",
+ "angle": "thẳng",
+ "source": "",
+ "city": "TP.HCM",
+ "languages": [
+  "en"
+ ],
+ "price_unit_default": "vnd",
+ "tax_note": "not_stated",
+ "has_prices": true,
+ "pii_present": false,
+ "pii_types": [],
+ "redaction_checked": false,
+ "consent_id": "",
+ "sections": [
+  {
+   "section_id": "s1",
+   "raw_title": "Taste it",
+   "norm_title": "taste it",
+   "shared_price_raw": "",
+   "notes": ""
+  }
+ ],
+ "items": [
+  {
+   "item_id": 1,
+   "section_id": "s1",
+   "item_code": "",
+   "raw_name": "Taste it",
+   "raw_name_2": "",
+   "norm_name": "thực đơn taste it",
+   "alt_norm_names": [],
+   "description": "",
+   "category": "combo – set",
+   "is_add_on": false,
+   "is_combo": true,
+   "combo_components": [
+    {
+     "name": "Grilled beef on clay tile",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Lotus fried rice",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "\"Banh xeo\" SH",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Spring rolls",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Fresh rolls",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Mustard green fresh rolls",
+     "qty": "",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Grilled Iribeco pork & vermicelli",
+     "qty": "",
+     "ref_price_vnd": null
+    }
+   ],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "Dòng 'More and more...' không gán.",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "Only from 275.000 vnd (9 EUR)",
+     "price_vnd": 275000,
+     "old_price_vnd": null,
+     "price_kind": "starting_from",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "global_header",
+     "evidence": "printed",
+     "notes": "",
+     "raw_old_price": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ]
+  }
+ ],
+ "ignore_regions": [],
+ "annotator": "A",
+ "status": "adjudicated",
+ "version": 2,
+ "notes": "Bảng tiếng Anh cho khách nước ngoài. Giá 'Only from' áp cho cả thực đơn, món liệt kê không có giá riêng nên ghi thành thành phần. Có giá quy đổi sang EUR, chỉ giữ giá VND.",
+ "domain": "food_menu",
+ "image_width": 1994,
+ "image_height": 2534,
+ "label_origin": "claude_draft",
+ "review": {
+  "status": "confirmed",
+  "reviewer": "A",
+  "changed": false,
+  "seconds": 34,
+  "reviewed_at": "2026-11-13T02:16:04.874Z",
+  "flag_note": "",
+  "pii_note": ""
+ },
+ "redactions": [],
+ "adjudication": {
+  "by": "claude_rule_pass+manual_image_check",
+  "date": "2026-11-14",
+  "version": "1.0",
+  "n_changes": 1,
+  "reviewer_status": "confirmed",
+  "reviewer": "A"
+ }
+}

@@ -1,0 +1,11 @@
+# Core 6 (bonus): further families for the main table. Models that cannot load are logged and skipped.
+name: c6_families
+seeds: [0]
+splits: [test, ood]
+include_optional: false
+prefetch: true
+keep_weights: false
+stages:
+  - role: vlm
+    models: [phi4_mm, pixtral_12b, molmo_7b, ovis25_9b, qwen25vl_7b, mimo_vl_7b]
+    prompts: [P1]

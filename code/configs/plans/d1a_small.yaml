@@ -1,0 +1,35 @@
+# Small models, lane A (half of card 1; runs side by side with d1b_small). Models of at most 4B whose weights and KV cache
+# fit in 12 GB with the usual 16,384-token context, so the outputs are the same as on a whole card; only speed differs
+# (manifests carry gpu_share, the deployment table ignores them).
+#   - compact output P1-C for the models of the main table (does the 8,192-token output limit explain the dense menus?)
+#   - what was left of c4b for these models: thinking on (Qwen3.5-4B), Vintern-3B (P1, P1-VI), cascade with VyLinh-3B
+#   - confidence signals on Qwen3.5-4B: token log-probabilities of the P1 answer (P1@lp) and stated confidence (P-Conf)
+name: d1a_small
+gpu_share: 0.49
+seeds: [0]
+splits: [test]
+include_optional: false
+prefetch: true
+keep_weights: false
+stages:
+  - role: vlm
+    name: Qwen3.5-4B, compact output, thinking on, confidence signals
+    models: [qwen35_4b]
+    prompts:
+      - {id: P1, tag: long, sampling: {max_tokens: 15000}}
+      - {id: P1, thinking: ["off", "on"]}
+      - {id: P1, tag: lp, sampling: {logprobs: true}}
+  - role: vlm
+    name: longer output budget (max_tokens 15000 vs 8192) to isolate truncation
+    models: [gemma4_e2b, ministral3_3b, vintern_3b_r]
+    prompts: [{id: P1, tag: long, sampling: {max_tokens: 15000}}]
+  - role: vlm
+    name: Vietnamese-specialised 3B, English and Vietnamese prompt (from c4b)
+    models: [vintern_3b_r]
+    prompts: [P1, P1-VI]
+  - role: llm
+    name: cascade with the Vietnamese 3B text LLM (from c4b)
+    models: [llm_vylinh_3b]
+    prompts:
+      - {id: P-OCR+, ocr_from: [ocr_ppocr, ocr_paddleocr_vl]}
+      - P-Oracle

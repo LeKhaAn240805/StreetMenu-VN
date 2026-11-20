@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\caption{How wrong are the wrong prices (P1, test)}
+\label{tab:severity}
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & Wrong prices & within 10\% (\%) & 10-100\% off (\%) & more than 2x off (\%) & factor 10 or more (\%) & median abs log10 ratio \\
+\midrule
+GLM-4.6V-Flash & 481 & 2 & 96 & 2 & 59 & 1.00 \\
+InternVL3.5-2B & 476 & 3 & 93 & 3 & 76 & 3.00 \\
+Gemma 4 E2B & 373 & 8 & 89 & 3 & 57 & 3.00 \\
+InternVL3.5-1B & 280 & 5 & 90 & 4 & 45 & 0.39 \\
+Vintern-1B v3.5 & 258 & 5 & 82 & 13 & 45 & 0.63 \\
+EraX-VL-2B v1.5 & 201 & 3 & 88 & 9 & 34 & 0.26 \\
+Qwen3.5-4B & 193 & 5 & 87 & 8 & 36 & 0.15 \\
+MiniCPM-V 4.5 & 191 & 19 & 75 & 5 & 5 & 0.08 \\
+\bottomrule
+\end{tabular}
+\par\smallskip{\footnotesize Relative error |predicted - gold| / gold of every offer whose price is wrong.}
+\end{table}

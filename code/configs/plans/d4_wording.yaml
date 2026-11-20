@@ -1,0 +1,12 @@
+# Wording sensitivity of P1 on Qwen3-VL-8B (three paraphrases, from c4b). Three hours on a slow model, so it runs after
+# everything that the main claims need.
+name: d4_wording
+seeds: [0]
+splits: [test]
+include_optional: false
+prefetch: true
+keep_weights: false
+stages:
+  - role: vlm
+    models: [qwen3vl_8b]
+    prompts: [P1a, P1b, P1c]

@@ -1,0 +1,17 @@
+# Core 1 (14/11/2026, deadline-driven queue): the main table. One frozen prompt (P1) for 8 VLM families on test + ood, plus the
+# two OCR engines the cascade needs. Dev results already exist for the three tuning models; other models skip dev.
+name: c1_main
+seeds: [0]
+splits: [test, ood]
+include_optional: false
+prefetch: true
+keep_weights: false          # weights are deleted as soon as a model has finished
+stages:
+  - role: ocr
+    name: OCR engines needed by the cascade (dev too, for the dev check of P-OCR+)
+    splits: [dev, test, ood]
+    models: [ocr_ppocr, ocr_paddleocr_vl]
+  - role: vlm
+    name: main table
+    models: [qwen3vl_8b, gemma4_e4b, internvl35_8b, glm46v_flash, minicpmv45, ministral3_8b, erax_vl_7b, vintern_1b]
+    prompts: [P1]

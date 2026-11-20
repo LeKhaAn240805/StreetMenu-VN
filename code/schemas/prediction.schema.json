@@ -1,0 +1,203 @@
+{
+  "$defs": {
+    "PredItem": {
+      "additionalProperties": true,
+      "properties": {
+        "section": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Section"
+        },
+        "raw_name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Raw Name"
+        },
+        "name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Name"
+        },
+        "description": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Description"
+        },
+        "is_topping": {
+          "default": false,
+          "title": "Is Topping",
+          "type": "boolean"
+        },
+        "is_combo": {
+          "default": false,
+          "title": "Is Combo",
+          "type": "boolean"
+        },
+        "offers": {
+          "items": {
+            "$ref": "#/$defs/PredOffer"
+          },
+          "title": "Offers",
+          "type": "array"
+        }
+      },
+      "title": "PredItem",
+      "type": "object"
+    },
+    "PredOffer": {
+      "additionalProperties": true,
+      "properties": {
+        "size": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Size"
+        },
+        "temp": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Temp"
+        },
+        "portion": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Portion"
+        },
+        "raw_price": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Raw Price"
+        },
+        "price_vnd": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Price Vnd"
+        },
+        "price_max_vnd": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Price Max Vnd"
+        },
+        "old_price_vnd": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Old Price Vnd"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        },
+        "confidence": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Confidence"
+        }
+      },
+      "title": "PredOffer",
+      "type": "object"
+    }
+  },
+  "additionalProperties": true,
+  "properties": {
+    "items": {
+      "items": {
+        "$ref": "#/$defs/PredItem"
+      },
+      "title": "Items",
+      "type": "array"
+    }
+  },
+  "title": "Prediction",
+  "type": "object"
+}

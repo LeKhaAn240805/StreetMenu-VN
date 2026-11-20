@@ -1,0 +1,123 @@
+{
+ "schema_version": "3.1",
+ "image_id": "smv_0263",
+ "file_name": "IMG_2116.jpg",
+ "file_sha256": "e34ae988db5c36225095f9230c0a962fdab85cb4d94366f1ccff53ba0f447093",
+ "group_id": "G_2116",
+ "near_duplicate_of": "",
+ "split": "test",
+ "ccl": 4,
+ "tags": [
+  "P_FORMAT",
+  "P_UNIT_BUNDLE",
+  "V_GEOMETRY",
+  "D_DISTRACTOR"
+ ],
+ "venue_tier": "street_vendor",
+ "venue_type": "tiệm bánh – tráng miệng",
+ "medium": "băng rôn / bảng hiệu",
+ "lighting": "đủ sáng",
+ "angle": "cong / gấp",
+ "source": "",
+ "city": "",
+ "languages": [
+  "vi"
+ ],
+ "price_unit_default": "k_vnd",
+ "tax_note": "not_stated",
+ "has_prices": true,
+ "pii_present": true,
+ "pii_types": [
+  "face"
+ ],
+ "redaction_checked": false,
+ "consent_id": "",
+ "sections": [],
+ "items": [
+  {
+   "section_id": null,
+   "item_code": "",
+   "raw_name": "BÁNH CREPE CÚC SẦU RIÊNG 247",
+   "raw_name_2": "",
+   "norm_name": "bánh crepe sầu riêng",
+   "alt_norm_names": [],
+   "description": "",
+   "category": "bánh",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "CHỈ TỪ 20K/HỘP",
+     "raw_old_price": "",
+     "price_vnd": 20000,
+     "old_price_vnd": null,
+     "price_kind": "starting_from",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": 1,
+     "unit": "hộp",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 1
+  }
+ ],
+ "ignore_regions": [],
+ "annotator": "A",
+ "status": "adjudicated",
+ "version": 2,
+ "notes": "Cờ phướn cong. Có người mẫu trên cờ, mặt đã che. 'Bánh mới trong ngày' là khẩu hiệu.",
+ "domain": "food_menu",
+ "image_width": 421,
+ "image_height": 1514,
+ "label_origin": "claude_draft",
+ "review": {
+  "status": "edited",
+  "reviewer": "A",
+  "changed": true,
+  "seconds": 72,
+  "reviewed_at": "2026-11-11T11:19:50.448Z",
+  "flag_note": "",
+  "pii_note": ""
+ },
+ "redactions": [
+  {
+   "type": "face",
+   "bbox": [
+    0.0807,
+    0.5439,
+    0.2404,
+    0.6034
+   ],
+   "origin": "auto"
+  }
+ ],
+ "adjudication": {
+  "by": "claude_rule_pass+manual_image_check",
+  "date": "2026-11-14",
+  "version": "1.0",
+  "n_changes": 0,
+  "reviewer_status": "edited",
+  "reviewer": "A"
+ }
+}

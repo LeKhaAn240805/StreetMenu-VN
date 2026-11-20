@@ -1,0 +1,4 @@
+[image]
+Extract every menu item and its price(s) from this image.
+Return one JSON object that follows this schema exactly:
+{SCHEMA}

@@ -1,0 +1,18 @@
+# Dev-only tuning pass (2026-11-14): choose prompt wording conventions and the matching threshold tau on dev, then freeze.
+# Weights are kept so that the real run (pilot, dev+test+ood) does not download them again.
+name: tune
+seeds: [0]
+splits: [dev]
+include_optional: false
+prefetch: true
+keep_weights: true
+stages:
+  - role: vlm
+    name: main model, every prompt type
+    models: [qwen3vl_8b]
+    prompts: [P0, P1, P2, P-T, P-2S]
+  - role: vlm
+    name: two more families
+    models: [gemma4_e4b, internvl35_8b]
+    prompts: [P0, P1]
+    thinking: ["off"]

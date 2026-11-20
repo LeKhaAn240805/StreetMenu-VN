@@ -1,0 +1,5 @@
+# Human–human agreement (blind audit, 30 test images, 2 annotators B+A)
+# Computed 2026-11-18 via 'smv agreement' (same scorer as the models)
+
+Annotator vs gold  Images Offer F1 Price match kappa CCL kappa tags (mean)
+      human_blind      30     86.0        99.8      0.54              0.58

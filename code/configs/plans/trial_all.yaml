@@ -1,0 +1,30 @@
+# Real trial run of EVERY model on the synthetic menus (all images marked dev): download -> serve ->
+# concurrent requests -> check outputs -> delete weights. Exercises every prompt type once per model family.
+name: trial_all
+seeds: [0]
+splits: [dev]
+include_optional: true
+prefetch: true
+keep_weights: false
+stages:
+  - role: ocr
+    models: [ocr_ppocr, ocr_paddleocr_vl, ocr_glm_ocr, ocr_deepseek_ocr2, ocr_dots, ocr_vietocr, ocr_easyocr, ocr_mineru25,
+             ocr_deepseek_ocr, ocr_glm_ocr_vi]
+  - role: vlm
+    name: pilot VLMs first
+    models: [qwen3vl_8b, internvl35_8b, gemma4_e4b, glm46v_flash, minicpmv45, vintern_1b, erax_vl_7b]
+    prompts: [P0, P1, P-T, P-2S, {id: P-OCR+, ocr_from: [ocr_ppocr]}, P-NL]
+    thinking: ["off", "on"]
+  - role: vlm
+    name: everything else
+    models: [qwen3vl_2b, qwen3vl_4b, internvl35_1b, internvl35_2b, internvl35_4b, gemma4_e2b, qwen3vl_8b_thinking,
+             vintern_3b_r, erax_vl_2b, qwen3vl_8b_fp8, qwen3vl_8b_awq, phi4_mm, pixtral_12b, molmo_7b, gemma4_12b,
+             ovis25_9b, aya_vision_8b, qwen25vl_7b, qwen35_9b, vintern_3b, erax_vl_7b_v2, qwen3vl_8b_vi_ocrvqa,
+             internvl35_14b, gemma4_26b_a4b_4bit, qwen3vl_32b_awq]
+    prompts: [P1, P-T]
+    thinking: ["off", "on"]
+  - role: llm
+    models: [llm_qwen3_8b, llm_gemma3_12b_text, llm_vylinh_3b, llm_sailor2_8b, llm_seallm_v3_7b, llm_phogpt_4b]
+    prompts:
+      - {id: P-OCR+, ocr_from: [ocr_ppocr]}
+      - P-Oracle

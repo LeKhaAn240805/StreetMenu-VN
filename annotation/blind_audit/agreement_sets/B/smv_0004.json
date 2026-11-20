@@ -1,0 +1,295 @@
+{
+ "schema_version": "3.1",
+ "image_id": "smv_0004",
+ "file_name": "13.jpg",
+ "file_sha256": "ce23c26d4404288d07dc3d86505122dd0371d8f455d3054567457e2fcd247fe8",
+ "file_size": 694384,
+ "group_id": "G_13",
+ "near_duplicate_of": "",
+ "split": "test",
+ "ccl": 3,
+ "tags": [
+  "P_FORMAT",
+  "P_UNIT_BUNDLE",
+  "P_PROMO",
+  "N_FOREIGN",
+  "L_COMBO_SET",
+  "V_QUALITY"
+ ],
+ "venue_tier": "small_shop",
+ "venue_type": "nhà hàng",
+ "medium": "sổ menu (trang)",
+ "lighting": "đủ sáng",
+ "angle": "nghiêng nhẹ",
+ "source": "tự chụp",
+ "city": "TP-HCM",
+ "languages": [
+  "vi",
+  "en"
+ ],
+ "price_unit_default": "vnd",
+ "tax_note": "not_stated",
+ "has_prices": true,
+ "pii_present": false,
+ "pii_types": [],
+ "redaction_checked": true,
+ "consent_id": "",
+ "sections": [
+  {
+   "section_id": "s1",
+   "raw_title": "COMBO",
+   "norm_title": "combo",
+   "shared_price_raw": "",
+   "notes": ""
+  },
+  {
+   "section_id": "s2",
+   "raw_title": "SET GIA ĐÌNH",
+   "norm_title": "set gia đình",
+   "shared_price_raw": "",
+   "notes": ""
+  }
+ ],
+ "items": [
+  {
+   "item_id": 1,
+   "section_id": "s1",
+   "item_code": "4102",
+   "raw_name": "COMBO HẢI SẢN (KÈM KHOAI TÂY )",
+   "raw_name_2": "OCEAN COMBO",
+   "norm_name": "combo hải sản (kèm khoai tây )",
+   "alt_norm_names": [],
+   "description": "",
+   "category": "món chính khác",
+   "is_add_on": false,
+   "is_combo": true,
+   "combo_components": [
+    {
+     "name": "Mực vòng chiên ( 4 miếng ) 30,000VND",
+     "qty": null,
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Tôm popcorn ( 5 miếng ) 40,000VND",
+     "qty": null,
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Viên tôm xốt kem ( 4 viên ) 40,000VND",
+     "qty": null,
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Khoai tây nướng 30,000VND",
+     "qty": null,
+     "ref_price_vnd": null
+    }
+   ],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "COMBO",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "130000đ",
+     "price_vnd": 130000,
+     "old_price_vnd": 140000,
+     "price_kind": "bundle",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": 1,
+     "unit": "phần",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "raw_old_price": "140000",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ]
+  },
+  {
+   "item_id": 2,
+   "section_id": "s1",
+   "item_code": "",
+   "raw_name": "COMBO GÀ ĐẶC BIỆT",
+   "raw_name_2": "",
+   "norm_name": "combo gà đặc biệt",
+   "alt_norm_names": [
+    "CHICKEN DELIGHT COMBO"
+   ],
+   "description": "",
+   "category": "món chính khác",
+   "is_add_on": false,
+   "is_combo": true,
+   "combo_components": [
+    {
+     "name": "Gà nướng ( 4 miếng ) 60,000đ",
+     "qty": null,
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Gà popcorn 40,000đ",
+     "qty": null,
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Gà xiên nướng ( 4 miếng ) 40,000đ",
+     "qty": null,
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Khoai tây nướng 30,000đ",
+     "qty": null,
+     "ref_price_vnd": null
+    }
+   ],
+   "serves": "1",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "COMBO",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "150000đ",
+     "price_vnd": 150000,
+     "old_price_vnd": 170000,
+     "price_kind": "bundle",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": 1,
+     "unit": "phần",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "raw_old_price": "170000",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ]
+  },
+  {
+   "item_id": 3,
+   "section_id": "s2",
+   "item_code": "",
+   "raw_name": "SET ĂN \"YÊU THÍCH\"",
+   "raw_name_2": "",
+   "norm_name": "set ăn \"yêu thích\"",
+   "alt_norm_names": [
+    "MOST POPULAR SET"
+   ],
+   "description": "",
+   "category": "món chính khác",
+   "is_add_on": false,
+   "is_combo": true,
+   "combo_components": [
+    {
+     "name": "Xà lách trái cây 40,000đ",
+     "qty": null,
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Quầy đồ uống (x2 / được uống thoả thích )40,000đ",
+     "qty": null,
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Pizza Margherita 60,000đ",
+     "qty": null,
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Mỳ Ý xốt thịt bằm 40,000đ",
+     "qty": null,
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Vẹm xào tỏi 30,000đ",
+     "qty": null,
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Gà xiên nướng ( 3 xiên ) 30,000đ",
+     "qty": null,
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Kem vani 30,000đ",
+     "qty": null,
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Kem sô cô la 30,000đ",
+     "qty": null,
+     "ref_price_vnd": null
+    }
+   ],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "combo",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "280000đ",
+     "price_vnd": 280000,
+     "old_price_vnd": 310000,
+     "price_kind": "bundle",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": 1,
+     "unit": "phần",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "raw_old_price": "310000đ",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ]
+  }
+ ],
+ "ignore_regions": [],
+ "annotator": "B",
+ "status": "needs_review",
+ "seconds_spent": 3580,
+ "version": 1,
+ "created_at": "2026-11-16T15:23:40.682Z",
+ "updated_at": "2026-11-18T02:43:08.563Z",
+ "notes": "[Xem lại] Cần xem lại ID và Tập",
+ "label_origin": "human",
+ "image_width": 1500,
+ "image_height": 2000,
+ "domain": "food_menu"
+}

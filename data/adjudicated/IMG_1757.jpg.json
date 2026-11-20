@@ -1,0 +1,248 @@
+{
+ "schema_version": "3.1",
+ "image_id": "smv_0188",
+ "file_name": "IMG_1757.jpg",
+ "file_sha256": "75bf6df58e8554aca23d64f709da69782cee2a3e15b42e228e4b23ef44880ce5",
+ "group_id": "G_1757",
+ "near_duplicate_of": "",
+ "split": "dev",
+ "ccl": 4,
+ "tags": [
+  "P_FORMAT",
+  "S_DETACHED",
+  "S_LAYOUT",
+  "V_QUALITY",
+  "V_GEOMETRY",
+  "D_DISTRACTOR"
+ ],
+ "venue_tier": "small_shop",
+ "venue_type": "nước ép – sinh tố",
+ "medium": "bảng đèn",
+ "lighting": "thiếu sáng",
+ "angle": "thẳng",
+ "source": "",
+ "city": "",
+ "languages": [
+  "vi"
+ ],
+ "price_unit_default": "k_vnd",
+ "tax_note": "not_stated",
+ "has_prices": true,
+ "pii_present": true,
+ "pii_types": [
+  "address",
+  "phone"
+ ],
+ "redaction_checked": false,
+ "consent_id": "",
+ "sections": [
+  {
+   "section_id": "s1",
+   "raw_title": "",
+   "norm_title": "đồ uống",
+   "shared_price_raw": "",
+   "notes": ""
+  }
+ ],
+ "items": [
+  {
+   "section_id": "s1",
+   "item_code": "",
+   "raw_name": "NƯỚC NHÃN LONG TUYỀN",
+   "raw_name_2": "",
+   "norm_name": "nước nhãn long tuyền",
+   "alt_norm_names": [],
+   "description": "",
+   "category": "nước giải khát",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "17K",
+     "raw_old_price": "",
+     "price_vnd": 17000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "badge",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 1
+  },
+  {
+   "section_id": "s1",
+   "item_code": "",
+   "raw_name": "TRÀ CHANH",
+   "raw_name_2": "",
+   "norm_name": "trà chanh",
+   "alt_norm_names": [],
+   "description": "",
+   "category": "trà",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "15K",
+     "raw_old_price": "",
+     "price_vnd": 15000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "badge",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 2
+  },
+  {
+   "section_id": "s1",
+   "item_code": "",
+   "raw_name": "TRÀ NHÃN LONG TUYÊN",
+   "raw_name_2": "",
+   "norm_name": "trà nhãn long tuyền",
+   "alt_norm_names": [],
+   "description": "",
+   "category": "trà",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "20K",
+     "raw_old_price": "",
+     "price_vnd": 20000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "badge",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 3
+  }
+ ],
+ "ignore_regions": [],
+ "annotator": "A",
+ "status": "adjudicated",
+ "version": 2,
+ "notes": "Bảng đèn, chữ xếp dọc nhiều dòng, giá tách xa tên. Giá 17K lớn trùng với Nước nhãn long tuyền. Chữ in trên ly (địa chỉ, SĐT) đã che.",
+ "domain": "food_menu",
+ "image_width": 797,
+ "image_height": 1407,
+ "label_origin": "claude_draft",
+ "review": {
+  "status": "edited",
+  "reviewer": "A",
+  "changed": true,
+  "seconds": 123,
+  "reviewed_at": "2026-11-11T15:37:56.659Z",
+  "flag_note": "",
+  "pii_note": ""
+ },
+ "redactions": [
+  {
+   "type": "address",
+   "bbox": [
+    0.4454,
+    0.8244,
+    0.6587,
+    0.8458
+   ],
+   "origin": "manual"
+  },
+  {
+   "type": "phone",
+   "bbox": [
+    0.4893,
+    0.833,
+    0.6274,
+    0.8472
+   ],
+   "origin": "manual"
+  },
+  {
+   "type": "address",
+   "bbox": [
+    0.3513,
+    0.7377,
+    0.4141,
+    0.7548
+   ],
+   "origin": "manual"
+  }
+ ],
+ "adjudication": {
+  "by": "claude_rule_pass+manual_image_check",
+  "date": "2026-11-14",
+  "version": "1.0",
+  "n_changes": 0,
+  "reviewer_status": "edited",
+  "reviewer": "A"
+ }
+}

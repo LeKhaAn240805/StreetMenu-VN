@@ -1,0 +1,112 @@
+case_id,model,status,truncated,theme_coder1,theme_coder2,final,axial,evidence_code
+Q000,qwen35_9b,FP_component_as_item,False,halluc,halluc,halluc,Hallucination,halluc
+Q003,gemma4_e4b,price_wrong,True,read_print,struct_spatial,struct_spatial,Structure,struct_spatial
+Q004,internvl35_8b,FN_item_missing,False,omit_dense,omit_dense,omit_dense,Omission,omit_dense
+Q005,minicpmv45,FN_offer_missing,True,other,omit_dense,unresolved,Unresolved,
+Q006,ministral3_8b,FN_item_missing,False,omit_dense,omit_dense,omit_dense,Omission,omit_dense
+Q009,qwen3vl_8b,price_wrong,True,read_print,struct_spatial,struct_spatial,Structure,struct_spatial
+Q010,minicpmv45,FN_item_missing,False,omit_dense,omit_dense,omit_dense,Omission,omit_dense
+Q011,qwen3vl_8b,abstain_wrong,False,halluc,struct_spatial,struct_spatial,Structure,struct_spatial
+Q012,ministral3_8b,FN_offer_missing,False,read_print,halluc,unresolved,Unresolved,
+Q013,minicpmv45,FP_hallucination,False,halluc,halluc,halluc,Hallucination,halluc
+Q014,ministral3_8b,FN_item_missing,True,omit_dense,omit_dense,omit_dense,Omission,omit_trunc
+Q016,qwen35_9b,FN_offer_missing,False,other,other,other,Evaluation artifact,
+Q017,ministral3_8b,price_wrong,False,omit_dense,omit_dense,omit_dense,Omission,
+Q018,qwen35_9b,FN_offer_missing,False,other,other,other,Evaluation artifact,
+Q019,minicpmv45,FN_item_missing,True,omit_dense,omit_dense,omit_dense,Omission,omit_trunc
+Q021,gemma4_e4b,FP_hallucination,True,halluc,omit_trunc,halluc,Hallucination,halluc
+Q024,ministral3_8b,FN_item_missing,False,omit_dense,omit_dense,omit_dense,Omission,omit_dense
+Q025,minicpmv45,FP_hallucination,False,halluc,halluc,halluc,Hallucination,halluc
+Q026,internvl35_8b,FN_item_missing,False,omit_dense,omit_dense,omit_dense,Omission,omit_dense
+Q027,minicpmv45,price_wrong,False,read_print,read_print,read_print,Perception,
+Q028,qwen35_9b,price_wrong,True,other,struct_spatial,struct_spatial,Structure,struct_spatial
+Q030,qwen3vl_8b,FN_item_missing,True,omit_dense,omit_trunc,omit_trunc,Omission,omit_trunc
+Q031,internvl35_8b,FN_item_missing,True,omit_dense,omit_trunc,unresolved,Unresolved,
+Q034,gemma4_e4b,price_wrong,False,name_norm,struct_spatial,struct_spatial,Structure,struct_spatial
+Q039,internvl35_8b,price_wrong,False,struct_inherit,struct_inherit,struct_inherit,Structure,
+Q040,qwen35_9b,FP_hallucination,False,omit_dense,read_print,read_print,Perception,
+Q041,qwen3vl_8b,FP_hallucination,False,other,other,other,Evaluation artifact,halluc
+Q042,internvl35_8b,FP_hallucination,False,halluc,omit_trunc,halluc,Hallucination,read_print
+Q043,ministral3_8b,FP_hallucination,False,other,halluc,halluc,Hallucination,halluc
+Q044,qwen3vl_8b,FN_item_missing,False,omit_dense,omit_dense,omit_dense,Omission,omit_dense
+Q045,minicpmv45,price_wrong,False,read_print,struct_spatial,read_print,Perception,read_print
+Q046,qwen35_9b,price_wrong,False,struct_inherit,omit_dense,unresolved,Unresolved,
+Q049,internvl35_8b,FN_item_missing,False,omit_dense,omit_dense,omit_dense,Omission,omit_dense
+Q050,ministral3_8b,FP_hallucination,False,name_norm,halluc,unresolved,Unresolved,read_print
+Q052,minicpmv45,FP_hallucination,False,halluc,read_print,halluc,Hallucination,halluc
+Q053,internvl35_8b,FN_item_missing,False,omit_dense,omit_dense,omit_dense,Omission,omit_dense
+Q054,gemma4_e4b,FN_item_missing,True,omit_dense,omit_trunc,omit_trunc,Omission,omit_trunc
+Q055,qwen35_9b,FN_item_missing,True,read_print,omit_trunc,omit_trunc,Omission,omit_trunc
+Q056,qwen3vl_8b,FP_hallucination,False,other,read_print,read_print,Perception,read_print
+Q057,qwen35_9b,FN_offer_missing,False,omit_trunc,other,other,Evaluation artifact,
+Q058,gemma4_e4b,FP_desc_as_item,False,halluc,halluc,halluc,Hallucination,halluc
+Q059,ministral3_8b,FP_hallucination,False,halluc,halluc,halluc,Hallucination,halluc
+Q060,minicpmv45,FN_item_missing,False,omit_dense,omit_dense,omit_dense,Omission,omit_dense
+Q061,minicpmv45,FN_item_missing,False,omit_dense,omit_dense,omit_dense,Omission,omit_dense
+Q062,qwen35_9b,FN_item_missing,False,omit_dense,omit_dense,omit_dense,Omission,omit_dense
+Q064,minicpmv45,FP_hallucination,True,other,omit_trunc,other,Evaluation artifact,halluc
+Q065,qwen35_9b,price_wrong,False,read_scale,read_scale,read_scale,Perception,read_scale
+Q068,gemma4_e4b,FP_hallucination,True,halluc,omit_trunc,halluc,Hallucination,read_print
+Q069,qwen35_9b,FN_offer_missing,False,other,halluc,other,Evaluation artifact,
+Q070,minicpmv45,FP_hallucination,False,halluc,halluc,halluc,Hallucination,halluc
+Q071,internvl35_8b,FN_item_missing,False,omit_dense,omit_dense,omit_dense,Omission,omit_dense
+Q073,qwen3vl_8b,abstain_wrong,False,struct_spatial,read_print,struct_spatial,Structure,struct_spatial
+Q074,ministral3_8b,FP_hallucination,False,halluc,halluc,halluc,Hallucination,halluc
+Q075,minicpmv45,FP_desc_as_item,False,other,halluc,halluc,Hallucination,halluc
+Q076,gemma4_e4b,FN_item_missing,True,omit_dense,omit_dense,omit_dense,Omission,omit_trunc
+Q077,minicpmv45,FN_offer_missing,False,omit_trunc,read_print,read_print,Perception,
+Q078,ministral3_8b,FN_item_missing,False,omit_dense,omit_dense,omit_dense,Omission,omit_dense
+Q079,qwen3vl_8b,FN_item_missing,False,omit_dense,omit_dense,omit_dense,Omission,omit_dense
+Q080,ministral3_8b,price_wrong,False,read_print,struct_spatial,unresolved,Unresolved,
+Q081,gemma4_e4b,FN_item_missing,True,omit_dense,omit_trunc,unresolved,Unresolved,
+Q082,gemma4_e4b,price_wrong,True,read_print,omit_trunc,read_print,Perception,struct_spatial
+Q085,internvl35_8b,FN_item_missing,False,omit_dense,omit_dense,omit_dense,Omission,omit_dense
+Q087,internvl35_8b,price_wrong,True,halluc,read_print,unresolved,Unresolved,read_scale
+Q088,minicpmv45,FP_hallucination,False,other,halluc,halluc,Hallucination,halluc
+Q089,internvl35_8b,price_wrong,False,read_print,read_print,read_print,Perception,read_print
+Q090,minicpmv45,FP_hallucination,False,halluc,halluc,halluc,Hallucination,halluc
+Q091,ministral3_8b,FN_offer_missing,False,omit_dense,omit_dense,omit_dense,Omission,
+Q092,internvl35_8b,FN_item_missing,False,omit_dense,omit_dense,omit_dense,Omission,omit_dense
+Q093,minicpmv45,FP_hallucination,True,halluc,omit_trunc,halluc,Hallucination,read_print
+Q095,qwen35_9b,FN_item_missing,False,halluc,omit_dense,omit_dense,Omission,omit_dense
+Q096,gemma4_e4b,price_wrong,True,read_print,struct_spatial,struct_spatial,Structure,struct_spatial
+Q097,qwen3vl_8b,FN_item_missing,False,other,omit_dense,omit_dense,Omission,omit_dense
+Q098,internvl35_8b,FP_hallucination,False,other,other,other,Evaluation artifact,halluc
+Q099,qwen3vl_8b,FN_offer_missing,False,other,other,other,Evaluation artifact,
+Q100,gemma4_e4b,FP_hallucination,False,halluc,halluc,halluc,Hallucination,halluc
+Q101,minicpmv45,price_wrong,True,other,omit_trunc,other,Evaluation artifact,
+Q102,qwen35_9b,FN_offer_missing,False,other,other,other,Evaluation artifact,
+Q103,qwen3vl_8b,FN_offer_missing,False,other,other,other,Evaluation artifact,
+Q104,gemma4_e4b,FP_hallucination,False,halluc,halluc,halluc,Hallucination,read_print
+Q105,minicpmv45,price_wrong,False,read_scale,read_scale,read_scale,Perception,read_scale
+Q108,qwen3vl_8b,FN_offer_missing,False,other,other,other,Evaluation artifact,
+Q109,qwen35_9b,FN_item_missing,True,omit_dense,omit_dense,omit_dense,Omission,
+Q110,internvl35_8b,FP_hallucination,False,halluc,name_norm,halluc,Hallucination,halluc
+Q111,qwen35_9b,price_wrong,False,read_print,read_hand,read_hand,Perception,read_hand
+Q113,minicpmv45,price_wrong,False,halluc,struct_spatial,struct_spatial,Structure,struct_spatial
+Q114,qwen35_9b,price_wrong,True,read_print,omit_trunc,read_print,Perception,struct_spatial
+Q115,minicpmv45,FN_item_missing,False,other,omit_dense,omit_dense,Omission,omit_dense
+Q118,internvl35_8b,price_wrong,False,read_print,read_print,read_print,Perception,
+Q120,qwen35_9b,price_wrong,False,omit_dense,omit_dense,omit_dense,Omission,
+Q122,internvl35_8b,FN_item_missing,False,omit_dense,omit_dense,omit_dense,Omission,omit_dense
+Q123,qwen3vl_8b,FN_item_missing,False,omit_dense,omit_dense,omit_dense,Omission,omit_dense
+Q125,minicpmv45,price_wrong,True,read_print,struct_spatial,struct_spatial,Structure,struct_spatial
+Q126,minicpmv45,FN_offer_missing,False,other,other,other,Evaluation artifact,
+Q127,minicpmv45,FN_item_missing,True,omit_dense,omit_trunc,omit_trunc,Omission,omit_trunc
+Q128,qwen3vl_8b,FN_item_missing,False,omit_dense,omit_dense,omit_dense,Omission,omit_dense
+Q129,ministral3_8b,FN_offer_missing,True,read_print,omit_trunc,unresolved,Unresolved,
+Q131,gemma4_e4b,FP_hallucination,False,other,halluc,halluc,Hallucination,halluc
+Q132,ministral3_8b,price_wrong,False,read_print,other,other,Structure,struct_spatial
+Q133,qwen35_9b,FN_offer_missing,False,other,other,other,Evaluation artifact,
+Q134,gemma4_e4b,price_wrong,False,read_print,halluc,unresolved,Unresolved,struct_spatial
+Q135,qwen35_9b,FN_item_missing,False,name_norm,omit_dense,omit_dense,Omission,omit_dense
+Q137,internvl35_8b,FN_offer_missing,False,omit_trunc,struct_variant,struct_variant,Structure,
+Q138,qwen35_9b,FN_item_missing,False,omit_dense,omit_dense,omit_dense,Omission,omit_dense
+Q140,gemma4_e4b,FN_item_missing,False,halluc,omit_dense,omit_dense,Omission,omit_dense
+Q141,gemma4_e4b,price_wrong,False,read_print,struct_spatial,struct_spatial,Structure,struct_spatial
+Q142,internvl35_8b,FP_hallucination,False,halluc,halluc,halluc,Hallucination,halluc
+Q145,qwen35_9b,price_wrong,False,read_scale,read_scale,read_scale,Perception,struct_spatial
+Q146,minicpmv45,FN_item_missing,False,omit_dense,omit_dense,omit_dense,Omission,omit_dense
+Q147,minicpmv45,FN_item_missing,True,read_print,omit_trunc,omit_trunc,Omission,omit_trunc
+Q148,internvl35_8b,price_wrong,False,read_scale,read_scale,read_scale,Perception,read_scale
+Q149,qwen3vl_8b,FP_hallucination,False,halluc,name_norm,unresolved,Unresolved,read_print

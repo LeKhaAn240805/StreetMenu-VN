@@ -1,0 +1,134 @@
+{
+ "schema_version": "3.1",
+ "image_id": "smv_0307",
+ "file_name": "IMG_2376.jpg",
+ "file_sha256": "fd0fccdf3fa4a12ad9a547605165a2c7b6f6bc5d7ea0e8b3212d987f2b6fe8dc",
+ "group_id": "G_2376",
+ "near_duplicate_of": "",
+ "split": "ood",
+ "ccl": null,
+ "tags": [
+  "P_FORMAT",
+  "P_UNIT_BUNDLE",
+  "V_QUALITY",
+  "D_DISTRACTOR"
+ ],
+ "venue_tier": "small_shop",
+ "venue_type": "khác",
+ "medium": "băng rôn / bảng hiệu",
+ "lighting": "đủ sáng",
+ "angle": "thẳng",
+ "source": "",
+ "city": "",
+ "languages": [
+  "vi"
+ ],
+ "price_unit_default": "k_vnd",
+ "tax_note": "not_stated",
+ "has_prices": true,
+ "pii_present": true,
+ "pii_types": [
+  "address",
+  "phone"
+ ],
+ "redaction_checked": false,
+ "consent_id": "",
+ "sections": [],
+ "items": [
+  {
+   "section_id": null,
+   "item_code": "",
+   "raw_name": "GIẶT ƯỚT",
+   "raw_name_2": "",
+   "norm_name": "giặt ướt",
+   "alt_norm_names": [],
+   "description": "Giặt 7 lần , Tặng 1 lần",
+   "category": "không phải đồ ăn",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "Chỉ từ 4k/kg",
+     "raw_old_price": "",
+     "price_vnd": 4000,
+     "old_price_vnd": null,
+     "price_kind": "starting_from",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": 1,
+     "unit": "kg",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 1
+  }
+ ],
+ "ignore_regions": [],
+ "annotator": "B",
+ "status": "adjudicated",
+ "version": 2,
+ "notes": "OOD: biển giặt sấy. Giặt 7 lần tặng 1 lần là khuyến mãi. Đã che hai số điện thoại và địa chỉ.",
+ "domain": "service",
+ "image_width": 814,
+ "image_height": 990,
+ "label_origin": "claude_draft",
+ "review": {
+  "status": "edited",
+  "reviewer": "B",
+  "changed": true,
+  "seconds": 98,
+  "reviewed_at": "2026-11-11T10:38:12.479Z",
+  "flag_note": "",
+  "pii_note": ""
+ },
+ "redactions": [
+  {
+   "type": "address",
+   "bbox": [
+    0.086,
+    0.9091,
+    0.9337,
+    0.9455
+   ],
+   "origin": "manual"
+  },
+  {
+   "type": "phone",
+   "bbox": [
+    0.1843,
+    0.9495,
+    0.86,
+    0.9818
+   ],
+   "origin": "manual"
+  }
+ ],
+ "adjudication": {
+  "by": "claude_rule_pass+manual_image_check",
+  "date": "2026-11-14",
+  "version": "1.0",
+  "n_changes": 1,
+  "reviewer_status": "edited",
+  "reviewer": "B"
+ }
+}

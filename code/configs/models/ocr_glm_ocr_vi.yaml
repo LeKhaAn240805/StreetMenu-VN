@@ -1,0 +1,71 @@
+key: ocr_glm_ocr_vi
+hf_id: KuongB/glm-ocr-vietnamese
+revision: c1b59a697bc7d276bae99c8a639ee8db087e6798
+family: GLM-OCR (community VI fine-tune)
+org: community
+params_b: 0.9
+license: unknown
+gated: false
+download_gb: 2.22
+role: ocr
+groups:
+- G4
+- G5
+tier: optional
+priority: 50
+backend: vllm
+text_only: false
+dtype: bfloat16
+keep_weights: false
+enabled: true
+note: ''
+vllm:
+  max_model_len: 16384
+  max_num_seqs: 16
+  gpu_memory_utilization: 0.85
+  limit_mm_per_prompt:
+    image: 1
+  trust_remote_code: false
+  enforce_eager: false
+  extra_args: []
+  env: {}
+autotune:
+  max_num_seqs:
+  - 16
+  - 8
+  - 4
+  - 2
+  max_model_len:
+  - 16384
+  - 8192
+  mm_processor_kwargs: []
+  preemption_limit: 200
+thinking:
+  supported: false
+  default_on: false
+  'off':
+    chat_template_kwargs:
+      enable_thinking: false
+  'on': {}
+  strip:
+  - <think>
+  - </think>
+sampling: {}
+hf:
+  adapter: generic
+  model_class: AutoModelForImageTextToText
+  batch_size: 4
+  batch_ladder:
+  - 4
+  - 2
+  - 1
+  python: main
+  dtype: bfloat16
+ocr:
+  engine: vlm_prompt
+  prompt: 'Text Recognition:'
+  output: text
+  lang: vi
+  max_tokens: 8192
+  options: {}
+mock: {}

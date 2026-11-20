@@ -1,0 +1,14 @@
+# Dev format check of the two prompts added on 16/11/2026 (P1-C compact output, P-Conf stated confidence), lane A.
+# Runs side by side with d0b_devcheck (gpu_share: the two plans split card 1). P1 on dev is the reference for the
+# output-length comparison in scripts/freeze_if_sane.py; nothing here touches test.
+name: d0a_devcheck
+gpu_share: 0.49
+seeds: [0]
+splits: [dev]
+include_optional: false
+prefetch: true
+keep_weights: false
+stages:
+  - role: vlm
+    models: [qwen35_4b, gemma4_e2b]
+    prompts: [P1, P1-C, P-Conf]

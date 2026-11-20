@@ -1,0 +1,120 @@
+{
+ "schema_version": "3.1",
+ "image_id": "smv_0250",
+ "file_name": "IMG_2081.jpg",
+ "file_sha256": "205179264bad6bbff15fdec29b6375e45f53c4bc8a94027aaf3b5ee62150b6cf",
+ "group_id": "G_2081",
+ "near_duplicate_of": "",
+ "split": "test",
+ "ccl": 1,
+ "tags": [
+  "P_MISSING"
+ ],
+ "venue_tier": "small_shop",
+ "venue_type": "bánh mì – xôi",
+ "medium": "poster một món",
+ "lighting": "đủ sáng",
+ "angle": "thẳng",
+ "source": "",
+ "city": "",
+ "languages": [
+  "vi"
+ ],
+ "price_unit_default": "",
+ "tax_note": "not_stated",
+ "has_prices": false,
+ "pii_present": true,
+ "pii_types": [
+  "phone"
+ ],
+ "redaction_checked": false,
+ "consent_id": "",
+ "sections": [],
+ "items": [
+  {
+   "item_id": 1,
+   "section_id": null,
+   "item_code": "",
+   "raw_name": "Bánh mì THỊT XÍU HUẾ",
+   "raw_name_2": "",
+   "norm_name": "bánh mì thịt xíu huế",
+   "alt_norm_names": [],
+   "description": "",
+   "category": "bánh mì – burger",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "",
+     "price_vnd": null,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "raw_old_price": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ]
+  }
+ ],
+ "ignore_regions": [],
+ "annotator": "B",
+ "status": "adjudicated",
+ "version": 2,
+ "notes": "Poster một món, không có giá. Số điện thoại, Zalo đã che.",
+ "domain": "food_menu",
+ "image_width": 565,
+ "image_height": 751,
+ "label_origin": "claude_draft",
+ "review": {
+  "status": "confirmed",
+  "reviewer": "B",
+  "changed": false,
+  "seconds": 16,
+  "reviewed_at": "2026-11-12T11:55:38.603Z",
+  "flag_note": "",
+  "pii_note": ""
+ },
+ "redactions": [
+  {
+   "type": "phone",
+   "bbox": [
+    0.2655,
+    0.9268,
+    0.7504,
+    0.9667
+   ],
+   "origin": "manual"
+  }
+ ],
+ "adjudication": {
+  "by": "claude_rule_pass+manual_image_check",
+  "date": "2026-11-14",
+  "version": "1.0",
+  "n_changes": 0,
+  "reviewer_status": "confirmed",
+  "reviewer": "B"
+ }
+}

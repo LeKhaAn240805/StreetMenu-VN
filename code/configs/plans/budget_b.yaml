@@ -1,0 +1,15 @@
+# Second half of the image-budget study (can run in parallel with budget.yaml on another GPU).
+name: budget_b
+seeds: [0]
+splits: [test]
+prefetch: true
+keep_weights: false
+stages:
+  - role: vlm
+    name: InternVL3.5-8B, maximum 448-px tiles per image (default 12)
+    models: [internvl35_8b]
+    prompts:
+      - {id: P1, tag: tile1, mm: {max_dynamic_patch: 1}}
+      - {id: P1, tag: tile2, mm: {max_dynamic_patch: 2}}
+      - {id: P1, tag: tile4, mm: {max_dynamic_patch: 4}}
+      - {id: P1, tag: tile6, mm: {max_dynamic_patch: 6}}

@@ -1,0 +1,12 @@
+# Test double: the first two server starts fail with a CUDA OOM message -> autotune ladder.
+key: mock_vlm_oom
+role: vlm
+tier: test
+backend: mock
+family: Mock
+dtype: null
+vllm: {max_num_seqs: 8, max_model_len: 8192}
+autotune: {max_num_seqs: [8, 4, 2], max_model_len: [8192, 4096]}
+mock:
+  fake_weights_mb: 2
+  env: {MOCK_GOLD_MAP: "{out_dir}/mock_gold_map.json", MOCK_OOM_STARTS: "2", MOCK_STATE_DIR: "{out_dir}/mock_state/oom"}

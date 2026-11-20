@@ -1,0 +1,126 @@
+{
+ "schema_version": "3.1",
+ "image_id": "smv_0240",
+ "file_name": "IMG_2066.jpg",
+ "file_sha256": "b24094e630b72ff04545e656154a66787f6593c04f0c1c967859c8cc66091506",
+ "group_id": "G_2066",
+ "near_duplicate_of": "",
+ "split": "ood",
+ "ccl": null,
+ "tags": [
+  "P_FORMAT",
+  "P_UNIT_BUNDLE",
+  "N_NORMALIZE",
+  "N_FOREIGN",
+  "S_DETACHED",
+  "D_DISTRACTOR"
+ ],
+ "venue_tier": "small_shop",
+ "venue_type": "khác",
+ "medium": "băng rôn / bảng hiệu",
+ "lighting": "đủ sáng",
+ "angle": "thẳng",
+ "source": "",
+ "city": "",
+ "languages": [
+  "vi",
+  "en"
+ ],
+ "price_unit_default": "k_vnd",
+ "tax_note": "not_stated",
+ "has_prices": true,
+ "pii_present": true,
+ "pii_types": [
+  "phone"
+ ],
+ "redaction_checked": false,
+ "consent_id": "",
+ "sections": [],
+ "items": [
+  {
+   "item_id": 1,
+   "section_id": null,
+   "item_code": "",
+   "raw_name": "THUÊ XE ĐIỆN",
+   "raw_name_2": "",
+   "norm_name": "thuê xe điện tự lái có tài",
+   "alt_norm_names": [],
+   "description": "TỰ LÁI - CÓ TÀI",
+   "category": "không phải đồ ăn",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "VF3, VF5, VF6+, Limo Green MPV7, Bán Tải WILD",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "CHỈ TỪ 399 NGÀN",
+     "price_vnd": 399000,
+     "old_price_vnd": null,
+     "price_kind": "starting_from",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "badge",
+     "evidence": "printed",
+     "notes": "",
+     "raw_old_price": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ]
+  }
+ ],
+ "ignore_regions": [],
+ "annotator": "B",
+ "status": "adjudicated",
+ "version": 2,
+ "notes": "OOD: thuê xe điện. 'CHỈ TỪ 399 NGÀN'. Hotline là số di động của doanh nghiệp nhỏ nên che.",
+ "domain": "service",
+ "image_width": 1163,
+ "image_height": 656,
+ "label_origin": "claude_draft",
+ "review": {
+  "status": "confirmed",
+  "reviewer": "B",
+  "changed": false,
+  "seconds": 23,
+  "reviewed_at": "2026-11-12T17:53:49.258Z",
+  "flag_note": "",
+  "pii_note": ""
+ },
+ "redactions": [
+  {
+   "type": "phone",
+   "bbox": [
+    0.2476,
+    0.3659,
+    0.6707,
+    0.5518
+   ],
+   "origin": "manual"
+  }
+ ],
+ "adjudication": {
+  "by": "claude_rule_pass+manual_image_check",
+  "date": "2026-11-14",
+  "version": "1.0",
+  "n_changes": 0,
+  "reviewer_status": "confirmed",
+  "reviewer": "B"
+ }
+}

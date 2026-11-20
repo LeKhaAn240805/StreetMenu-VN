@@ -1,0 +1,113 @@
+{
+ "schema_version": "3.1",
+ "image_id": "smv_0129",
+ "file_name": "IMG_1600.jpg",
+ "file_sha256": "fdf095ed1445c4319dd42f9ea58beb0001f133b664775c90b07b8a6133bacf00",
+ "group_id": "G_1600",
+ "near_duplicate_of": "",
+ "split": "test",
+ "ccl": 4,
+ "tags": [
+  "P_IMPLICIT_K",
+  "P_UNIT_BUNDLE",
+  "N_NORMALIZE",
+  "S_LAYOUT",
+  "V_HANDWRITING"
+ ],
+ "venue_tier": "street_vendor",
+ "venue_type": "khác",
+ "medium": "viết tay trên giấy",
+ "lighting": "đủ sáng",
+ "angle": "thẳng",
+ "source": "",
+ "city": "",
+ "languages": [
+  "vi"
+ ],
+ "price_unit_default": "k_vnd",
+ "tax_note": "not_stated",
+ "has_prices": true,
+ "pii_present": false,
+ "pii_types": [],
+ "redaction_checked": false,
+ "consent_id": "",
+ "sections": [],
+ "items": [
+  {
+   "section_id": null,
+   "item_code": "",
+   "raw_name": "Nho Ruby Ko Hạt",
+   "raw_name_2": "",
+   "norm_name": "nho ruby không hạt",
+   "alt_norm_names": [
+    "nho ruby ko hạt"
+   ],
+   "description": "Giòn ngọt",
+   "category": "khác",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "Đơn vị 'xổ', '1 nửa ký' khó đọc.",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "30k/0.5kg",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "30",
+     "raw_old_price": "",
+     "price_vnd": 30000,
+     "old_price_vnd": null,
+     "price_kind": "unit_price",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": 0.5,
+     "unit": "ký",
+     "price_source": "item_line",
+     "evidence": "handwritten",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 1
+  }
+ ],
+ "ignore_regions": [],
+ "annotator": "B",
+ "status": "adjudicated",
+ "version": 2,
+ "notes": "Bìa xốp viết tay bán trái cây, bố cục tự do. Đơn vị đọc là 1 nửa ký nhưng chữ 'nửa' chèn nhỏ. 'xổ' đoán là bán xổ, không chắc.",
+ "domain": "food_menu",
+ "image_width": 601,
+ "image_height": 440,
+ "label_origin": "claude_draft",
+ "review": {
+  "status": "edited",
+  "reviewer": "B",
+  "changed": true,
+  "seconds": 54,
+  "reviewed_at": "2026-11-12T17:40:16.431Z",
+  "flag_note": "",
+  "pii_note": ""
+ },
+ "redactions": [],
+ "adjudication": {
+  "by": "claude_rule_pass+manual_image_check",
+  "date": "2026-11-14",
+  "version": "1.0",
+  "n_changes": 1,
+  "reviewer_status": "edited",
+  "reviewer": "B"
+ }
+}

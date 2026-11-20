@@ -1,0 +1,12 @@
+**Gold offers by price kind and split**
+
+| price kind | dev | test | ood | Total |
+|---|---|---|---|---|
+| fixed | 699 | 4474 | 295 | 5468 |
+| unit_price | 64 | 232 | 36 | 332 |
+| range | 5 | 282 | 34 | 321 |
+| delta | 4 | 50 | 0 | 54 |
+| bundle | 5 | 27 | 3 | 35 |
+| starting_from | 5 | 12 | 8 | 25 |
+| market | 6 | 4 | 0 | 10 |
+| All | 788 | 5081 | 376 | 6245 |

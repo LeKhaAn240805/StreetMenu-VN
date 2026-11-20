@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "section": "heading the item is listed under, or null",
+      "raw_name": "item name exactly as written",
+      "name": "item name",
+      "description": "description text, or null",
+      "is_topping": false,
+      "is_combo": false,
+      "offers": [
+        {
+          "size": "size, or null",
+          "temp": "nóng | đá | null",
+          "portion": "portion, or null",
+          "raw_price": "price exactly as written, or null",
+          "price_vnd": 25000,
+          "price_max_vnd": null,
+          "old_price_vnd": null,
+          "unit": "unit such as 100 g, or null"
+        }
+      ]
+    }
+  ]
+}

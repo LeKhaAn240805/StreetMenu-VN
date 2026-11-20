@@ -1,0 +1,235 @@
+{
+ "schema_version": "3.1",
+ "image_id": "smv_0122",
+ "file_name": "IMG_1588.jpg",
+ "file_sha256": "be2d21cbdc06f2aa10ce2ce5d6102624e13221da3fa31791f80da5e0f8ab0643",
+ "group_id": "G_1588",
+ "near_duplicate_of": "",
+ "split": "test",
+ "ccl": 4,
+ "tags": [
+  "P_FORMAT",
+  "S_DETACHED",
+  "V_QUALITY"
+ ],
+ "venue_tier": "street_vendor",
+ "venue_type": "bánh mì – xôi",
+ "medium": "băng rôn / bảng hiệu",
+ "lighting": "đủ sáng",
+ "angle": "thẳng",
+ "source": "",
+ "city": "",
+ "languages": [
+  "vi"
+ ],
+ "price_unit_default": "k_vnd",
+ "tax_note": "not_stated",
+ "has_prices": true,
+ "pii_present": true,
+ "pii_types": [
+  "address",
+  "phone"
+ ],
+ "redaction_checked": false,
+ "consent_id": "",
+ "sections": [
+  {
+   "section_id": "s1",
+   "raw_title": "MENU",
+   "norm_title": "thực đơn",
+   "shared_price_raw": "",
+   "notes": ""
+  }
+ ],
+ "items": [
+  {
+   "item_id": 1,
+   "section_id": "s1",
+   "item_code": "",
+   "raw_name": "BÁNH MÌ THỊT NƯỚNG",
+   "raw_name_2": "",
+   "norm_name": "bánh mì thịt nướng",
+   "alt_norm_names": [],
+   "description": "",
+   "category": "bánh mì – burger",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "20K",
+     "price_vnd": 20000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "badge",
+     "evidence": "printed",
+     "notes": "",
+     "raw_old_price": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ]
+  },
+  {
+   "item_id": 2,
+   "section_id": "s1",
+   "item_code": "",
+   "raw_name": "BÚN THỊT NƯỚNG",
+   "raw_name_2": "",
+   "norm_name": "bún thịt nướng",
+   "alt_norm_names": [],
+   "description": "",
+   "category": "món nước (bún, phở, hủ tiếu, mì)",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "25K",
+     "price_vnd": 25000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "badge",
+     "evidence": "printed",
+     "notes": "",
+     "raw_old_price": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ]
+  },
+  {
+   "item_id": 3,
+   "section_id": "s1",
+   "item_code": "",
+   "raw_name": "BÁNH HỎI THỊT NƯỚNG",
+   "raw_name_2": "",
+   "norm_name": "bánh hỏi thịt nướng",
+   "alt_norm_names": [],
+   "description": "",
+   "category": "món chính khác",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "30K",
+     "price_vnd": 30000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "badge",
+     "evidence": "printed",
+     "notes": "",
+     "raw_old_price": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ]
+  }
+ ],
+ "ignore_regions": [],
+ "annotator": "A",
+ "status": "adjudicated",
+ "version": 2,
+ "notes": "Giá trong hình trái tim trên ảnh món. Bóng nắng chéo. Đã che địa chỉ và hai số điện thoại.",
+ "domain": "food_menu",
+ "image_width": 774,
+ "image_height": 480,
+ "label_origin": "claude_draft",
+ "review": {
+  "status": "confirmed",
+  "reviewer": "A",
+  "changed": false,
+  "seconds": 16,
+  "reviewed_at": "2026-11-13T02:15:30.769Z",
+  "flag_note": "",
+  "pii_note": ""
+ },
+ "redactions": [
+  {
+   "type": "address",
+   "bbox": [
+    0.0568,
+    0.8125,
+    0.3385,
+    0.8625
+   ],
+   "origin": "manual"
+  },
+  {
+   "type": "phone",
+   "bbox": [
+    0.4186,
+    0.8125,
+    0.7416,
+    0.8625
+   ],
+   "origin": "manual"
+  }
+ ],
+ "adjudication": {
+  "by": "claude_rule_pass+manual_image_check",
+  "date": "2026-11-14",
+  "version": "1.0",
+  "n_changes": 0,
+  "reviewer_status": "confirmed",
+  "reviewer": "A"
+ }
+}

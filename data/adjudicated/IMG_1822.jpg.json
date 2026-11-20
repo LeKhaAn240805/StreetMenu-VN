@@ -1,0 +1,133 @@
+{
+ "schema_version": "3.1",
+ "image_id": "smv_0202",
+ "file_name": "IMG_1822.jpg",
+ "file_sha256": "a1c18d50187498724e8ebae66c96700f23a993865db0122c30555420d0fbae90",
+ "group_id": "G_1822",
+ "near_duplicate_of": "",
+ "split": "test",
+ "ccl": 4,
+ "tags": [
+  "P_FORMAT",
+  "S_DETACHED",
+  "D_DISTRACTOR"
+ ],
+ "venue_tier": "small_shop",
+ "venue_type": "quán nhậu – ốc",
+ "medium": "bảng đèn",
+ "lighting": "đủ sáng",
+ "angle": "thẳng",
+ "source": "",
+ "city": "",
+ "languages": [
+  "vi"
+ ],
+ "price_unit_default": "k_vnd",
+ "tax_note": "not_stated",
+ "has_prices": true,
+ "pii_present": true,
+ "pii_types": [
+  "address",
+  "phone"
+ ],
+ "redaction_checked": false,
+ "consent_id": "",
+ "sections": [],
+ "items": [
+  {
+   "section_id": null,
+   "item_code": "",
+   "raw_name": "LẨU CÁ BÓP",
+   "raw_name_2": "",
+   "norm_name": "lẩu cá bóp",
+   "alt_norm_names": [],
+   "description": "",
+   "category": "lẩu",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "99k",
+     "raw_old_price": "",
+     "price_vnd": 99000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "badge",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 1
+  }
+ ],
+ "ignore_regions": [],
+ "annotator": "A",
+ "status": "adjudicated",
+ "version": 2,
+ "notes": "Hộp đèn. Bia Hơi Hà Nội là thương hiệu đối tác, không có giá.",
+ "domain": "food_menu",
+ "image_width": 744,
+ "image_height": 986,
+ "label_origin": "claude_draft",
+ "review": {
+  "status": "edited",
+  "reviewer": "A",
+  "changed": true,
+  "seconds": 79,
+  "reviewed_at": "2026-11-09T15:42:09.193Z",
+  "flag_note": "",
+  "pii_note": ""
+ },
+ "redactions": [
+  {
+   "type": "address",
+   "bbox": [
+    0.1478,
+    0.8976,
+    0.5175,
+    0.9635
+   ],
+   "origin": "manual"
+  },
+  {
+   "type": "phone",
+   "bbox": [
+    0.6519,
+    0.9026,
+    0.9476,
+    0.9452
+   ],
+   "origin": "manual"
+  }
+ ],
+ "adjudication": {
+  "by": "claude_rule_pass+manual_image_check",
+  "date": "2026-11-14",
+  "version": "1.0",
+  "n_changes": 1,
+  "reviewer_status": "edited",
+  "reviewer": "A"
+ }
+}

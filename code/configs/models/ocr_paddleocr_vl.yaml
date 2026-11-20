@@ -1,0 +1,72 @@
+key: ocr_paddleocr_vl
+hf_id: PaddlePaddle/PaddleOCR-VL
+revision: 7fa00a8c55b735ba51ba49a9058f3f9c57a99a11
+family: PaddleOCR-VL
+org: Baidu
+params_b: 0.9
+license: apache-2.0
+gated: false
+download_gb: 2.14
+role: ocr
+groups:
+- G5
+tier: full
+priority: 50
+backend: vllm
+text_only: false
+dtype: bfloat16
+keep_weights: false
+enabled: true
+note: kiểm bản 1.5/1.6 mới nhất
+vllm:
+  max_model_len: 16384
+  max_num_seqs: 16
+  gpu_memory_utilization: 0.85
+  limit_mm_per_prompt:
+    image: 1
+  trust_remote_code: true
+  max_num_batched_tokens: 16384
+  enforce_eager: false
+  extra_args:
+  - --no-enable-prefix-caching
+  - --mm-processor-cache-gb
+  - '0'
+  env: {}
+autotune:
+  max_num_seqs:
+  - 16
+  - 8
+  - 4
+  - 2
+  max_model_len:
+  - 16384
+  - 8192
+  mm_processor_kwargs: []
+  preemption_limit: 200
+thinking:
+  supported: false
+  default_on: false
+  'off': {}
+  'on': {}
+  strip:
+  - <think>
+  - </think>
+sampling: {}
+hf:
+  adapter: generic
+  model_class: AutoModelForImageTextToText
+  batch_size: 4
+  batch_ladder:
+  - 4
+  - 2
+  - 1
+  python: main
+  dtype: bfloat16
+ocr:
+  engine: vlm_prompt
+  prompt: 'OCR:'
+  output: text
+  lang: vi
+  max_tokens: 8192
+  options: {}
+mock: {}

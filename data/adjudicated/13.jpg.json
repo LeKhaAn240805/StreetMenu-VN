@@ -1,0 +1,305 @@
+{
+ "schema_version": "3.1",
+ "image_id": "smv_0004",
+ "file_name": "13.jpg",
+ "file_sha256": "ce23c26d4404288d07dc3d86505122dd0371d8f455d3054567457e2fcd247fe8",
+ "group_id": "G_13",
+ "near_duplicate_of": "",
+ "split": "test",
+ "ccl": 3,
+ "tags": [
+  "P_FORMAT",
+  "P_PROMO",
+  "N_NORMALIZE",
+  "N_FOREIGN",
+  "L_COMBO_SET",
+  "D_DISTRACTOR"
+ ],
+ "venue_tier": "chain",
+ "venue_type": "nhà hàng",
+ "medium": "sổ menu (trang)",
+ "lighting": "đủ sáng",
+ "angle": "nghiêng nhẹ",
+ "source": "",
+ "city": "",
+ "languages": [
+  "vi",
+  "en"
+ ],
+ "price_unit_default": "vnd",
+ "tax_note": "not_stated",
+ "has_prices": true,
+ "pii_present": false,
+ "pii_types": [],
+ "redaction_checked": false,
+ "consent_id": "",
+ "sections": [
+  {
+   "section_id": "s1",
+   "raw_title": "COMBO",
+   "norm_title": "combo",
+   "shared_price_raw": "",
+   "notes": ""
+  },
+  {
+   "section_id": "s2",
+   "raw_title": "SET GIA ĐÌNH",
+   "norm_title": "set gia đình",
+   "shared_price_raw": "",
+   "notes": ""
+  }
+ ],
+ "items": [
+  {
+   "section_id": "s1",
+   "item_code": "4102",
+   "raw_name": "COMBO HẢI SẢN (KÈM KHOAI TÂY)",
+   "raw_name_2": "OCEAN COMBO",
+   "norm_name": "combo hải sản kèm khoai tây",
+   "alt_norm_names": [],
+   "description": "Mực vòng chiên (4 miếng); Tôm popcorn (5 miếng); Viên tôm xốt kem (4 viên); Khoai tây nướng",
+   "category": "combo – set",
+   "is_add_on": false,
+   "is_combo": true,
+   "combo_components": [
+    {
+     "name": "Mực vòng chiên",
+     "qty": "4 miếng",
+     "ref_price_vnd": 30000
+    },
+    {
+     "name": "Tôm popcorn",
+     "qty": "5 miếng",
+     "ref_price_vnd": 40000
+    },
+    {
+     "name": "Viên tôm xốt kem",
+     "qty": "4 viên",
+     "ref_price_vnd": 40000
+    },
+    {
+     "name": "Khoai tây nướng",
+     "qty": "",
+     "ref_price_vnd": 30000
+    }
+   ],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "130 000đ",
+     "raw_old_price": "140.000",
+     "price_vnd": 130000,
+     "old_price_vnd": 140000,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 1
+  },
+  {
+   "section_id": "s1",
+   "item_code": "4101",
+   "raw_name": "COMBO GÀ ĐẶC BIỆT (KÈM KHOAI TÂY)",
+   "raw_name_2": "CHICKEN DELIGHT COMBO",
+   "norm_name": "combo gà đặc biệt kèm khoai tây",
+   "alt_norm_names": [],
+   "description": "Gà nướng (4 miếng); Gà popcorn; Gà xiên nướng (4 xiên); Khoai tây nướng",
+   "category": "combo – set",
+   "is_add_on": false,
+   "is_combo": true,
+   "combo_components": [
+    {
+     "name": "Gà nướng",
+     "qty": "4 miếng",
+     "ref_price_vnd": 60000
+    },
+    {
+     "name": "Gà popcorn",
+     "qty": "",
+     "ref_price_vnd": 40000
+    },
+    {
+     "name": "Gà xiên nướng",
+     "qty": "4 xiên",
+     "ref_price_vnd": 40000
+    },
+    {
+     "name": "Khoai tây nướng",
+     "qty": "",
+     "ref_price_vnd": 30000
+    }
+   ],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "150 000đ",
+     "raw_old_price": "170.000",
+     "price_vnd": 150000,
+     "old_price_vnd": 170000,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 2
+  },
+  {
+   "section_id": "s2",
+   "item_code": "4201",
+   "raw_name": "SET ĂN \"YÊU THÍCH\"",
+   "raw_name_2": "MOST POPULAR SET",
+   "norm_name": "set ăn yêu thích",
+   "alt_norm_names": [],
+   "description": "Xà lách trái cây; Quầy đồ uống (x2/ được uống thỏa thích); Pizza Margherita; Mỳ Ý xốt thịt bằm; Vẹm xào tỏi; Gà xiên nướng (3 xiên); Kem vani; Kem sôcôla",
+   "category": "combo – set",
+   "is_add_on": false,
+   "is_combo": true,
+   "combo_components": [
+    {
+     "name": "Xà lách trái cây",
+     "qty": "",
+     "ref_price_vnd": 40000
+    },
+    {
+     "name": "Quầy đồ uống",
+     "qty": "x2 được uống thỏa thích",
+     "ref_price_vnd": 40000
+    },
+    {
+     "name": "Pizza Margherita",
+     "qty": "",
+     "ref_price_vnd": 60000
+    },
+    {
+     "name": "Mỳ Ý xốt thịt bằm",
+     "qty": "",
+     "ref_price_vnd": 40000
+    },
+    {
+     "name": "Vẹm xào tỏi",
+     "qty": "",
+     "ref_price_vnd": 30000
+    },
+    {
+     "name": "Gà xiên nướng",
+     "qty": "3 xiên",
+     "ref_price_vnd": 30000
+    },
+    {
+     "name": "Kem vani",
+     "qty": "",
+     "ref_price_vnd": 30000
+    },
+    {
+     "name": "Kem sôcôla",
+     "qty": "",
+     "ref_price_vnd": 30000
+    }
+   ],
+   "serves": "2 người",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "280 000đ",
+     "raw_old_price": "310.000đ",
+     "price_vnd": 280000,
+     "old_price_vnd": 310000,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 3
+  }
+ ],
+ "ignore_regions": [],
+ "annotator": "A",
+ "status": "adjudicated",
+ "version": 2,
+ "notes": "Giá lẻ trong combo là giá tham khảo, không phải offer riêng. Mã 4102, 4101, 4201 đưa vào item_code. 'Gọi riêng từng món 310.000đ' là giá bị gạch của set. Nhiều dòng giá cũ bị lóa, đọc tương đối.",
+ "domain": "food_menu",
+ "image_width": 1500,
+ "image_height": 2000,
+ "label_origin": "claude_draft",
+ "review": {
+  "status": "edited",
+  "reviewer": "A",
+  "changed": true,
+  "seconds": 355,
+  "reviewed_at": "2026-11-11T06:46:14.701Z",
+  "flag_note": "",
+  "pii_note": ""
+ },
+ "redactions": [],
+ "adjudication": {
+  "by": "claude_rule_pass+manual_image_check",
+  "date": "2026-11-14",
+  "version": "1.0",
+  "n_changes": 0,
+  "reviewer_status": "edited",
+  "reviewer": "A"
+ }
+}

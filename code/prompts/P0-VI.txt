@@ -1,0 +1,4 @@
+[image]
+Trích xuất mọi món trong ảnh thực đơn này cùng giá của chúng.
+Trả về một đối tượng JSON theo đúng schema sau:
+{SCHEMA}

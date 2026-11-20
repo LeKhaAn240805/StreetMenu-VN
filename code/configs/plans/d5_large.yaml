@@ -1,0 +1,14 @@
+# Scale ceiling on one 24 GB card (bonus/appendix): the largest models that fit in 4-bit or FP8, one after another on the
+# whole card, P1 on test + ood. Answers "does more scale help on this task?" without leaving the single-GPU, single-backend
+# setting of the main table (every model is still vLLM, greedy, frozen P1). qwen3vl_30b_a3b_awq already ran in c2.
+# These weights are 4-bit/FP8 and serve at 2 sequences, so each model is slow (~2-4 h); cut the plan any time.
+name: d5_large
+seeds: [0]
+splits: [test, ood]
+include_optional: false
+prefetch: true
+keep_weights: false
+stages:
+  - role: vlm
+    models: [qwen3vl_32b_awq, qwen35_27b_awq, gemma4_31b_awq, ministral3_14b_fp8, internvl35_14b]
+    prompts: [P1]

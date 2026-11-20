@@ -1,0 +1,25 @@
+# Prompt registry. kind: image (image + text), text (text only).
+# inputs: extra placeholders the runner must fill:
+#   LINES <- transcript of stage `from` (P-T of the same model, or an OCR model for P-OCR+)
+#   GOLD_LINES <- oracle lines generated from the gold label
+#   STAGE1_OUTPUT <- raw output of stage-1 prompt `stage1`
+# output: json (Prediction), lines (Transcript), free (plain text)
+# status: final | draft (drafts are refused by `smv prompts freeze` and by split=test)
+prompts:
+  P0:       {file: P0.txt, system: en, kind: image, output: json, status: final}
+  P0-VI:    {file: P0-VI.txt, system: vi, kind: image, output: json, status: final}
+  P1:       {file: P1.txt, system: en, kind: image, output: json, status: final}
+  P1-VI:    {file: P1-VI.txt, system: vi, kind: image, output: json, status: final}
+  P1-C:     {file: P1-C.txt, system: en, kind: image, output: json, status: final}
+  P2:       {file: P2.txt, system: en, kind: image, output: json, status: final}
+  P-Conf:   {file: P-Conf.txt, system: en, kind: image, output: json, status: final}
+  P-T:      {file: P-T.txt, system: en, kind: image, output: lines, status: final}
+  P-2S:     {file: P-2S.txt, system: en, kind: image, output: json, status: final, inputs: [LINES], lines_from: P-T}
+  P-OCR+:   {file: P-OCR+.txt, system: en, kind: image, output: json, status: final, inputs: [LINES], lines_from: ocr}
+  P-Oracle: {file: P-Oracle.txt, system: en, kind: text, output: json, status: final, inputs: [GOLD_LINES]}
+  P-NL.s1:  {file: P-NL.s1.txt, system: en, kind: image, output: free, status: final}
+  P-NL:     {file: P-NL.txt, system: en, kind: text, output: json, status: final, inputs: [STAGE1_OUTPUT], stage1: P-NL.s1}
+  P1a:      {file: P1a.txt, system: en, kind: image, output: json, status: final}
+  P1b:      {file: P1b.txt, system: en, kind: image, output: json, status: final}
+  P1c:      {file: P1c.txt, system: en, kind: image, output: json, status: final}
+# Text sent to OCR-type VLMs is defined per model (configs/models/*.yaml, ocr.prompt).

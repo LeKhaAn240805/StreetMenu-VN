@@ -1,0 +1,147 @@
+{
+ "schema_version": "3.1",
+ "image_id": "smv_0322",
+ "file_name": "IMG_2421.jpg",
+ "file_sha256": "b6f70e9d04b3b1cc5545b0427cd30fd48b4431b8b00eb8fdb662b7e001ac1ce0",
+ "group_id": "G_2421",
+ "near_duplicate_of": "",
+ "split": "test",
+ "ccl": 4,
+ "tags": [
+  "P_FORMAT",
+  "P_MULTI_UNLABELED",
+  "V_GEOMETRY",
+  "D_DISTRACTOR"
+ ],
+ "venue_tier": "small_shop",
+ "venue_type": "bánh mì – xôi",
+ "medium": "poster một món",
+ "lighting": "đủ sáng",
+ "angle": "thẳng",
+ "source": "",
+ "city": "",
+ "languages": [
+  "vi"
+ ],
+ "price_unit_default": "vnd",
+ "tax_note": "not_stated",
+ "has_prices": true,
+ "pii_present": true,
+ "pii_types": [
+  "phone"
+ ],
+ "redaction_checked": false,
+ "consent_id": "",
+ "sections": [],
+ "items": [
+  {
+   "section_id": null,
+   "item_code": "",
+   "raw_name": "Bánh Mì Chay",
+   "raw_name_2": "",
+   "norm_name": "bánh mì chay",
+   "alt_norm_names": [],
+   "description": "PATE THƠM BÉO, CHẢ NẤM, SƯỜN GIÒN",
+   "category": "bánh mì – burger",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [
+    "vegetarian"
+   ],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "#1",
+     "size_rank": 1,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "19.000",
+     "raw_old_price": "",
+     "price_vnd": 19000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    },
+    {
+     "size": "#2",
+     "size_rank": 2,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "22.000",
+     "raw_old_price": "",
+     "price_vnd": 22000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 1
+  }
+ ],
+ "ignore_regions": [],
+ "annotator": "A",
+ "status": "adjudicated",
+ "version": 2,
+ "notes": "Poster, tên chính là bánh mì chay. Hai giá không ghi nhãn. 'Chủ nhật quán nghỉ trừ mùng 1 & 15 AL' là thông báo. Đã che Zalo và hotline.",
+ "domain": "food_menu",
+ "image_width": 921,
+ "image_height": 2048,
+ "label_origin": "claude_draft",
+ "review": {
+  "status": "edited",
+  "reviewer": "A",
+  "changed": true,
+  "seconds": 119,
+  "reviewed_at": "2026-11-09T15:37:04.885Z",
+  "flag_note": "",
+  "pii_note": ""
+ },
+ "redactions": [
+  {
+   "type": "phone",
+   "bbox": [
+    0.1901,
+    0.801,
+    0.8369,
+    0.852
+   ],
+   "origin": "manual"
+  }
+ ],
+ "adjudication": {
+  "by": "claude_rule_pass+manual_image_check",
+  "date": "2026-11-14",
+  "version": "1.0",
+  "n_changes": 1,
+  "reviewer_status": "edited",
+  "reviewer": "A"
+ }
+}

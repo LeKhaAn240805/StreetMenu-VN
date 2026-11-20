@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "StreetMenu-VN model output v1.1",
+  "type": "object",
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "raw_name",
+          "name",
+          "offers"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "section": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "raw_name": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "is_topping": {
+            "type": "boolean"
+          },
+          "is_combo": {
+            "type": "boolean"
+          },
+          "offers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "raw_price",
+                "price_vnd"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "size": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "temp": {
+                  "enum": [
+                    "nóng",
+                    "đá",
+                    null
+                  ]
+                },
+                "portion": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "raw_price": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "price_vnd": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "price_max_vnd": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "old_price_vnd": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "unit": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

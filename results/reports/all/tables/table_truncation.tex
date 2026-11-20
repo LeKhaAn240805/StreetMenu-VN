@@ -1,0 +1,45 @@
+\begin{table}[t]
+\centering
+\caption{Answers cut at the 8,192-token output limit in the main run (P1, test)}
+\label{tab:truncation}
+\small
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Model & Answers cut (\%) & Gold offers in cut answers (\%) & Missed offers in cut answers (\%) & F1 all & F1 complete answers & F1 cut answers & Loops (\%) & Output tokens per offer \\
+\midrule
+Qwen3.5-27B (AWQ-4bit) & 9.5 & 41.0 & 68.4 & 84.5 & 90.2 & 74.8 & 0.0 & 156 \\
+Qwen3.5-9B & 7.7 & 35.6 & 50.7 & 82.2 & 84.9 & 76.7 & 0.0 & 159 \\
+Qwen3-VL-8B (FP8) & 5.5 & 26.8 & 43.1 & 82.1 & 85.4 & 71.8 & 0.4 & 139 \\
+Qwen3-VL-8B & 5.8 & 28.1 & 45.3 & 81.6 & 85.2 & 71.0 & 0.4 & 138 \\
+Qwen3-VL-8B (AWQ-4bit) & 5.1 & 26.1 & 49.0 & 80.9 & 85.7 & 64.0 & 1.1 & 138 \\
+Ministral 3 8B & 4.4 & 22.9 & 35.4 & 79.9 & 82.3 & 70.4 & 0.0 & 141 \\
+Qwen3.5-4B & 8.4 & 35.7 & 52.6 & 79.6 & 83.4 & 71.9 & 0.4 & 152 \\
+Qwen3-VL-32B (AWQ-4bit) & 13.1 & 48.2 & 75.3 & 79.1 & 88.8 & 66.4 & 0.0 & 142 \\
+Qwen3-VL-4B & 5.8 & 27.9 & 46.6 & 78.1 & 83.4 & 62.9 & 1.1 & 132 \\
+Gemma 4 E4B & 7.7 & 35.7 & 57.4 & 77.3 & 84.5 & 62.3 & 1.1 & 161 \\
+Ovis2.5-9B & 6.6 & 29.2 & 49.7 & 76.0 & 82.5 & 57.6 & 2.6 & 135 \\
+InternVL3.5-4B & 5.5 & 26.9 & 36.2 & 75.1 & 77.9 & 66.9 & 0.4 & 135 \\
+Qwen3-VL-30B-A3B (AWQ-4bit) & 6.9 & 30.9 & 55.1 & 74.4 & 81.6 & 55.6 & 1.1 & 138 \\
+Ministral 3 3B & 3.6 & 18.9 & 23.0 & 73.4 & 74.3 & 69.5 & 0.0 & 125 \\
+GLM-4.6V-Flash & 4.4 & 22.7 & 27.5 & 70.6 & 71.8 & 66.1 & 0.0 & 134 \\
+InternVL3.5-8B & 3.6 & 18.7 & 22.2 & 70.4 & 71.7 & 64.8 & 0.0 & 140 \\
+MiniCPM-V 4.5 & 6.6 & 27.4 & 45.6 & 69.4 & 76.4 & 47.5 & 3.6 & 136 \\
+Qwen2.5-VL-7B & 6.2 & 22.9 & 30.3 & 67.6 & 70.0 & 57.9 & 3.6 & 142 \\
+Gemma 4 E2B & 1.8 & 10.5 & 12.9 & 63.1 & 64.0 & 54.8 & 0.0 & 165 \\
+Qwen3.5-2B & 12.8 & 41.6 & 55.8 & 60.5 & 71.4 & 44.3 & 5.5 & 157 \\
+Qwen3-VL-2B & 13.5 & 32.3 & 46.2 & 54.7 & 67.1 & 30.9 & 7.7 & 137 \\
+InternVL3.5-2B & 8.4 & 32.7 & 42.6 & 49.4 & 58.3 & 30.3 & 4.0 & 143 \\
+MiMo-VL-7B-RL & 29.6 & 70.3 & 86.5 & 42.8 & 75.5 & 20.9 & 0.0 & 584 \\
+Phi-4-multimodal & 10.0 & 0.5 & 0.7 & 41.2 & 41.4 & 0.0 & 0.0 & 164 \\
+EraX-VL-7B v1.5 & 10.6 & 32.9 & 42.6 & 39.4 & 51.5 & 16.6 & 4.0 & 140 \\
+Qwen3.5-0.8B & 17.2 & 43.7 & 52.5 & 35.3 & 45.4 & 21.5 & 9.5 & 152 \\
+Vintern-3B-R beta & 10.6 & 25.1 & 28.2 & 34.6 & 41.3 & 19.2 & 5.1 & 146 \\
+InternVL3.5-1B & 4.4 & 15.3 & 16.7 & 28.7 & 31.4 & 16.4 & 0.7 & 143 \\
+Vintern-1B v3.5 & 20.8 & 38.4 & 41.0 & 12.3 & 22.1 & 4.1 & 11.3 & 136 \\
+EraX-VL-2B v1.5 & 38.7 & 72.0 & 77.6 & 4.3 & 19.4 & 1.5 & 4.4 & 67 \\
+Molmo-7B-D & 80.7 & 90.0 & 90.6 & 2.4 & 9.5 & 1.5 & 43.8 & 131 \\
+Ministral 3 14B (FP8) & 100.0 & 100.0 & 100.0 & 0.0 & – & 0.0 & 0.0 & – \\
+\bottomrule
+\end{tabular}
+\par\smallskip{\footnotesize An answer is cut when generation stops at the output limit (finish reason `length`). Output tokens per offer are measured on complete answers.}
+\end{table}

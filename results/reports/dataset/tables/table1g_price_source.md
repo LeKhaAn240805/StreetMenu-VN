@@ -1,0 +1,13 @@
+**Gold offers by price source and split**
+
+| price source | dev | test | ood | Total |
+|---|---|---|---|---|
+| item_line | 493 | 3383 | 317 | 4193 |
+| column_header | 197 | 674 | 54 | 925 |
+| section_header | 47 | 342 | 0 | 389 |
+| badge | 10 | 280 | 1 | 291 |
+| merged_cell | 0 | 147 | 0 | 147 |
+| handwritten_override | 18 | 109 | 0 | 127 |
+| bracket | 9 | 80 | 4 | 93 |
+| global_header | 14 | 66 | 0 | 80 |
+| All | 788 | 5081 | 376 | 6245 |

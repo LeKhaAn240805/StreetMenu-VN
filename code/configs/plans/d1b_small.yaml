@@ -1,0 +1,31 @@
+# Small models, lane B (the other part of card 1; runs side by side with d1a_small). Models of at most 2B.
+#   - compact output P1-C
+#   - decoding check P1@rp105: repetition_penalty 1.05 (the value Qwen ships in generation_config.json, which the main
+#     protocol ignores so that every model decodes the same way) for the models whose main run loops or is truncated most
+#   - what was left of c4b: EraX-VL-2B (P1, P1-VI) and the MinerU OCR engine
+name: d1b_small
+gpu_share: 0.41
+seeds: [0]
+splits: [test]
+include_optional: false
+prefetch: true
+keep_weights: false
+stages:
+  - role: ocr
+    name: remaining OCR engine (from c4b)
+    splits: [dev, test, ood]
+    models: [ocr_mineru25]
+  - role: vlm
+    name: compact output and repetition penalty
+    models: [qwen35_2b, qwen3vl_2b, internvl35_2b, qwen35_0p8b, vintern_1b, erax_vl_2b]
+    prompts:
+      - {id: P1, tag: long, sampling: {max_tokens: 15000}}
+      - {id: P1, tag: rp105, sampling: {repetition_penalty: 1.05}}
+  - role: vlm
+    name: longer output budget
+    models: [internvl35_1b]
+    prompts: [{id: P1, tag: long, sampling: {max_tokens: 15000}}]
+  - role: vlm
+    name: Vietnamese-specialised 2B, English and Vietnamese prompt (from c4b)
+    models: [erax_vl_2b]
+    prompts: [P1, P1-VI]

@@ -1,0 +1,25 @@
+# Compact output P1-C for the remaining models of the main table (whole card, one after another), the 40 requests of
+# GLM-4.6V-Flash that vLLM refused in c1 (encoder cache, fixed in its config), and the repetition-penalty check for the two
+# large models whose main run loops.
+name: d3_compact
+seeds: [0]
+splits: [test]
+include_optional: false
+prefetch: true
+keep_weights: false
+stages:
+  - role: vlm
+    name: compact output
+    models: [qwen35_9b, ministral3_8b, qwen3vl_4b, internvl35_4b, internvl35_8b, minicpmv45, glm46v_flash, erax_vl_7b,
+             qwen3vl_30b_a3b_awq]
+    prompts: [{id: P1, tag: long, sampling: {max_tokens: 15000}}]
+  - role: vlm
+    name: GLM-4.6V-Flash, requests refused in c1
+    splits: [test, ood]
+    models: [glm46v_flash]
+    prompts: [P1]
+  - role: vlm
+    name: repetition penalty 1.05 for the large models that loop
+    models: [erax_vl_7b, minicpmv45]
+    prompts:
+      - {id: P1, tag: rp105, sampling: {repetition_penalty: 1.05}}

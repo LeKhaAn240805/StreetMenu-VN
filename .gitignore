@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.venvs/
+.pytest_cache/
+.ruff_cache/
+
+# Local settings and secrets
+.env
+.claude/
+
+# Pipeline working folders (created by runs)
+code/outputs/
+code/cache/
+code/checkpoints/
+code/.cache/
+
+# LaTeX and editor files
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

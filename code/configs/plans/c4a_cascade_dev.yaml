@@ -1,0 +1,13 @@
+# Core 4a: dev check of the cascade prompts (OCR text to JSON, human transcript upper bound) before they are frozen.
+name: c4a_cascade_dev
+seeds: [0]
+splits: [dev]
+include_optional: false
+prefetch: true
+keep_weights: false
+stages:
+  - role: llm
+    models: [llm_qwen3_8b, llm_vylinh_3b]
+    prompts:
+      - {id: P-OCR+, ocr_from: [ocr_ppocr, ocr_paddleocr_vl]}
+      - P-Oracle

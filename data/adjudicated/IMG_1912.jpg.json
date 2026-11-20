@@ -1,0 +1,330 @@
+{
+ "schema_version": "3.1",
+ "image_id": "smv_0221",
+ "file_name": "IMG_1912.jpg",
+ "file_sha256": "0a095f8debbed0b14065f18691410e6fc10b82fbbadae86d563a99d1454c8595",
+ "group_id": "G_1912",
+ "near_duplicate_of": "",
+ "split": "test",
+ "ccl": 4,
+ "tags": [
+  "P_FORMAT",
+  "P_INHERITED",
+  "N_SECTION_COMPOSE",
+  "S_LAYOUT",
+  "V_QUALITY"
+ ],
+ "venue_tier": "street_vendor",
+ "venue_type": "bánh mì – xôi",
+ "medium": "băng rôn / bảng hiệu",
+ "lighting": "đủ sáng",
+ "angle": "thẳng",
+ "source": "",
+ "city": "",
+ "languages": [
+  "vi"
+ ],
+ "price_unit_default": "k_vnd",
+ "tax_note": "not_stated",
+ "has_prices": true,
+ "pii_present": true,
+ "pii_types": [
+  "phone"
+ ],
+ "redaction_checked": false,
+ "consent_id": "",
+ "sections": [
+  {
+   "section_id": "s1",
+   "raw_title": "BÁNH MÌ MẶN",
+   "norm_title": "bánh mì mặn",
+   "shared_price_raw": "15K",
+   "notes": ""
+  }
+ ],
+ "items": [
+  {
+   "item_id": 1,
+   "section_id": null,
+   "item_code": "",
+   "raw_name": "BÁNH MÌ CHAY",
+   "raw_name_2": "",
+   "norm_name": "bánh mì chay",
+   "alt_norm_names": [],
+   "description": "",
+   "category": "bánh mì – burger",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [
+    "vegetarian"
+   ],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "15K",
+     "price_vnd": 15000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "raw_old_price": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ]
+  },
+  {
+   "item_id": 2,
+   "section_id": null,
+   "item_code": "",
+   "raw_name": "BÚN GẠO XÀO CHAY",
+   "raw_name_2": "",
+   "norm_name": "bún gạo xào chay",
+   "alt_norm_names": [],
+   "description": "",
+   "category": "món nước (bún, phở, hủ tiếu, mì)",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [
+    "vegetarian"
+   ],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "20K",
+     "price_vnd": 20000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "item_line",
+     "evidence": "printed",
+     "notes": "",
+     "raw_old_price": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ]
+  },
+  {
+   "item_id": 3,
+   "section_id": "s1",
+   "item_code": "",
+   "raw_name": "HEO QUAY",
+   "raw_name_2": "",
+   "norm_name": "bánh mì heo quay",
+   "alt_norm_names": [
+    "heo quay"
+   ],
+   "description": "",
+   "category": "bánh mì – burger",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "15K",
+     "price_vnd": 15000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "bracket",
+     "evidence": "printed",
+     "notes": "",
+     "raw_old_price": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ]
+  },
+  {
+   "item_id": 4,
+   "section_id": "s1",
+   "item_code": "",
+   "raw_name": "CHẢ CÁ",
+   "raw_name_2": "",
+   "norm_name": "bánh mì chả cá",
+   "alt_norm_names": [
+    "chả cá"
+   ],
+   "description": "",
+   "category": "bánh mì – burger",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "15K",
+     "price_vnd": 15000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "bracket",
+     "evidence": "printed",
+     "notes": "",
+     "raw_old_price": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ]
+  },
+  {
+   "item_id": 5,
+   "section_id": "s1",
+   "item_code": "",
+   "raw_name": "ỐP LA",
+   "raw_name_2": "",
+   "norm_name": "bánh mì ốp la",
+   "alt_norm_names": [
+    "ốp la"
+   ],
+   "description": "",
+   "category": "bánh mì – burger",
+   "is_add_on": false,
+   "is_combo": false,
+   "combo_components": [],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "15K",
+     "price_vnd": 15000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "bracket",
+     "evidence": "printed",
+     "notes": "",
+     "raw_old_price": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ]
+  }
+ ],
+ "ignore_regions": [],
+ "annotator": "B",
+ "status": "adjudicated",
+ "version": 2,
+ "notes": "Mũi tên từ 'Bánh mì mặn' tới 3 loại, 15K trong sao áp cho cả 3.",
+ "domain": "food_menu",
+ "image_width": 354,
+ "image_height": 472,
+ "label_origin": "claude_draft",
+ "review": {
+  "status": "confirmed",
+  "reviewer": "B",
+  "changed": false,
+  "seconds": 16,
+  "reviewed_at": "2026-11-12T18:00:28.392Z",
+  "flag_note": "",
+  "pii_note": ""
+ },
+ "redactions": [
+  {
+   "type": "phone",
+   "bbox": [
+    0.1921,
+    0.9153,
+    0.8418,
+    0.9788
+   ],
+   "origin": "manual"
+  }
+ ],
+ "adjudication": {
+  "by": "claude_rule_pass+manual_image_check",
+  "date": "2026-11-14",
+  "version": "1.0",
+  "n_changes": 0,
+  "reviewer_status": "confirmed",
+  "reviewer": "B"
+ }
+}

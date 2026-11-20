@@ -1,0 +1,65 @@
+key: aya_vision_8b
+hf_id: unsloth/aya-vision-8b
+revision: 1904accecafa6a9d5c5c9a475d92a40c0b4694cc
+family: Aya Vision
+org: Cohere
+params_b: 8.6
+license: cc-by-nc-4.0
+gated: false
+download_gb: 17.28
+role: vlm
+groups:
+- G1
+- G4
+tier: optional
+priority: 50
+backend: hf
+text_only: false
+dtype: bfloat16
+keep_weights: false
+enabled: true
+note: vLLM 0.32 has no AyaVision implementation -> transformers; ungated mirror of
+  CohereLabs/aya-vision-8b
+vllm:
+  max_model_len: 16384
+  max_num_seqs: 8
+  gpu_memory_utilization: 0.9
+  limit_mm_per_prompt:
+    image: 1
+  trust_remote_code: false
+  enforce_eager: false
+  extra_args: []
+  env: {}
+autotune:
+  max_num_seqs:
+  - 16
+  - 8
+  - 4
+  - 2
+  - 1
+  max_model_len:
+  - 16384
+  - 12288
+  - 8192
+  mm_processor_kwargs: []
+  preemption_limit: 200
+thinking:
+  supported: false
+  default_on: false
+  'off': {}
+  'on': {}
+  strip:
+  - <think>
+  - </think>
+sampling: {}
+hf:
+  adapter: generic
+  model_class: AutoModelForImageTextToText
+  batch_size: 4
+  batch_ladder:
+  - 4
+  - 2
+  - 1
+  python: main
+  dtype: bfloat16
+mock: {}

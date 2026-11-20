@@ -1,0 +1,4 @@
+﻿file_name,image_id,split_before,domain,reason_code,flagged_by,reason
+IMG_1653.jpg,smv_0157,ood,service,ethics_minor,,Ảnh có hình trẻ em; hướng dẫn gán nhãn khuyến nghị loại khỏi bản công bố.
+IMG_2298.jpg,smv_0278,ood,notice,reviewer_drop,B,"Người kiểm ghi ""xoá món nì"". Bảng ""phạt"" mang tính đùa, vốn là ảnh OOD loại notice. Có thể đưa lại làm bẫy OOD nếu cần."
+IMG_7850.jpg,smv_0343,ood,notice,reviewer_drop,A,"Người kiểm ghi ""bỏ"". Biển phạt vi phạm giao thông, không phải bảng giá; vốn là ảnh OOD loại notice."

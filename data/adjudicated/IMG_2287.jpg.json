@@ -1,0 +1,246 @@
+{
+ "schema_version": "3.1",
+ "image_id": "smv_0271",
+ "file_name": "IMG_2287.jpg",
+ "file_sha256": "c2f8f2160325cca0ae9e15bc063a9f2934a8b94464d3acc46974a0844f47ebac",
+ "group_id": "G_2287",
+ "near_duplicate_of": "",
+ "split": "test",
+ "ccl": 4,
+ "tags": [
+  "P_FORMAT",
+  "N_FOREIGN",
+  "L_COMBO_SET",
+  "S_DETACHED"
+ ],
+ "venue_tier": "chain",
+ "venue_type": "trà sữa",
+ "medium": "bảng đèn",
+ "lighting": "đủ sáng",
+ "angle": "thẳng",
+ "source": "",
+ "city": "",
+ "languages": [
+  "vi",
+  "en"
+ ],
+ "price_unit_default": "k_vnd",
+ "tax_note": "not_stated",
+ "has_prices": true,
+ "pii_present": false,
+ "pii_types": [],
+ "redaction_checked": false,
+ "consent_id": "",
+ "sections": [
+  {
+   "section_id": "s1",
+   "raw_title": "COMBO",
+   "norm_title": "combo",
+   "shared_price_raw": "",
+   "notes": ""
+  }
+ ],
+ "items": [
+  {
+   "section_id": "s1",
+   "item_code": "",
+   "raw_name": "COMBO VUI KHOÁI CHÍ",
+   "raw_name_2": "Pleasure Combo",
+   "norm_name": "combo vui khoái chí",
+   "alt_norm_names": [],
+   "description": "Bánh tráng trộn và trà đào cam sả size vừa",
+   "category": "combo – set",
+   "is_add_on": false,
+   "is_combo": true,
+   "combo_components": [
+    {
+     "name": "Bánh Tráng Trộn",
+     "qty": "1",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Trà Đào Cam Sả (size vừa)",
+     "qty": "1",
+     "ref_price_vnd": null
+    }
+   ],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "37k",
+     "raw_old_price": "",
+     "price_vnd": 37000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "badge",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 1
+  },
+  {
+   "section_id": "s1",
+   "item_code": "",
+   "raw_name": "COMBO NO CĂNG BỤNG",
+   "raw_name_2": "Full Stomach Combo",
+   "norm_name": "combo no căng bụng",
+   "alt_norm_names": [],
+   "description": "Cơm cuộn Hàn Quốc và Trà sữa Mrs Nhi size lớn",
+   "category": "combo – set",
+   "is_add_on": false,
+   "is_combo": true,
+   "combo_components": [
+    {
+     "name": "Cơm Cuộn Hàn Quốc",
+     "qty": "1",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Trà Sữa Mrs Nhi (size lớn)",
+     "qty": "1",
+     "ref_price_vnd": null
+    }
+   ],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "52k",
+     "raw_old_price": "",
+     "price_vnd": 52000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "badge",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 2
+  },
+  {
+   "section_id": "s1",
+   "item_code": "",
+   "raw_name": "COMBO MỐI TÌNH ĐẦU",
+   "raw_name_2": "First Love Combo",
+   "norm_name": "combo mối tình đầu",
+   "alt_norm_names": [],
+   "description": "Tokbokki và trà sữa ô long sủi bọt trân châu",
+   "category": "combo – set",
+   "is_add_on": false,
+   "is_combo": true,
+   "combo_components": [
+    {
+     "name": "Tokbokki",
+     "qty": "1",
+     "ref_price_vnd": null
+    },
+    {
+     "name": "Trà Sữa Ô Long Sủi Bọt Trân Châu",
+     "qty": "1",
+     "ref_price_vnd": null
+    }
+   ],
+   "serves": "",
+   "option_groups": "",
+   "attributes": [],
+   "availability": "",
+   "item_status": "active",
+   "legibility": "clear",
+   "ambiguous": false,
+   "ambig_reason": "",
+   "notes": "",
+   "offers": [
+    {
+     "size": "",
+     "size_rank": null,
+     "temp": "",
+     "portion": "",
+     "quantity": null,
+     "qty_unit": "",
+     "raw_price": "52k",
+     "raw_old_price": "",
+     "price_vnd": 52000,
+     "old_price_vnd": null,
+     "price_kind": "fixed",
+     "price_min_vnd": null,
+     "price_max_vnd": null,
+     "unit_qty": null,
+     "unit": "",
+     "price_source": "badge",
+     "evidence": "printed",
+     "notes": "",
+     "ambiguous": false,
+     "ambig_reason": ""
+    }
+   ],
+   "item_id": 3
+  }
+ ],
+ "ignore_regions": [],
+ "annotator": "A",
+ "status": "adjudicated",
+ "version": 2,
+ "notes": "Bảng đèn combo. Giá trong vòng tròn. Người trong logo trên ly là hình in logo, không xử lý thêm.",
+ "domain": "food_menu",
+ "image_width": 1024,
+ "image_height": 1795,
+ "label_origin": "claude_draft",
+ "review": {
+  "status": "edited",
+  "reviewer": "A",
+  "changed": true,
+  "seconds": 159,
+  "reviewed_at": "2026-11-12T18:15:55.614Z",
+  "flag_note": "",
+  "pii_note": ""
+ },
+ "redactions": [],
+ "adjudication": {
+  "by": "claude_rule_pass+manual_image_check",
+  "date": "2026-11-14",
+  "version": "1.0",
+  "n_changes": 0,
+  "reviewer_status": "edited",
+  "reviewer": "A"
+ }
+}

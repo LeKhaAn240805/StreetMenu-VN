@@ -1,0 +1,17 @@
+# Core 2: scale ladders inside five families (P1, test only) and one large 4-bit point. Small models are fast.
+name: c2_scale
+seeds: [0]
+splits: [test]
+include_optional: false
+prefetch: true
+keep_weights: false
+stages:
+  - role: vlm
+    name: small and mid models
+    models: [qwen3vl_4b, internvl35_4b, qwen35_4b, gemma4_e2b, qwen3vl_2b, internvl35_2b, qwen35_2b, internvl35_1b,
+             qwen35_0p8b, ministral3_3b, qwen35_9b]
+    prompts: [P1]
+  - role: vlm
+    name: one large point (MoE with 3B active, 4-bit)
+    models: [qwen3vl_30b_a3b_awq]
+    prompts: [P1]

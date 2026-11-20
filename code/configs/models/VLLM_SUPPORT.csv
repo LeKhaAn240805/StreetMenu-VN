@@ -1,0 +1,69 @@
+key,architectures,vllm_supported,backend,suggested_backend,mismatch
+aya_vision_8b,AyaVisionForConditionalGeneration,False,hf,hf,False
+erax_vl_2b,Qwen2VLForConditionalGeneration,True,vllm,vllm,False
+erax_vl_7b,Qwen2VLForConditionalGeneration,True,vllm,vllm,False
+erax_vl_7b_v2,Qwen2VLForConditionalGeneration,True,vllm,vllm,False
+gemma4_12b,Gemma4UnifiedForConditionalGeneration,True,vllm,vllm,False
+gemma4_26b_a4b_4bit,Gemma4ForConditionalGeneration,True,vllm,vllm,False
+gemma4_31b_awq,Gemma4ForConditionalGeneration,True,vllm,vllm,False
+gemma4_e2b,Gemma4ForConditionalGeneration,True,vllm,vllm,False
+gemma4_e4b,Gemma4ForConditionalGeneration,True,vllm,vllm,False
+glm46v_flash,Glm4vForConditionalGeneration,True,vllm,vllm,False
+granite_vision_4b,Granite4VisionForConditionalGeneration,True,vllm,vllm,False
+internvl35_14b,InternVLChatModel,True,vllm,vllm,False
+internvl35_1b,InternVLChatModel,True,vllm,vllm,False
+internvl35_2b,InternVLChatModel,True,vllm,vllm,False
+internvl35_4b,InternVLChatModel,True,vllm,vllm,False
+internvl35_8b,InternVLChatModel,True,vllm,vllm,False
+llm_gemma3_12b_text,Gemma3ForConditionalGeneration,True,vllm,vllm,False
+llm_phogpt_4b,MPTForCausalLM,False,hf,hf,False
+llm_qwen3_8b,Qwen3ForCausalLM,True,vllm,vllm,False
+llm_sailor2_8b,Qwen2ForCausalLM,True,vllm,vllm,False
+llm_seallm_v3_7b,Qwen2ForCausalLM,True,vllm,vllm,False
+llm_vistral_7b,MistralForCausalLM,True,vllm,vllm,False
+llm_vylinh_3b,Qwen2ForCausalLM,True,vllm,vllm,False
+mimo_vl_7b,Qwen2_5_VLForConditionalGeneration,True,vllm,vllm,False
+minicpmv45,MiniCPMV,True,vllm,vllm,False
+ministral3_14b_fp8,Mistral3ForConditionalGeneration,True,vllm,vllm,False
+ministral3_3b,Mistral3ForConditionalGeneration,True,vllm,vllm,False
+ministral3_8b,Mistral3ForConditionalGeneration,True,vllm,vllm,False
+mock_llm,,,mock,mock (architecture unknown: run `smv models verify`),False
+mock_ocr,,,mock,mock (architecture unknown: run `smv models verify`),False
+mock_vlm_a,,,mock,mock (architecture unknown: run `smv models verify`),False
+mock_vlm_crash,,,mock,mock (architecture unknown: run `smv models verify`),False
+mock_vlm_oom,,,mock,mock (architecture unknown: run `smv models verify`),False
+molmo_7b,MolmoForCausalLM,True,vllm,vllm,False
+nemotron_vl_12b_fp8,,,vllm,vllm (architecture unknown: run `smv models verify`),False
+ocr_deepseek_ocr,DeepseekOCRForCausalLM,True,vllm,vllm,False
+ocr_deepseek_ocr2,DeepseekOCR2ForCausalLM,True,vllm,vllm,False
+ocr_dots,DotsOCRForCausalLM,True,vllm,vllm,False
+ocr_easyocr,,,ocr,ocr,False
+ocr_glm_ocr,GlmOcrForConditionalGeneration,True,vllm,vllm,False
+ocr_glm_ocr_vi,GlmOcrForConditionalGeneration,True,vllm,vllm,False
+ocr_mineru25,Qwen2VLForConditionalGeneration,True,vllm,vllm,False
+ocr_paddleocr_vl,PaddleOCRVLForConditionalGeneration,True,vllm,vllm,False
+ocr_ppocr,,,ocr,ocr,False
+ocr_vietocr,,,ocr,ocr,False
+ovis25_9b,Ovis2_5,True,vllm,vllm,False
+phi4_mm,Phi4MMForCausalLM,True,vllm,vllm,False
+pixtral_12b,LlavaForConditionalGeneration,True,vllm,vllm,False
+qwen25vl_7b,Qwen2_5_VLForConditionalGeneration,True,vllm,vllm,False
+qwen35_0p8b,Qwen3_5ForConditionalGeneration,True,vllm,vllm,False
+qwen35_27b_awq,Qwen3_5ForConditionalGeneration,True,vllm,vllm,False
+qwen35_2b,Qwen3_5ForConditionalGeneration,True,vllm,vllm,False
+qwen35_4b,Qwen3_5ForConditionalGeneration,True,vllm,vllm,False
+qwen35_9b,Qwen3_5ForConditionalGeneration,True,vllm,vllm,False
+qwen3vl_2b,Qwen3VLForConditionalGeneration,True,vllm,vllm,False
+qwen3vl_30b_a3b_awq,Qwen3VLMoeForConditionalGeneration,True,vllm,vllm,False
+qwen3vl_32b_awq,Qwen3VLForConditionalGeneration,True,vllm,vllm,False
+qwen3vl_4b,Qwen3VLForConditionalGeneration,True,vllm,vllm,False
+qwen3vl_8b,Qwen3VLForConditionalGeneration,True,vllm,vllm,False
+qwen3vl_8b_awq,Qwen3VLForConditionalGeneration,True,vllm,vllm,False
+qwen3vl_8b_fp8,Qwen3VLForConditionalGeneration,True,vllm,vllm,False
+qwen3vl_8b_gguf_q4,,,vllm,vllm (architecture unknown: run `smv models verify`),False
+qwen3vl_8b_thinking,Qwen3VLForConditionalGeneration,True,vllm,vllm,False
+qwen3vl_8b_vi_ocrvqa,Qwen3VLForConditionalGeneration,True,vllm,vllm,False
+smolvlm2_2b,SmolVLMForConditionalGeneration,True,vllm,vllm,False
+vintern_1b,InternVLChatModel,True,vllm,vllm,False
+vintern_3b,InternVLChatModel,True,vllm,vllm,False
+vintern_3b_r,InternVLChatModel,True,vllm,vllm,False

@@ -1,0 +1,62 @@
+key: llm_vylinh_3b
+hf_id: arcee-ai/Arcee-VyLinh
+revision: 5f9751c095cdfa14c2e77489f8aef8a037da1b1c
+family: VyLinh (Qwen2.5)
+org: Arcee AI
+params_b: 3.1
+license: apache-2.0
+gated: false
+download_gb: 13.6
+role: llm
+groups:
+- G4
+- G5
+tier: full
+priority: 50
+backend: vllm
+text_only: true
+dtype: bfloat16
+keep_weights: false
+enabled: true
+note: ''
+vllm:
+  max_model_len: 16384
+  max_num_seqs: 16
+  gpu_memory_utilization: 0.9
+  trust_remote_code: false
+  enforce_eager: false
+  extra_args: []
+  env: {}
+autotune:
+  max_num_seqs:
+  - 16
+  - 8
+  - 4
+  - 2
+  - 1
+  max_model_len:
+  - 16384
+  - 12288
+  - 8192
+  mm_processor_kwargs: []
+  preemption_limit: 200
+thinking:
+  supported: false
+  default_on: false
+  'off': {}
+  'on': {}
+  strip:
+  - <think>
+  - </think>
+sampling: {}
+hf:
+  adapter: generic
+  model_class: AutoModelForImageTextToText
+  batch_size: 4
+  batch_ladder:
+  - 4
+  - 2
+  - 1
+  python: main
+  dtype: bfloat16
+mock: {}

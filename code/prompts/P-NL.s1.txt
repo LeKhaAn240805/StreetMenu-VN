@@ -1,0 +1,3 @@
+[image]
+List every item on this menu with its price or prices, one item per line, in
+the form: item name — options and prices. Copy names and prices as written.

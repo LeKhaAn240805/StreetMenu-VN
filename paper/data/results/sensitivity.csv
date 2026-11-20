@@ -1,0 +1,8 @@
+Scoring variant,Kendall tau vs main,Top-1,Top-1 same,Models
+"main (strict price, strict names, tau 0.70, repeats merged)",1.0,qwen35_27b_awq,yes,32
+lenient price rule,1.0,qwen35_27b_awq,yes,32
+names without diacritics,0.98,qwen35_27b_awq,yes,32
+macro over images,0.863,qwen35_27b_awq,yes,32
+tau 0.60,0.867,qwen35_27b_awq,yes,32
+tau 0.80,0.899,qwen35_27b_awq,yes,32
+repeated items counted separately,0.883,qwen35_27b_awq,yes,32

@@ -1,0 +1,75 @@
+key: qwen35_27b_awq
+hf_id: cyankiwi/Qwen3.5-27B-AWQ-4bit
+revision: 9d8d63632afafe90bdfcb70164d3e2a0955619f7
+family: Qwen3.5
+org: Alibaba
+params_b: 27.0
+license: apache-2.0
+gated: false
+download_gb: 20.08
+role: vlm
+groups:
+- G2
+tier: optional
+priority: 50
+backend: vllm
+text_only: false
+dtype: float16
+quant: awq
+keep_weights: false
+enabled: true
+note: community AWQ 4-bit; 20 GB of weights leave little KV cache
+vllm:
+  max_model_len: 10240
+  max_num_seqs: 2
+  gpu_memory_utilization: 0.95
+  limit_mm_per_prompt:
+    image: 1
+    video: 0
+  trust_remote_code: false
+  mm_processor_kwargs:
+    size:
+      longest_edge: 4194304
+      shortest_edge: 65536
+  enforce_eager: false
+  extra_args: []
+  env: {}
+autotune:
+  max_num_seqs:
+  - 2
+  - 1
+  max_model_len:
+  - 10240
+  - 8192
+  mm_processor_kwargs:
+  - size:
+      longest_edge: 2097152
+      shortest_edge: 65536
+  - size:
+      longest_edge: 1048576
+      shortest_edge: 65536
+  preemption_limit: 200
+thinking:
+  supported: true
+  default_on: true
+  'off':
+    chat_template_kwargs:
+      enable_thinking: false
+  'on':
+    chat_template_kwargs:
+      enable_thinking: true
+  strip:
+  - <think>
+  - </think>
+sampling: {}
+hf:
+  adapter: generic
+  model_class: AutoModelForImageTextToText
+  batch_size: 4
+  batch_ladder:
+  - 4
+  - 2
+  - 1
+  python: main
+  dtype: bfloat16
+mock: {}

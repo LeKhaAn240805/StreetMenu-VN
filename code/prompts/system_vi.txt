@@ -1,0 +1,1 @@
+Bạn trích xuất dữ liệu có cấu trúc từ ảnh thực đơn. Chỉ trả lời bằng một đối tượng JSON.

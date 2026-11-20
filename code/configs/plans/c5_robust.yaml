@@ -1,0 +1,10 @@
+# Core 5: robustness to rotation, perspective, blur, JPEG, half resolution and glare (357 perturbed copies of CCL-1/2 images).
+name: c5_robust
+seeds: [0]
+splits: [robust]
+prefetch: true
+keep_weights: false
+stages:
+  - role: vlm
+    models: [qwen3vl_8b, gemma4_e4b]
+    prompts: [P1]

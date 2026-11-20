@@ -1,0 +1,63 @@
+key: llm_phogpt_4b
+hf_id: vinai/PhoGPT-4B-Chat
+revision: 3b11fad96d853b78f2fecc76f13aedb381b02d5a
+family: PhoGPT
+org: VinAI
+params_b: 3.7
+license: bsd-3-clause
+gated: false
+download_gb: 7.38
+role: llm
+groups:
+- G4
+- G5
+tier: optional
+priority: 50
+backend: hf
+text_only: true
+dtype: bfloat16
+keep_weights: false
+enabled: true
+note: MPT architecture has no vLLM implementation -> transformers
+vllm:
+  max_model_len: 8192
+  max_num_seqs: 16
+  gpu_memory_utilization: 0.9
+  trust_remote_code: true
+  enforce_eager: false
+  extra_args: []
+  env: {}
+autotune:
+  max_num_seqs:
+  - 16
+  - 8
+  - 4
+  - 2
+  - 1
+  max_model_len:
+  - 16384
+  - 12288
+  - 8192
+  mm_processor_kwargs: []
+  preemption_limit: 200
+thinking:
+  supported: false
+  default_on: false
+  'off': {}
+  'on': {}
+  strip:
+  - <think>
+  - </think>
+sampling: {}
+hf:
+  adapter: generic
+  model_class: AutoModelForCausalLM
+  batch_size: 4
+  batch_ladder:
+  - 4
+  - 2
+  - 1
+  python: main
+  dtype: bfloat16
+mock: {}
+system_role: merge

@@ -1,0 +1,7 @@
+[image]
+Transcribe all text visible in this image, line by line, in reading order (top
+to bottom; finish one column or panel before moving to the next). Copy exactly as
+written, including prices, spelling mistakes, missing accents and symbols. Do not
+translate, correct, merge or explain anything. Write "?" for characters you
+cannot read.
+Return one JSON object: {"lines": ["first line", "second line", "..."]}

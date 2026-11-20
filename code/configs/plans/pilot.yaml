@@ -1,0 +1,23 @@
+# Pilot (main table): 8 VLM families + Vietnamese-specialised models + the mandatory OCR+regex baseline.
+# Every model runs dev, test and ood in ONE server session (prompts must be frozen first: smv prompts freeze ...).
+# Order: OCR first, then VLMs by priority (main table first). A model that fails to load is logged and skipped.
+#   make pilot   |  optional prompts (P2, P-T): smv run --plan configs/plans/pilot.yaml --with-optional
+name: pilot
+seeds: [0]
+splits: [dev, test, ood]       # test and ood run only for frozen prompts
+include_optional: false
+prefetch: true
+keep_weights: false
+stages:
+  - role: ocr
+    name: G5a OCR + regex baseline (mandatory)
+    models: [ocr_ppocr]
+  - role: vlm
+    name: G1 families + G4 Vietnamese
+    models: [qwen3vl_8b, internvl35_8b, gemma4_e4b, glm46v_flash, minicpmv45, vintern_1b, erax_vl_7b, ministral3_8b]
+    prompts:
+      - P0
+      - P1
+      - {id: P2, optional: true}
+      - {id: P-T, optional: true}
+    thinking: ["off"]
